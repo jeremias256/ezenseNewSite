@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn-ezense {
+		@apply text-red-600 px-4;
+	}
+}
