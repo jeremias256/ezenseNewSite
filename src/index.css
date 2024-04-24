@@ -3,73 +3,27 @@
 @tailwind utilities;
 
 @layer components {
-	.btn-ezense {
-		@apply text-red-600 px-4;
-	}
-
-	:root{
-		--Grey-Black:#4A4C58;
-		--White:#fff;
-		--Call-to-Action:#FF3D00;
-		--Background: #ECEAE5;
-		--white-50: rgba(255, 255, 255, 0.50);
-	}
-
-	*{
-		box-sizing: border-box;
-	}
-
-	/* Body*/
-
-	body{
-		background-color: var(--Background);
-		margin: 0px 10%;
-	}
-
-	nav{
-		display: flex;
-		padding: 8px;
-		justify-content: space-between;
-		align-items: center;
-		flex: 1 0 0;
-		border-radius: 555px;
-		background: var(--white-50);
-		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
-		backdrop-filter: blur(10px);
-		margin-top: 8px;
-		height: 46px;
-
-	}
-
 	/*Tipografías*/
-
 	.grey-black{
-		color:var(--Grey-Black);
+		@apply text-greyBlack;
 	}
 	
 	.white{
-		color:var(--White);
+		@apply text-white;
 	}
 
 	.call-to-action{
-		color:var(--Call-to-Action);
+		@apply text-callToAction;
 	}
-
 	/* Menu */
 
 	.titulo {
-		font-family: 'Nunito', sans-serif;
-		font-size: 44px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
-		letter-spacing: -1.32px;
-	  }
-	  
+		@apply font-nunito text-[40px] not-italic font-light leading-normal tracking-tighter mb-[7px];
+	}
 	  /* Opciones */
 	  .opciones {
 		font-family: 'Nunito', sans-serif;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
@@ -77,85 +31,100 @@
 
 	/* 40px Nunito 400 */
 	.text-lg-nunito-400 {
-		font-size: 40px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 400;
+		@apply text-[40px] font-nunito font-medium;
 	}
 	
 	/* 40px Lato 700 */
 	.text-lg-lato-700 {
-		font-size: 40px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 700;
+		@apply text-[40px] font-lato font-bold;
 	}
 	
 	/* 40px Nunito 700 */
 	.text-lg-nunito-700 {
-		font-size: 40px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 700;
+		@apply text-[40px] font-nunito font-bold;
 	}
 	
 	/* 40px Lato 400 */
 	.text-lg-lato-400 {
-		font-size: 40px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
+		@apply text-[40px] font-lato font-normal;
 	}
 	
 	/* 26px Nunito 400 */
 	.text-md-nunito-400 {
-		font-size: 26px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 400;
+		@apply text-[26px] font-nunito font-bold;
 	}
 	
 	/* 26px Lato 700 */
 	.text-md-lato-700 {
-		font-size: 26px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 700;
+		@apply text-[26px] font-lato font-bold;
 	}
 	
 	/* 26px Nunito 700 */
 	.text-md-nunito-700 {
-		font-size: 26px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 700;
+		@apply text-[26px] font-nunito font-bold;
 	}
 	
 	/* 26px Lato 400 */
 	.text-md-lato-400 {
-		font-size: 26px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
+		@apply text-[26px] font-Lato font-normal;
 	}
 	
 	/* 16px Nunito 400 */
 	.text-sm-nunito-400 {
-		font-size: 16px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 400;
+		@apply text-[16px] font-nunito font-normal;
 	}
 	
 	/* 16px Lato 700 */
 	.text-sm-lato-700 {
-		font-size: 16px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 700;
+		@apply text-[16px] font-lato font-bold;
 	}
 	
 	/* 16px Nunito 700 */
 	.text-sm-nunito-700 {
-		font-size: 16px;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 700;
+		@apply text-[16px] font-nunito font-bold;
 	}
 	
 	/* 16px Lato 400 */
 	.text-sm-lato-400 {
-		font-size: 16px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
+		@apply text-[16px] font-lato font-normal;
+	}
+
+	/*MENÚ*/
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		background-color: #ECEAE5;
+		margin:0 10%;
+	}
+	nav{
+		display: flex;
+		padding: 8px 16px 8px 8px;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1 0 0;
+		border-radius: 555px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+		backdrop-filter: blur(10px);
+		margin-top: 8px;
+		height: 46px;
+	}
+	.nav-opciones{
+		flex:1;
+	}
+	.nav-contacto svg path:hover {
+		fill: var(--Call-to-Action); /* Cambia "your-desired-color" al color que deseas que tenga el icono al pasar el mouse sobre él */
+		stroke: var(--Call-to-Action); /* Cambia "your-desired-color" al color que deseas que tenga el contorno del icono al pasar el mouse sobre él */
+	}
+	/* Menu movile */
+	@media (width <=576px) {
+		body{
+			margin:0;
+		}
+		nav{
+			border-radius: 0px;
+			flex-wrap: wrap;
+			border-radius: 0px 0px 12px 12px;
+		}
 	}
 }
