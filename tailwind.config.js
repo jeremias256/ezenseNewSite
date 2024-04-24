@@ -1,5 +1,5 @@
 export default {
-	content: ['./src/**/*.{html,jsx}'],
+	content: ['./**/*.{html,jsx}'],
 	theme: {
 		extend: {
 			colors: {
@@ -14,6 +14,12 @@ export default {
 				'lato': ['Lato', 'sans-serif'],
 			  },
 		},
+		screens: {
+			'sm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			// => @media (min-width: XXXpx) { ... }
+		  },
 	},
 	plugins: [],
 };

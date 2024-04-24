@@ -15,7 +15,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root/>,
     errorElement: <ErrorPage />,
-    // outlet Home, Iplan
     children:[
       { index: true, element: <Home /> },
       {

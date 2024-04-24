@@ -1,9 +1,10 @@
 import React from 'react'
+import Works from '../components/works'
 
 const home = () => {
   return (
-    <div>
-      <h2>home braian</h2>
+    <div className="">
+        <Works/>
     </div>
   )
 }
