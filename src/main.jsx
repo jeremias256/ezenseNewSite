@@ -1,33 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 import Root from "./routes/root";
 import Home from "./routes/home";
-import Iplan from "./routes/iplan";
 import ErrorPage from "./error-page";
+import { EzenseProvider } from "./context/ezenseProvider";
+import Works from "./routes/works";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
     errorElement: <ErrorPage />,
-    children:[
+    children: [
       { index: true, element: <Home /> },
       {
-        path: "/iplan",
-        element: <Iplan />,
-      }
+        path: "/works",
+        element: <Works />,
+      },
     ],
   },
-  
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <EzenseProvider>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </EzenseProvider>,
+);

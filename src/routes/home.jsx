@@ -1,12 +1,7 @@
-import React from 'react'
-import Works from '../components/works'
+import React from "react";
 
 const home = () => {
-  return (
-    <div className="">
-        <Works/>
-    </div>
-  )
-}
+  return <h2 className="titulo">Home</h2>;
+};
 
-export default home
+export default home;
