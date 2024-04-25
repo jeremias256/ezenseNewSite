@@ -1,7 +1,18 @@
 import React from "react";
+import Banner from "../components/banner";
+import Works from "../components/works";
+import Services from "../components/services";
+import Bureau from "../components/bureau";
 
 const home = () => {
-  return <h2 className="titulo">Home</h2>;
+  return (
+    <>
+      <Banner />
+      <Works />
+      <Services />
+      <Bureau />
+    </>
+  );
 };
 
 export default home;

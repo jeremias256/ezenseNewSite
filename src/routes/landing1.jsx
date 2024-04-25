@@ -1,8 +1,8 @@
 import useEzense from "../hooks/useEzenseProvider";
 import videoDrone from "../assets/drone.mp4";
 
-const Works = () => {
-  //const { auxState, setAuxState } = useEzense();
+const Landing1 = () => {
+  const { auxState, setAuxState } = useEzense();
   return (
     <div>
       <div className="relative h-screen">
@@ -25,4 +25,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Landing1;

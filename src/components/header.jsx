@@ -27,7 +27,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex justify-between border-t-2 border-callToAction px-[16px] py-[12px] md:mt-[8px] md:items-center md:gap-[16px] md:border-none md:px-0 md:py-0">
+      <div className="flex justify-between rounded-b-[12px] border-t-2 border-callToAction px-[16px] py-[12px] md:mt-[8px] md:items-center md:gap-[16px] md:border-none md:px-0 md:py-0">
         <span className="opciones flex cursor-pointer hover:text-callToAction md:text-[18px]">
           Works
         </span>

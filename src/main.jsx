@@ -6,7 +6,7 @@ import Root from "./routes/root";
 import Home from "./routes/home";
 import ErrorPage from "./error-page";
 import { EzenseProvider } from "./context/ezenseProvider";
-import Works from "./routes/works";
+import Landing from "./routes/landing1";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       {
-        path: "/works",
-        element: <Works />,
+        path: "/landing",
+        element: <Landing />,
       },
     ],
   },
