@@ -1,0 +1,9 @@
+.works_content{
+    margin: 24px 24px 24px 24px;
+}
+.seccion-subTitulo{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

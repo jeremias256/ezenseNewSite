@@ -1,0 +1,10 @@
+.clients_content{
+    margin: 24px 24px 24px 24px;
+}
+
+.seccion-subTitulo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 19px;
+}
