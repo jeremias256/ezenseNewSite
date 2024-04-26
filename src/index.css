@@ -50,7 +50,7 @@
   }
   /* 26px Lato 400 */
   .text-md-lato-400 {
-    @apply font-Lato text-[26px] font-normal;
+    @apply font-lato text-[26px] font-normal;
   }
   /* 16px Nunito 400 */
   .text-sm-nunito-400 {
