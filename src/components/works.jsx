@@ -5,7 +5,7 @@ import "../css/works.css";
 const Works = () => {
   return (
     <>
-      <div className="works_content">
+      <div className="works_content absolute top-[40px] w-full">
         <TituloSeccion titulo="Works" />
         <div className="seccion-subTitulo">
           <span className="text-md-lato-700 grey-black">
