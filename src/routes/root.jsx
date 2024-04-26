@@ -3,15 +3,13 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 export default function Root() {
-    return (
-      <div className="flex flex-col">
-        <Header/>
+  return (
+    <div className="relative flex flex-col">
+      <Header />
 
-        <div>
-          <Outlet />
-        </div>
+      <Outlet />
 
-        <Footer/>
-      </div>
-    );
-  }
+      <Footer />
+    </div>
+  );
+}

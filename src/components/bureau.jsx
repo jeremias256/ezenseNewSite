@@ -1,7 +1,7 @@
 import React from "react";
 
 const Bureau = () => {
-  return <div></div>;
+  return <div>Bureau</div>;
 };
 
 export default Bureau;

@@ -7,7 +7,7 @@ import Bureau from "../components/bureau";
 const home = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <Works />
       <Services />
       <Bureau />

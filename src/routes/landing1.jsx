@@ -1,26 +1,13 @@
+import Banner from "../components/banner";
 import useEzense from "../hooks/useEzenseProvider";
-import videoDrone from "../assets/drone.mp4";
 
 const Landing1 = () => {
-  const { auxState, setAuxState } = useEzense();
+  const { classFixed, screenHeight } = useEzense();
   return (
-    <div>
-      <div className="relative h-screen">
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source src={videoDrone} type="video/mp4" />
-        </video>
-
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">
-            Contenido sobre el video
-          </h1>
-        </div>
-      </div>
+    <div
+      className={`${classFixed === true ? "fixed" : ""} top-[60px] z-50 h-[${screenHeight}px] w-full`}
+    >
+      <Banner />
     </div>
   );
 };

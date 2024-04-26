@@ -1,7 +1,7 @@
 import React from "react";
 
 const Works = () => {
-  return <div className="">titulo</div>;
+  return <div className="">Works</div>;
 };
 
 export default Works;
