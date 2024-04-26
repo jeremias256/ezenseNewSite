@@ -4,7 +4,6 @@ const EzenseContext = createContext();
 const EzenseProvider = ({ children }) => {
   const [classFixed, setClassFixed] = useState(true); //mostrar o no el banner
   const [scrollY, setScrollY] = useState(0); //eje y
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth); //px w pantalla
   const [screenHeight, setScreenHeight] = useState(window.innerHeight); //px h pantalla
   const [heightX5, setHeightX5] = useState(window.innerHeight / 5); //px h pantalla
 
@@ -15,8 +14,6 @@ const EzenseProvider = ({ children }) => {
         setClassFixed,
         scrollY,
         setScrollY,
-        screenWidth,
-        setScreenWidth,
         screenHeight,
         setScreenHeight,
         heightX5,

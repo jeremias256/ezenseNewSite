@@ -42,7 +42,7 @@
   }
   /* 26px Lato 700 */
   .text-md-lato-700 {
-    @apply font-lato text-[26px] font-bold;
+    @apply font-lato text-[26px] font-bold not-italic;
   }
   /* 26px Nunito 700 */
   .text-md-nunito-700 {
@@ -73,4 +73,15 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.fade-out {
+  animation: fadeOut 3s;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

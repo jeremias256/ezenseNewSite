@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 
 import videoDrone from "../assets/drone.mp4";
@@ -6,45 +6,33 @@ import useEzense from "../hooks/useEzenseProvider";
 
 const Banner = () => {
   /* --------------------------------------- estados locales -------------------------------------- */
-  const [playing, setPlaying] = useState(false);
   const anteriorY = useRef(0);
   const playerRef = useRef(null);
+  const estado = useRef(null);
   /* ------------------------------------------- context ------------------------------------------ */
-  const {
-    setClassFixed,
-    scrollY,
-    setScrollY,
-    screenWidth,
-    setScreenWidth,
-    screenHeight,
-    setScreenHeight,
-    heightX5,
-    setHeightX5,
-  } = useEzense();
+  const { setClassFixed, setScrollY } = useEzense();
 
   //actualia eje y
   useEffect(() => {
     const updateScrollY = () => {
-      const screenHeight10 = screenHeight * 0.1;
-      const screenHeight90 = screenHeight * 0.9;
       const newY = window.scrollY;
+      if (newY > anteriorY.current) estado.current = "subir";
+      if (newY >= 100 && newY <= 200) adelantaVideo1();
+      if (newY >= 200 && newY <= 300) adelantaVideo2();
+      if (newY >= 300 && newY <= 400) adelantaVideo3();
+      if (newY >= 400 && newY <= 500) adelantaVideo4();
+      if (newY >= 500 && newY <= 600) adelantaVideo5();
+      if (newY >= 600 && newY <= 700) adelantaVideo6();
+      if (newY >= 700 && newY <= 800) adelantaVideo7();
+      if (newY >= 800 && newY <= 900) adelantaVideo8();
+      if (newY >= 900 && newY <= 1000) adelantaVideo9(anteriorY.current);
+      if (newY >= 1000) adelantaVideo10(anteriorY.current);
 
-      if (newY > anteriorY.current) {
-        setPlaying(true);
-        //adelantaVideo()
-        setTimeout(() => {
-          setPlaying(false);
-        }, 1000);
-      } else {
-        retrocedeVideo();
-      }
       anteriorY.current = newY;
 
       setScrollY(newY); //NO VA PARA FINAL
-      //menor al 10% agrega FIXED
-      if (newY < screenHeight10) setClassFixed(true);
-      //mayor al 90% remove FIXED
-      if (newY > screenHeight90) setClassFixed(false);
+      if (newY < 1000) setClassFixed(true);
+      if (newY >= 1000) setClassFixed(false);
     };
 
     window.addEventListener("scroll", updateScrollY);
@@ -52,28 +40,41 @@ const Banner = () => {
       window.removeEventListener("scroll", updateScrollY);
     };
   }, []);
-  const retrocedeVideo = () => {
-    const currentTime = playerRef.current.getCurrentTime();
-    playerRef.current.seekTo(currentTime - 1, "seconds");
+  const adelantaVideo1 = () => {
+    playerRef.current.seekTo(1, "seconds");
   };
-  const adelantaVideo = () => {
-    const currentTime = playerRef.current.getCurrentTime();
-    playerRef.current.seekTo(currentTime + 1, "seconds");
+  const adelantaVideo2 = () => {
+    playerRef.current.seekTo(2, "seconds");
   };
-
-  //captura tam de w y h
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
-      setHeightX5(window.innerHeight / 5);
-    };
-
-    window.addEventListener("resize", updateScreenSize);
-    return () => {
-      window.removeEventListener("resize", updateScreenSize);
-    };
-  }, []);
+  const adelantaVideo3 = () => {
+    playerRef.current.seekTo(3, "seconds");
+  };
+  const adelantaVideo4 = () => {
+    playerRef.current.seekTo(4, "seconds");
+  };
+  const adelantaVideo5 = () => {
+    playerRef.current.seekTo(5, "seconds");
+  };
+  const adelantaVideo6 = () => {
+    playerRef.current.seekTo(6, "seconds");
+  };
+  const adelantaVideo7 = () => {
+    playerRef.current.seekTo(7, "seconds");
+  };
+  const adelantaVideo8 = () => {
+    playerRef.current.seekTo(8, "seconds");
+  };
+  const adelantaVideo9 = (estado) => {
+    playerRef.current.seekTo(9, "seconds");
+  };
+  const adelantaVideo10 = (estado) => {
+    console.log("👀 - adelantaVideo10 - estado:", estado);
+    document.getElementById("bannerVideo").classList.add("fade-out");
+    setTimeout(() => {
+      document.getElementById("bannerVideo").classList.add("hidden");
+    }, 2000);
+    playerRef.current.seekTo(10, "seconds");
+  };
 
   return (
     <>
@@ -83,7 +84,6 @@ const Banner = () => {
         width="100%"
         height="100%"
         muted
-        playing={playing}
       />
     </>
   );
