@@ -1,0 +1,103 @@
+.combo_content{
+    margin-top: 16px;
+    position: relative;
+    
+}
+
+.r1{
+    display: flex;
+}
+
+.r1-c1{
+    flex:0.02;
+    border-bottom: 2px solid #ff3d00;
+   
+}
+
+.r1-c2{
+    flex: 1;
+    border-bottom: 2px solid #ff3d00;
+}
+
+
+.r1-c3{
+    flex: 0.02;
+}
+
+
+.r2{
+    display: flex;
+    
+   margin-top: -0.12%;
+}
+
+.r2-c1{
+    flex:0.02;
+   
+}
+
+.r2-c2{
+   flex:1;
+    
+    border-bottom: 2px solid #ff3d00;
+}
+
+
+.r2-c3{
+    flex:0.02;
+    border-bottom: 2px solid #ff3d00;
+    border-right: 2px solid #ff3d00;
+    border-top: 2px solid #ff3d00;
+    border-bottom-right-radius: 555px;
+    border-top-right-radius: 555px;
+}
+
+
+.r3{
+    display: flex;
+    margin-top: -1.5px;
+  
+}
+
+
+.r3-c1{
+    flex:0.02;
+    border-bottom: 2px solid #ff3d00;
+    border-left: 2px solid #ff3d00;
+    border-top: 2px solid #ff3d00;
+    border-bottom-left-radius: 555px;
+    border-top-left-radius: 555px;
+    /*padding: 16px;*/
+}
+
+.r3-c2{
+    flex:1;
+    border-bottom: 2px solid #ff3d00;
+   
+}
+.r3-c3{
+    flex:0.02;
+    border-bottom: 2px solid #ff3d00;
+   
+}
+
+@media (min-height: 600px) {
+    .r2{
+        /*background-color: red;*/
+    }
+  }
+  
+  @media (max-height: 800px) {
+    /* Estilos que se aplicarán si la altura de la pantalla es como máximo 800px */
+    .r2{
+       /* background-color: green;*/
+    }
+  }
+  
+  @media (min-height: 600px) and (max-height: 800px) {
+    /* Estilos que se aplicarán si la altura de la pantalla está entre 600px y 800px */
+    .r2{
+       /* background-color: yellow;*/
+    }
+
+  }
