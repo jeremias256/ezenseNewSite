@@ -9,7 +9,7 @@ const Works = () => {
   return (
     <div
       className={`works_content absolute z-10 w-full`}
-      style={{ top: `1700px` }}
+      style={{ top: `2750px` }}
     >
       <TituloSeccion titulo="Works" />
       <div className="seccion-subTitulo">

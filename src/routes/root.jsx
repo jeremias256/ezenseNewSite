@@ -1,10 +1,8 @@
 import Header from "../components/header";
 import { Outlet } from "react-router-dom";
 import StickyBox from "react-sticky-box";
-import useEzense from "../hooks/useEzenseProvider";
 
 export default function Root() {
-  const { screenHeight } = useEzense();
   return (
     <div className="flex">
       <div>
@@ -16,7 +14,7 @@ export default function Root() {
         </StickyBox>
         <Outlet />
       </div>
-      <div className="w-0" style={{ height: `1500px` }}></div>
+      <div className="w-0" style={{ height: `2750px` }}></div>
     </div>
   );
 }

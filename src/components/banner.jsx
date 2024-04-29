@@ -57,7 +57,7 @@ const Banner = () => {
       width="100%"
       height="100%"
       muted
-      style={{ position: "", top: "0px" }}
+      //style={{ position: "", top: "0px" }}
     />
   );
 };
