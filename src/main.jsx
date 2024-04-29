@@ -10,16 +10,10 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ezenseSite2",
     element: <Root />,
     errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <Home /> },
-      {
-        path: "/landing",
-        element: <Landing />,
-      },
-    ],
+    children: [{ index: true, element: <Home /> }],
   },
 ]);
 
