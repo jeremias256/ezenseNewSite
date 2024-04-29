@@ -21,7 +21,23 @@ const Works = () => {
             architect and implement ideas into impactful digital realities{" "}
           </span>
         </div>
-        <ComboLG />
+        <div className="combo_fila1">
+          <ComboLG />
+        </div>
+
+        <div className="combo_fila2">
+          <ComboLG />
+          <ComboLG />
+        </div>
+
+        <div className="combo_fila3">
+          <ComboLG />
+          <ComboLG />
+        </div>
+
+
+
+
       </div>
     </>
   );

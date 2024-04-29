@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        greyBlack: "#4A4C58",
+        greyBlack: "#4D4F61",
         white: "#fff",
         callToAction: "#ff3d00",
         background: "#ECEAE5",
