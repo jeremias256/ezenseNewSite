@@ -3,10 +3,10 @@ import imgLogo from "../assets/logo-ezense.png";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Header = () => {
-  const { scrollY, screenWidth, screenHeight, heightX5 } = useEzense();
+  const { scrollY, screenHeight } = useEzense();
 
   return (
-    <header className="fixed top-0 w-full bg-white50 md:flex md:justify-between md:rounded-[555px] md:px-[16px]">
+    <header className="w-full md:flex md:justify-between">
       <div className="flex cursor-pointer items-center justify-between px-[16px] md:px-0">
         <div className="flex items-center">
           <img src={imgLogo} width="31px" height="31px" alt="Logo de e-zense" />
@@ -64,10 +64,8 @@ const Header = () => {
         </svg>
       </div>
       <div className="absolute left-0 top-0 flex">
-        <p>Ancho: {screenWidth}px</p>
         <p>---Alto: {screenHeight}px</p>
         <p>---Y: {scrollY}px</p>
-        <p>---H/5: {heightX5}px</p>
       </div>
     </header>
   );

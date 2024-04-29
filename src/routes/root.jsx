@@ -1,15 +1,20 @@
-import { Outlet } from "react-router-dom";
 import Header from "../components/header";
-import Footer from "../components/footer";
+import { Outlet } from "react-router-dom";
+import StickyBox from "react-sticky-box";
 
 export default function Root() {
   return (
-    <div className="relative flex flex-col">
-      <Header />
-
-      <Outlet />
-
-      <Footer />
+    <div className="flex">
+      <div>
+        <StickyBox
+          offsetTop={0}
+          className="z-50 mx-auto h-[110px] bg-white50 backdrop-blur-sm md:flex md:h-auto md:w-[98%] md:rounded-[555px] md:px-[16px]"
+        >
+          <Header />
+        </StickyBox>
+        <Outlet />
+      </div>
+      <div className="w-0" style={{ height: `2750px` }}></div>
     </div>
   );
 }

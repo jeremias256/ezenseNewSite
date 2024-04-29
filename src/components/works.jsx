@@ -2,13 +2,19 @@ import React from "react";
 import TituloSeccion from "./tituloSeccion";
 import ComboLG from "./comboLG";
 import ComboMD from "./comboMD";
+import ComboL from "./comboL";
+import ComboS from "./comboS";
 import "../css/works.css";
+import useEzense from "../hooks/useEzenseProvider";
 
 const Works = () => {
+  const { screenHeight } = useEzense();
   return (
     <>
-      <div className="works_content absolute top-[80px] w-full">
+     
+      <div className="works_content absolute z-10 w-full" style={{ top: `2750px` }}>
         <TituloSeccion titulo="Works" />
+        
         <div className="seccion-subTitulo">
           <span className="text-md-lato-700 grey-black">
             {" "}
@@ -22,24 +28,21 @@ const Works = () => {
             architect and implement ideas into impactful digital realities{" "}
           </span>
         </div>
+
         <div className="combo_fila1">
-          <ComboLG />
+            <ComboLG />
         </div>
 
         <div className="combo_fila2">
-          <ComboMD />
-          <ComboMD />
+          <ComboL />
+          <ComboS />
         </div>
 
         <div className="combo_fila3">
-          <ComboLG />
-          <ComboLG />
+          <ComboMD />
+          <ComboMD />
         </div>
-
-
-
-
-      </div>
+    </div>
     </>
   );
 };

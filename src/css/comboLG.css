@@ -104,14 +104,14 @@
 .cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 30px;
+padding-top: 29px;
 }
 
 
 .cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 157px;
+    height: 159px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
@@ -123,7 +123,7 @@ padding-top: 30px;
     border-left: none;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
-    height: 32px;
+    height: 31px;
     width: 16px;
     margin-bottom: 1px;
 }

@@ -38,12 +38,12 @@
 
                 .md-ca-f1-f2-c1-relleno1{
                     width: 16px;
-                    height: 30px;
+                    height: 30.5px;
                 }
 
                 .md-ca-f1-f2-c1-relleno2{
                     width: 16px;
-                    height: 30px;
+                    height: 31px;
                 }
                 
                 .md-ca-f1-f2-c1-f1{
@@ -98,14 +98,14 @@
 .md-cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 29.5px;
+padding-top: 30px;
 }
 
 
 .md-cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 158.5px;
+    height: 157px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;

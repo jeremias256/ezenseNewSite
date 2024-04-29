@@ -1,25 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+import { EzenseProvider } from "./context/ezenseProvider";
 import Root from "./routes/root";
 import Home from "./routes/home";
+import Landing from "./routes/landing";
 import ErrorPage from "./error-page";
-import { EzenseProvider } from "./context/ezenseProvider";
-import Landing from "./routes/landing1";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ezenseSite2",
     element: <Root />,
     errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <Home /> },
-      {
-        path: "/landing",
-        element: <Landing />,
-      },
-    ],
+    children: [{ index: true, element: <Home /> }],
   },
 ]);
 

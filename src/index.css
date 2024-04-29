@@ -34,12 +34,12 @@
 
    /* 26px Nunito 400 */
    .text-md-nunito-400 {
-    @apply font-nunito text-[26px] font-bold;
+    @apply font-nunito text-[24px] font-bold;
   }
 
    /* 26px Nunito 700 */
    .text-md-nunito-700 {
-    @apply font-nunito text-[26px] font-bold;
+    @apply font-nunito text-[24px] font-bold;
   }
 
   /* 19px Nunito 400 */
@@ -69,14 +69,14 @@
     @apply font-lato text-[40px] font-normal;
   }
  
-  /* 26px Lato 700 */
+  /* 24px Lato 700 */
   .text-md-lato-700 {
-    @apply font-lato text-[26px] font-bold not-italic;
+    @apply font-lato text-[24px] font-bold not-italic;
   }
  
-  /* 26px Lato 400 */
+  /* 24px Lato 400 */
   .text-md-lato-400 {
-    @apply font-lato text-[26px] font-normal;
+    @apply font-lato text-[24px] font-normal;
   }
   
   /* 16px Lato 700 */
