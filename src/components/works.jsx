@@ -1,6 +1,7 @@
 import React from "react";
 import TituloSeccion from "./tituloSeccion";
 import ComboLG from "./comboLG";
+import ComboMD from "./comboMD";
 import "../css/works.css";
 
 const Works = () => {
@@ -26,8 +27,8 @@ const Works = () => {
         </div>
 
         <div className="combo_fila2">
-          <ComboLG />
-          <ComboLG />
+          <ComboMD />
+          <ComboMD />
         </div>
 
         <div className="combo_fila3">
