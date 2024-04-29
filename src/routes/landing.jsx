@@ -1,5 +1,4 @@
 import Banner from "../components/banner";
-import Parrafo from "../components/parrafo";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Landing1 = () => {
@@ -12,7 +11,6 @@ const Landing1 = () => {
       >
         <Banner />
       </div>
-      <div className="absolute top-[1060px] w-full">Bur</div>
     </>
   );
 };

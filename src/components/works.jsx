@@ -6,7 +6,7 @@ import "../css/works.css";
 const Works = () => {
   return (
     <>
-      <div className="works_content absolute top-[80px] w-full">
+      <div className="works_content w-full">
         <TituloSeccion titulo="Works" />
         <div className="seccion-subTitulo">
           <span className="text-md-lato-700 grey-black">
@@ -34,10 +34,6 @@ const Works = () => {
           <ComboLG />
           <ComboLG />
         </div>
-
-
-
-
       </div>
     </>
   );

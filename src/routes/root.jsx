@@ -1,15 +1,11 @@
-import { Outlet } from "react-router-dom";
 import Header from "../components/header";
-import Footer from "../components/footer";
+import { Outlet } from "react-router-dom";
 
 export default function Root() {
   return (
-    <div className="relative flex flex-col">
+    <div className="flex flex-col md:items-center">
       <Header />
-
       <Outlet />
-
-      <Footer />
     </div>
   );
 }
