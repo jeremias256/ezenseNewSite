@@ -2,11 +2,16 @@ import React from "react";
 import TituloSeccion from "./tituloSeccion";
 import ComboLG from "./comboLG";
 import "../css/works.css";
+import useEzense from "../hooks/useEzenseProvider";
 
 const Works = () => {
+  const { screenHeight } = useEzense();
   return (
     <>
-      <div className="works_content w-full">
+      <div
+        className={`works_content absolute w-full`}
+        style={{ top: `${screenHeight * 1.1}px` }}
+      >
         <TituloSeccion titulo="Works" />
         <div className="seccion-subTitulo">
           <span className="text-md-lato-700 grey-black">

@@ -6,8 +6,7 @@ const Header = () => {
   const { scrollY, screenHeight } = useEzense();
 
   return (
-    //fixed
-    <header className="z-50 h-[110px] w-full bg-white50 backdrop-blur-sm md:top-[8px] md:flex md:h-auto md:w-[98%] md:justify-between md:rounded-[555px] md:px-[16px]">
+    <header className="w-full md:flex md:justify-between">
       <div className="flex cursor-pointer items-center justify-between px-[16px] md:px-0">
         <div className="flex items-center">
           <img src={imgLogo} width="31px" height="31px" alt="Logo de e-zense" />

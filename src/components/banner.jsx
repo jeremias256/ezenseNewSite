@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 
+import StickyBox from "react-sticky-box";
+
 import ezenseVideo from "../assets/ezenseVideo.mp4";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Banner = () => {
-  const { setClassFixed, setScrollY, screenHeight } = useEzense();
+  const { setClassFixed, setScrollY } = useEzense();
   /* --------------------------------------- estados locales -------------------------------------- */
   const playerRef = useRef(null);
   const anteriorY = useRef(0);
@@ -49,15 +51,14 @@ const Banner = () => {
   };
 
   return (
-    <div className={`z-10 w-full`} style={{ height: `${screenHeight}px` }}>
-      <ReactPlayer
-        ref={playerRef}
-        url={ezenseVideo}
-        width="100%"
-        height="100%"
-        muted
-      />
-    </div>
+    <ReactPlayer
+      ref={playerRef}
+      url={ezenseVideo}
+      width="100%"
+      height="100%"
+      muted
+      style={{ position: "absolute", top: "0px" }}
+    />
   );
 };
 
