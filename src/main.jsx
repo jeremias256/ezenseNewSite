@@ -10,7 +10,7 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/ezenseSite2",
+    path: "/ezenseSite3",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [{ index: true, element: <Home /> }],
