@@ -1,6 +1,8 @@
 import React from "react";
 import Banner from "../components/banner";
 import Works from "../components/works";
+import Servicios from "../components/servicios";
+import Bureau from "../components/bureau";
 import StickyBox from "react-sticky-box";
 import useEzense from "../hooks/useEzenseProvider";
 
@@ -14,6 +16,11 @@ const home = () => {
       </StickyBox>
 
       <Works />
+
+      <Servicios />
+
+      
+      <Bureau />
     </>
   );
 };

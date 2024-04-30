@@ -22,34 +22,34 @@
   }
 
 
-  /* 40px Nunito 400 */
+  /* 32px Nunito 400 */
   .text-lg-nunito-400 {
-    @apply font-nunito text-[40px] font-medium;
+    @apply font-nunito text-[32px] font-medium;
   }
 
-   /* 40px Nunito 700 */
+   /* 32px Nunito 700 */
    .text-lg-nunito-700 {
-    @apply font-nunito text-[40px] font-bold;
+    @apply font-nunito text-[32px] font-bold;
   }
 
    /* 26px Nunito 400 */
    .text-md-nunito-400 {
-    @apply font-nunito text-[26px] font-bold;
+    @apply font-nunito text-[24px] font-bold;
   }
 
    /* 26px Nunito 700 */
    .text-md-nunito-700 {
-    @apply font-nunito text-[26px] font-bold;
+    @apply font-nunito text-[24px] font-bold;
   }
 
-  /* 19px Nunito 400 */
+  /* 18px Nunito 400 */
   .text-sm-nunito-400 {
-    @apply font-nunito text-[19px] font-normal;
+    @apply font-nunito text-[18px] font-normal;
   }
 
-  /* 19px Nunito 700 */
+  /* 18px Nunito 700 */
   .text-sm-nunito-700 {
-    @apply font-nunito text-[19px] font-bold;
+    @apply font-nunito text-[18px] font-bold;
   }
 
 
@@ -69,24 +69,24 @@
     @apply font-lato text-[40px] font-normal;
   }
  
-  /* 26px Lato 700 */
+  /* 24px Lato 700 */
   .text-md-lato-700 {
-    @apply font-lato text-[26px] font-bold not-italic;
+    @apply font-lato text-[24px] font-bold not-italic;
   }
  
-  /* 26px Lato 400 */
+  /* 24px Lato 400 */
   .text-md-lato-400 {
-    @apply font-lato text-[26px] font-normal;
+    @apply font-lato text-[24px] font-normal;
   }
   
-  /* 16px Lato 700 */
+  /* 18px Lato 700 */
   .text-sm-lato-700 {
-    @apply font-lato text-[16px] font-bold;
+    @apply font-lato text-[18px] font-bold;
   }
   
-  /* 16px Lato 400 */
+  /* 18px Lato 400 */
   .text-sm-lato-400 {
-    @apply font-lato text-[16px] font-normal;
+    @apply font-lato text-[18px] font-normal;
   }
 
 

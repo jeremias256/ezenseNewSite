@@ -29,7 +29,7 @@
         .ca-f1-f2{
             display: flex;
             height: 155px;
-            padding-bottom: 30px;
+            padding-bottom: 31px;
            
         }
 
@@ -44,12 +44,12 @@
 
                 .ca-f1-f2-c1-relleno1{
                     width: 16px;
-                    height: 30px;
+                    height: 30.5px;
                 }
 
                 .ca-f1-f2-c1-relleno2{
                     width: 16px;
-                    height: 30px;
+                    height: 30.5px;
                 }
                 
                 .ca-f1-f2-c1-f1{
@@ -57,7 +57,7 @@
                     border-right: none;
                     border-top-left-radius: 555px;
                     border-bottom-left-radius: 555px;
-                    height: 32px;
+                    height: 31px;
                     width: 16px;
                 }
 
@@ -102,21 +102,21 @@
 
 
 .cb{
-width: 78px;
-border-bottom: 2px solid #ff3d00;
-padding-top: 30px;
+    width: 78px;
+    border-bottom: 2px solid #ff3d00;
+    padding-top: 29.5px;
 }
 
 
 .cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 157px;
+    height: 158.5px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
     display: flex;
-    align-items: center;
+    padding-top: 61px;
 }
 .cb-f1-f1 {
     border: 1px solid #4D4F61;
@@ -125,7 +125,6 @@ padding-top: 30px;
     border-bottom-right-radius: 555px;
     height: 32px;
     width: 16px;
-    margin-bottom: 1px;
 }
 
 
