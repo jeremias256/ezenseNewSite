@@ -45,26 +45,94 @@ const Servicios = () => {
 
                         <div className='sc-c3'>
                             {/* Web Devolepment */}
-                            <div className='sc-c3-f1'> <span className='text-md-lato-700 call-to-action'> Web Development </span></div>
-                            <div className='sc-c3-f2'></div>
+                            <div className='sc-servicio'> <span className='text-md-lato-700 call-to-action'> Web Development </span></div>
+                            
+                            <div className='sc-content-subSerivicio'>
+                                <div className='sc-rounded-left'>
+                                   
+                                </div>
+
+                                <div className='sc-list-subservicio'>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Platform-Agnostic Solutions</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                </div>
+                            </div>
 
                             {/* Ui/UX Design */}
+                            <div className='sc-servicio'> <span className='text-md-lato-700 call-to-action'>Ui/UX Design </span></div>
+                            <div className='sc-content-subSerivicio'>
+                                
+                                <div className='sc-list-subservicio'>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Platform-Agnostic Solutions</span></div>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                </div>
 
+                                <div className='sc-rounded-right'>
+                                    
+                                </div>
+
+                            </div>
+
+                            {/* Digital Strategy */}
+                            <div className='sc-servicio'> <span className='text-md-lato-700 call-to-action'> Digital Strategy </span></div>
+                            <div className='sc-content-subSerivicio'>
+                                <div className='sc-rounded-left'>
+                                   
+                                </div>
+                                <div className='sc-list-subservicio'>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Platform-Agnostic Solutions</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                </div>
+                            </div>
+
+                            {/* Online Marketing */}
+                            <div className='sc-servicio'> <span className='text-md-lato-700 call-to-action'>Online Marketing </span></div>
+                            <div className='sc-content-subSerivicio'>
+                                
+                                <div className='sc-list-subservicio'>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Platform-Agnostic Solutions</span></div>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                    <div className='sc-subServicio pl-[420px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                </div>
+                                <div className='sc-rounded-right'>
+                                    
+                                </div>
+
+                            </div>
+
+                            {/* Mobile APPs */}
+                            <div className='sc-servicio'> <span className='text-md-lato-700 call-to-action'> Mobile APPs </span></div>
+                            <div className='sc-content-subSerivicio'>
+                                <div className='sc-rounded-left'>
+                                   
+                                </div>
+                                <div className='sc-list-subservicio'>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Platform-Agnostic Solutions</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                    <div className='sc-subServicio pl-[404px]'><span className='text-sm-nunito-400 white'>Seamless Service Integration</span></div>
+                                </div>
+                            </div>
+
+                            
                         </div>
-{/* 
-                        <div className='sc-c4'>
-                        col4
-                        </div> */}
 
                         <div className='sc-c5'>
                             <div className='sc-c5-f1'></div>
                             <div className='sc-c5-f2'>
+                                
                                 <div className='sc-c5-f2-c1'>
                                     <div className='sc-c5-f2-c1-f1'></div>
                                 </div>
                                 <div className='sc-c5-f2-c2'></div>
                                 <div className='sc-c5-f2-c3'>
                                     <div className='sc-c5-f2-c3-f1'></div>
+                                </div>
+                                <div className='sc-c5-f2-c4'></div>
+                                <div className='sc-c5-f2-c5'>
+                                    <div className='sc-c5-f2-c5-f1'></div>
                                 </div>
                             </div>
                         </div>

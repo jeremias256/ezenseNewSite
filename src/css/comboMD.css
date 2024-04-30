@@ -23,7 +23,7 @@
         .md-ca-f1-f2{
             display: flex;
             height: 155px;
-            padding-bottom: 30px;
+            padding-bottom: 31px;
            
         }
 
@@ -38,12 +38,12 @@
 
                 .md-ca-f1-f2-c1-relleno1{
                     width: 16px;
-                    height: 30.5px;
+                    height: 31px;
                 }
 
                 .md-ca-f1-f2-c1-relleno2{
                     width: 16px;
-                    height: 31px;
+                    height: 30.5px;
                 }
                 
                 .md-ca-f1-f2-c1-f1{
@@ -98,28 +98,28 @@
 .md-cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 30px;
+padding-top: 29px;
 }
 
 
 .md-cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 157px;
+    height: 159px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
     display: flex;
-    align-items: center;
+   padding-top: 61.5px;
 }
 .md-cb-f1-f1 {
     border: 1px solid #4D4F61;
     border-left: none;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
-    height: 32px;
+    height: 31.5px;
     width: 16px;
-    margin-bottom: 1px;
+
 }
 
 
