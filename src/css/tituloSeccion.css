@@ -1,109 +1,114 @@
 .title_content{
    /* margin:16px*/
-}
-
-.row1 {
    display: flex;
 }
 
 
-.row1a {
-    border-top: 2px solid #ff3d00;
-    border-left: 2px solid #ff3d00;
+/* #ff3d00; */
+
+.tc-c1{
+    width: 24px;
+}
+
+.tc-c1-r1{
+    border:2px solid #ff3d00;
+    border-right: none;
+    border-top-left-radius:555px;
+    border-bottom-left-radius:555px;
+    height: 58px;
+
+}
+
+.tc-c1-r2{
     border-bottom: 2px solid #ff3d00;
-    border-top-left-radius: 555px;
-    border-bottom-left-radius: 555px;
-    padding: 8px 0px 8px 24px;
+    height: 30px;
+}
+
+
+.tc-c2{
+   
+}
+
+.tc-c2-r1{
+   
+    min-height: 58px;
+    border-top: 2px solid #ff3400;
+    border-bottom: 2px solid #ff3400;
+
+}
+
+.tc-c2-r2{
+    border-bottom: 2px solid #ff3d00;
+    height: 30px;
+}
+
+
+
+.tc-c3{
+   
+}
+
+.tc-c3-r1{
+   width: 45px;
+   height: 34px;
     
 }
 
-.row1b {
-    
-    display: flex;
-    flex-direction: column;
-    flex:0.05;
-   
-   
-}
-
-.row1ba {
-    flex: 0.5;
-    clip-path: polygon(0% 0%, 100% 94%, 100% 98%, 0% 4%);
-    background-color: #ff3d00;
-    border: 2px solid #ff3d00;
-}
-
-.row1bb {
-    flex: 0.5;
-   
-}
-
-.row1c {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-   
-}
-
-.row1ca {
-   
-    flex: 0.5;
-}
-
-.row1cb {
-  
-    flex: 0.5;
-    border-top: 2px solid #ff3d00;
-}
-
-
-.row1d {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-   
-
-}
-
-.row1da {
-   
-    flex: 0.5;
+.tc-c3-r2{
+    border-bottom: 2px solid #ff3d00;
+    width: 45px;
+    height: 24px;
     
 }
 
-.row1db {
-  
-    flex: 0.5;
-    border-top: 2px solid #ff3d00;
-}
-
-
-
-.row4 {
-    margin-top: -2px;
-    display: flex;
-}
-
-.row4b {
+.tc-c3-r3{
     border-bottom: 2px solid #ff3d00;
-    border-right: 2px solid #ff3d00;
-    border-top-right-radius: 555px;
-    border-bottom-right-radius: 555px;
-    border-top: 2px solid #ff3d00;
-
-    flex:1;
-    height: 36px;
+    height: 30px;
 }
 
-.row4a {
-    flex:0.09;   
+
+.tc-c4{
+   flex:1;
+}
+
+.tc-c4-r1{
     border-bottom: 2px solid #ff3d00;
+    
+    border-top: 2px solid #ff3d00;
+    height: 26px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.tc-c4-r2{
+    border-bottom: 2px solid #ff3d00;
+    height: 30px;
    
 }
 
-@media (max-width: 391px) {
 
-    .row1b {
-        flex:0.5;
-    }
+.tc-c5{
+    width: 24px;
+    
+}
+
+.tc-c5-r1{
+
+
+border-top: 2px solid #ff3d00;
+height:  24.5px;
+margin-top: 32px;
+width: 100%;
+
+}
+
+.tc-c5-r2{
+border-bottom: 2px solid #ff3d00;
+border-top: 2px solid #ff3d00;
+border-right: 2px solid #ff3400;
+height:  31.5px;
+
+border-top-right-radius: 555px;
+border-bottom-right-radius: 555px;
+
 }

@@ -1,36 +1,71 @@
 .servicios_content{
-  
-
-    padding:0px 48px;
     margin-top: 60px;
-
-   
 }
 
+
+.servicios-back {
+    border-radius: 24px;
+   
+    position: relative;
+    width: 1290px;
+    margin: auto;
+    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor */
+   
+    
+}
+
+.servicios-back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/ezenseSite2/src/assets/back-servicios.gif) no-repeat center center;
+    background-size: cover;
+    /* filter: brightness(1.5); */
+    /* opacity: 0.12; */
+    z-index: -1;
+    background-color: #60627A;
+    background-blend-mode: luminosity;
+   
+}
+/* 
 .servicios-back{
    
     border-radius: 24px;
+    padding:60px 36px;
+  
+
     background: url("../assets/back-servicios.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.88);
+    filter: brightness(0.50);
+    width: 1290px;
+    margin: auto;
+    background-color:#60627A;
+    background-blend-mode: darken;
 
-}
+
+} */
 
 .servicios-back2{
   
     border-radius: 24px;
-    background-color: rgba(236, 234, 229,0.9)
+    padding: 60px 36px;
+    /*background-color: rgba(236, 234, 229,0.9)*/
+    background-color: rgba(77, 77, 96,0.88);
 
-}
+} 
 
 .servicios{
   
-    border-radius: 24px;
+    /* border-radius: 24px;
     background-color: rgba(96, 98, 122,0.9);
 
-    padding:60px 36px
+    padding:60px 36px */
 }
+
 .servicio-subTitulo{
     display: flex;
     flex-direction: column;
@@ -141,8 +176,7 @@
 
 .sc-content-subSerivicio{
     height: 124px;
-    width: 763px;
-   
+    width: 692px;
     display: flex;   
 }
 

@@ -13,12 +13,30 @@
   .call-to-action {
     @apply text-callToAction;
   }
+
   /* Menu */
   .titulo {
     @apply font-nunito text-[40px] font-light not-italic leading-normal tracking-tighter;
   }
   .opciones {
     @apply font-nunito text-[16px] font-semibold not-italic leading-normal;
+  }
+
+  /* Formulario de contacto*/
+
+  .contacto-subtitulo {
+    @apply font-nunito text-[56px] not-italic;
+    font-weight: 200;
+    letter-spacing: -1.56px;
+    line-height: 50px;
+  }
+
+  /* Formulario enviar CV */
+  .cv-subtitulo {
+    @apply font-nunito text-[38px] not-italic;
+    font-weight: 200;
+    letter-spacing: -0.56px;
+    line-height: 20px;
   }
 
 
@@ -106,4 +124,13 @@ video {
   to {
     opacity: 0;
   }
+}
+
+/* Botones */
+
+.btn_gris{
+  background-color: #4D4F61;
+  color:white;
+  padding: 10px 28px;
+  border-radius: 555px;
 }

@@ -3,48 +3,41 @@ import '../css/tituloSeccion.css';
 import biselBig from '../assets/biselBig.png';
 import biselLine from '../assets/biselLine.png';
 
+import BiselSmall from './bisel/biselSmall'
+
+// {props.titulo}
+// <BiselSmall />
+
 const TituloSeccion = (props) => {
   
   return (
     <>  
         <div className='title_content'> 
 
-            <div className='row1'> 
-            
-                <div className='row1a'><span className='text-lg-nunito-400 grey-black'> {props.titulo}</span></div>
+            <div className="tc-c1">
+                <div className='tc-c1-r1'></div>
+                <div className='tc-c1-r2'></div>
+            </div>
+            <div className="tc-c2">
+                <div className='tc-c2-r1'><span className='text-lg-nunito-400 grey-black'>{props.titulo}</span> </div>
+                <div className='tc-c2-r2'> </div>
+            </div>
+            <div className="tc-c3">
+                <div className='tc-c3-r1'><BiselSmall /> </div>
+                <div className='tc-c3-r2'> </div>
+                <div className='tc-c3-r3'> </div>
+            </div>
+            <div className="tc-c4">
+                <div className='tc-c4-r1'> </div>
+                <div className='tc-c4-r2'> </div>
+            </div>
 
-                <div className='row1b'>
-
-                    
-                    <div className='row1ba'>
-                    
-                    </div>
-                    <div className='row1bb'></div>
-
-
-                </div>
-
-                <div className='row1c'>
-
-                <div className='row1ca'></div>
-                    <div className='row1cb'></div>
-
-                </div>
-
-                <div className='row1d'>
-                    <div className='row1da'></div>
-                    <div className='row1db'></div>
-                </div>
-            
+            <div className="tc-c5">
+                <div className='tc-c5-r1'> </div>
+                <div className='tc-c5-r2'> </div>
             </div>
 
 
-
-            <div className='row4'> 
-                <div className='row4a'> </div>
-                <div className='row4b'> </div>
-                
-            </div>
 
         </div>
     </>
