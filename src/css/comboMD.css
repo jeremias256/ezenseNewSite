@@ -38,7 +38,7 @@
 
                 .md-ca-f1-f2-c1-relleno1{
                     width: 16px;
-                    height: 31px;
+                    height: 30.5px;
                 }
 
                 .md-ca-f1-f2-c1-relleno2{
@@ -51,7 +51,7 @@
                     border-right: none;
                     border-top-left-radius: 555px;
                     border-bottom-left-radius: 555px;
-                    height: 32px;
+                    height: 31.5px;
                     width: 16px;
                 }
 
@@ -60,7 +60,7 @@
                     border-right: none;
                     border-top-left-radius: 555px;
                     border-bottom-left-radius: 555px;
-                    height: 32px;
+                    height: 31.5px;
                     width: 16px;
                 }
             
@@ -70,7 +70,7 @@
                 width: 100%;
             }
                 .md-ca-f1-f2-c2-f1{
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid #4D4F61;
                     height: 31px;
                     padding: 8px 0px 10px 8px;
                     display: flex;
@@ -105,19 +105,19 @@ padding-top: 29px;
 .md-cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 159px;
+    height: 158.5px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
     display: flex;
-   padding-top: 61.5px;
+   padding-top: 62px;
 }
 .md-cb-f1-f1 {
     border: 1px solid #4D4F61;
     border-left: none;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
-    height: 31.5px;
+    height: 31px;
     width: 16px;
 
 }
