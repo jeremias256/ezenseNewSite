@@ -2,9 +2,9 @@ import { createContext, useState } from "react";
 
 const EzenseContext = createContext();
 const EzenseProvider = ({ children }) => {
-  const [classFixed, setClassFixed] = useState(true);
-  const [scrollY, setScrollY] = useState(0);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+  const [classFixed, setClassFixed] = useState(true); //navbar fixed
+  const [scrollY, setScrollY] = useState(0); //eje y
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight); //height pantalla
 
   return (
     <EzenseContext.Provider

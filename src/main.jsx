@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { EzenseProvider } from "./context/ezenseProvider";
 import Root from "./routes/root";
 import Home from "./routes/home";
-import Landing from "./routes/landing";
 import ErrorPage from "./error-page";
 import "./index.css";
 
