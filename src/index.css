@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @layer components {
+
   /*Tipografías*/
   .grey-black {
     @apply text-greyBlack;
   }
+
   .white {
     @apply text-white;
   }
+
   .call-to-action {
     @apply text-callToAction;
   }
@@ -18,6 +21,7 @@
   .titulo {
     @apply font-nunito text-[40px] font-light not-italic leading-normal tracking-tighter;
   }
+
   .opciones {
     @apply font-nunito text-[16px] font-semibold not-italic leading-normal;
   }
@@ -45,18 +49,18 @@
     @apply font-nunito text-[32px] font-medium;
   }
 
-   /* 32px Nunito 700 */
-   .text-lg-nunito-700 {
+  /* 32px Nunito 700 */
+  .text-lg-nunito-700 {
     @apply font-nunito text-[32px] font-bold;
   }
 
-   /* 26px Nunito 400 */
-   .text-md-nunito-400 {
+  /* 26px Nunito 400 */
+  .text-md-nunito-400 {
     @apply font-nunito text-[24px] font-bold;
   }
 
-   /* 26px Nunito 700 */
-   .text-md-nunito-700 {
+  /* 26px Nunito 700 */
+  .text-md-nunito-700 {
     @apply font-nunito text-[24px] font-bold;
   }
 
@@ -81,27 +85,27 @@
   .text-lg-lato-700 {
     @apply font-lato text-[40px] font-bold;
   }
- 
+
   /* 40px Lato 400 */
   .text-lg-lato-400 {
     @apply font-lato text-[40px] font-normal;
   }
- 
+
   /* 24px Lato 700 */
   .text-md-lato-700 {
     @apply font-lato text-[24px] font-bold not-italic;
   }
- 
+
   /* 24px Lato 400 */
   .text-md-lato-400 {
     @apply font-lato text-[24px] font-normal;
   }
-  
+
   /* 18px Lato 700 */
   .text-sm-lato-700 {
     @apply font-lato text-[18px] font-bold;
   }
-  
+
   /* 18px Lato 400 */
   .text-sm-lato-400 {
     @apply font-lato text-[18px] font-normal;
@@ -109,18 +113,22 @@
 
 
 }
+
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .fade-out {
   animation: fadeOut 3s;
 }
+
 @keyframes fadeOut {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -128,9 +136,9 @@ video {
 
 /* Botones */
 
-.btn_gris{
+.btn_gris {
   background-color: #4D4F61;
-  color:white;
+  color: white;
   padding: 10px 28px;
   border-radius: 555px;
 }

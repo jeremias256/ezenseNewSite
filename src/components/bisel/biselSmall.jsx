@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
 
 const BiselSmall = () => {
   return (
     <>
-      <svg width="45" height="34" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="45"
+        height="34"
+        viewBox="0 0 45 34"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g id="bisel small">
-            <path id="Rectangle 8" 
-            fill-rule="evenodd" 
-            clip-rule="evenodd"
+          <path
+            id="Rectangle 8"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M22 13.175
             C15.1027 3.76715 14 0 0 0
             V2
@@ -18,14 +25,14 @@ const BiselSmall = () => {
             V32
             C42.9944 32 44.5003 32 40 32
             C32.5 32 28 21.359 22 13.175
-            Z" 
+            Z"
             fill="#FF3D00"
-            strokeWidth="2"/>
+            strokeWidth="2"
+          />
         </g>
-    </svg>
-
+      </svg>
     </>
-  )
-}
+  );
+};
 
 export default BiselSmall;

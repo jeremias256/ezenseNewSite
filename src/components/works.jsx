@@ -8,12 +8,8 @@ import "../css/works.css";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Works = () => {
-  const { screenHeight } = useEzense();
   return (
-    <div
-      className="works_content absolute z-10 mx-auto w-full max-w-[1440px]"
-      style={{ top: `2750px` }}
-    >
+    <div className="works_content">
       <div className="works-back">
         <TituloSeccion titulo="Works" />
 

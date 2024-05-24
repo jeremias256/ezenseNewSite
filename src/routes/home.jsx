@@ -4,29 +4,23 @@ import Works from "../components/works";
 import Servicios from "../components/servicios";
 import Bureau from "../components/bureau";
 import Contacto from "../components/contacto";
-import StickyBox from "react-sticky-box";
 import useEzense from "../hooks/useEzenseProvider";
 
 const home = () => {
   const { screenHeight } = useEzense();
-
+  const adjustedHeight = screenHeight * 1.1;
   return (
     <>
-      <StickyBox
-        className="bg-gradient-to-r from-cyan-500 to-blue-500"
-        offsetTop={20}
-        style={{ height: `${screenHeight}px` }}
-      >
-        <Banner />
-      </StickyBox>
+      <Banner />
+      <div className="absolute flex w-full flex-col border-4 border-green-500">
+        <Works />
 
-      <Works />
+        <Servicios />
 
-      <Servicios />
+        <Bureau />
 
-      <Bureau />
-
-      <Contacto />
+        <Contacto />
+      </div>
     </>
   );
 };

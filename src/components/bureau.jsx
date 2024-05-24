@@ -8,10 +8,7 @@ import ale from "../assets/aleJeroz.png";
 
 const Bureau = () => {
   return (
-    <div
-      className="bureau-content absolute z-10 mx-auto w-full max-w-[1440px]"
-      style={{ top: `5585px` }}
-    >
+    <div className="bureau-content">
       <div className="bureau-back">
         <div className="bureau-back2">
           <TituloSeccionWhite titulo="Bureau" />

@@ -4,10 +4,7 @@ import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
 const Servicios = () => {
   return (
-    <div
-      className="servicios_content absolute z-10 mx-auto w-full max-w-[1440px]"
-      style={{ top: `4285px` }}
-    >
+    <div className="servicios_content">
       <div className="servicios-back">
         <div className="servicios-back2">
           <div className="servicios">

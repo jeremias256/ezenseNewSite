@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
-
-import StickyBox from "react-sticky-box";
-
 import ezenseVideo from "../assets/ezenseVideo.mp4";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Banner = () => {
-  const { setClassFixed, setScrollY } = useEzense();
+  const { setScrollY, screenHeight, contentHeight, setContentHeight } =
+    useEzense();
   /* --------------------------------------- estados locales -------------------------------------- */
+  const bannerDivRef = useRef(null);
+  const contentBannerDivRef = useRef(null);
   const playerRef = useRef(null);
   const anteriorY = useRef(0);
   const frame = 0.025;
@@ -18,18 +18,24 @@ const Banner = () => {
     const updateScrollY = () => {
       acumulador = acumulador + frame;
       const newY = window.scrollY;
+
       if (newY > anteriorY.current) {
         adelantarVideo();
       } else {
         retrasarVideo();
       }
-
       anteriorY.current = newY;
 
-      setScrollY(newY); //NO VA PARA FINAL
-      //0.795 79.5% screenHeight * 0.795
-      if (newY < 4000) setClassFixed(true);
-      if (newY >= 4000) setClassFixed(false);
+      setScrollY(newY);
+      setContentHeight(
+        contentBannerDivRef.current.getBoundingClientRect().height,
+      );
+
+      if (newY >= contentBannerDivRef.current.getBoundingClientRect().height) {
+        contentBannerDivRef.current.classList.remove("fixed");
+      } else {
+        contentBannerDivRef.current.classList.add("fixed");
+      }
     };
 
     window.addEventListener("scroll", updateScrollY);
@@ -51,13 +57,22 @@ const Banner = () => {
   };
 
   return (
-    <ReactPlayer
-      ref={playerRef}
-      url={ezenseVideo}
-      width="100%"
-      height="100%"
-      muted
-    />
+    <div className="relative" ref={bannerDivRef} style={{ height: "2000px" }}>
+      <div
+        className="fixed top-[110px] w-full md:top-0"
+        id="contentBannerDiv"
+        ref={contentBannerDivRef}
+      >
+        <ReactPlayer
+          ref={playerRef}
+          url={ezenseVideo}
+          width="100%"
+          height="100%"
+          muted
+        />
+        <div className="bg-opacity-gradient pointer-events-none absolute bottom-0 left-0 h-1/3 w-full"></div>
+      </div>
+    </div>
   );
 };
 

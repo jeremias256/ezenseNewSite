@@ -8,10 +8,7 @@ const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div
-      className="contacto_content absolute z-10 mx-auto w-full max-w-[1440px]"
-      style={{ top: `6489px` }}
-    >
+    <div className="contacto_content">
       <div className="contacto-back">
         {/* formulario */}
         <div className="cont-form">
