@@ -3,6 +3,7 @@ import '../css/contacto.css'
 import { useState } from 'react'
 
 import BiselSmall from './bisel/biselSmall'
+import { Input } from 'postcss'
 
 
 
@@ -11,8 +12,8 @@ import BiselSmall from './bisel/biselSmall'
 const Contacto = () => {
 
     const [stepContacto, setStepContacto] = useState(1);
-   
-    
+  
+
    return (
 
         <div className="contacto_content absolute z-10 w-full" style={{ top: `6489px` }}>
@@ -43,8 +44,10 @@ const Contacto = () => {
                             : <Contacto_step3 />
                     }
                        
-                       
+                   
                     </div>
+                    
+                    
                 </div>
 
                 {/* datos */}
