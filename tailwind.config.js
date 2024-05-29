@@ -14,12 +14,15 @@ export default {
         nunito: ["Nunito", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
+      backgroundImage: {
+        "opacity-gradient":
+          "linear-gradient(to bottom, rgba(236, 234, 229, 0), rgba(236, 234, 229, var(--tw-bg-opacity)))",
+      },
     },
     screens: {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      // => @media (min-width: XXXpx) { ... }
     },
   },
   plugins: [],

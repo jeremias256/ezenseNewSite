@@ -68,6 +68,7 @@ const ComboMD = () => {
                             <div className='md-ca-f1-f2-c2-f1'>
                                 <p className='text-sm-nunito-400 grey-black'>+ Drupal services</p>
                             </div>
+                            <p className='text-sm-nunito-400 grey-black ml-2'>+ Rich</p>
                             
                             
                         </div>
@@ -78,9 +79,7 @@ const ComboMD = () => {
                 <div className='md-ca-f2'> 
                     <img src={biselBig}/>
                     <img src={biselBigM}/>
-                    <img src={biselBigL}/>
-                    <img src={biselBig}/>
-                    <img src={biselBig}/>
+                   
                 </div>
             </div>
             <div className='md-cb'>

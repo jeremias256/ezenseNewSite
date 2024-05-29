@@ -7,7 +7,7 @@
 /* #ff3d00; */
 
 .tc-c1{
-    width: 24px;
+    width: 32px;
 }
 
 .tc-c1-r1{
@@ -34,7 +34,12 @@
     min-height: 58px;
     border-top: 2px solid #ff3400;
     border-bottom: 2px solid #ff3400;
+    padding-top: 2px;
 
+}
+
+.tc-c2-r1 span{
+    margin-left: -8px;
 }
 
 .tc-c2-r2{
