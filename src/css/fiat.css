@@ -1,0 +1,125 @@
+.pp-content{
+    width: 1440px;
+    margin: auto;
+    margin-top: 76px;
+}
+
+/* Detalle */
+
+.pp-info{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 40px;
+    gap:90px;
+    padding: 0px 90px 0px 90px;
+}
+
+.pp-info-detalle, .pp-info-imagen, .pp-info-combo{ 
+    flex:1;
+    margin-top: auto;
+}
+
+.pp-info-detalle{ 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pp-info-imagen{ 
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    justify-content: space-between;
+}
+
+
+/* Imagenes */
+.video-background-container {
+    position: relative;
+    width: 1440px; /* Ajusta según sea necesario */
+    height: 664px; /* Ajusta según sea necesario */
+    margin-top: 40px;
+    border-radius: 24px;
+    overflow: hidden; /* Para asegurarte de que el video no se salga del div */
+    padding: 90px;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que el video cubra todo el fondo */
+    z-index: -1; /* Para asegurarte de que el video esté detrás del contenido */
+  }
+  
+  .pp-imagenes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1; /* Asegura que el contenido esté por encima del video */
+    /* Otras propiedades de estilo para .pp-imagenes */
+
+  }
+  
+  .video-background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 79, 97, 0.7); /* Ajusta el color y la opacidad según sea necesario */
+    background-blend-mode: luminosity;
+    z-index: 0; /* Asegura que el pseudo-elemento esté sobre el video pero debajo del contenido */
+  }
+
+  .pp-imagenes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin estirarse */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+  }
+  
+  .carousel-indicators {
+    display: none; /* Oculta los indicadores del carrusel */
+  }
+
+
+
+/* Proyecto relacionados */
+
+.pp-relacionados{
+
+  display: flex;
+  flex-direction: column;
+ 
+  margin-top: 40px;
+  padding: 0px 90px 0px 90px;
+
+}
+
+.pp-relacionados .text-lg-nunito-400 {
+  text-align: center;
+}
+
+.pp-relacionadosCombos{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}

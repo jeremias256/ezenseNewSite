@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(/ezenseSite2/src/assets/back-servicios.gif) no-repeat center center;
+    background: url("/ezenseSite2/src/assets/back-servicios.gif") no-repeat center center;
     background-size: cover;
     /* filter: brightness(1.5); */
     /* opacity: 0.12; */

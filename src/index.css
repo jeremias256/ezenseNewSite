@@ -20,10 +20,12 @@
   /* Menu */
   .titulo {
     @apply font-nunito text-[40px] font-light not-italic leading-normal tracking-tighter;
+    margin: 0px;
   }
 
   .opciones {
     @apply font-nunito text-[16px] font-semibold not-italic leading-normal;
+    margin: 0px;
   }
 
   /* Formulario de contacto*/
@@ -33,6 +35,7 @@
     font-weight: 200;
     letter-spacing: -1.56px;
     line-height: 50px;
+    margin: 0px;
   }
 
   /* Formulario enviar CV */
@@ -41,37 +44,44 @@
     font-weight: 200;
     letter-spacing: -0.56px;
     line-height: 20px;
+    margin: 0px;
   }
 
 
   /* 32px Nunito 400 */
   .text-lg-nunito-400 {
     @apply font-nunito text-[32px] font-medium;
+    margin: 0px;
   }
 
   /* 32px Nunito 700 */
   .text-lg-nunito-700 {
     @apply font-nunito text-[32px] font-bold;
+    margin: 0px;
   }
 
   /* 26px Nunito 400 */
   .text-md-nunito-400 {
     @apply font-nunito text-[24px] font-bold;
+    margin: 0px;
   }
 
   /* 26px Nunito 700 */
   .text-md-nunito-700 {
     @apply font-nunito text-[24px] font-bold;
+    margin: 0px;
   }
 
   /* 18px Nunito 400 */
   .text-sm-nunito-400 {
     @apply font-nunito text-[18px] font-normal;
+    margin: 0px;
   }
 
   /* 18px Nunito 700 */
   .text-sm-nunito-700 {
     @apply font-nunito text-[18px] font-bold;
+    margin: 0px;
   }
 
 
@@ -84,31 +94,37 @@
   /* 40px Lato 700 */
   .text-lg-lato-700 {
     @apply font-lato text-[40px] font-bold;
+    margin: 0px;
   }
 
   /* 40px Lato 400 */
   .text-lg-lato-400 {
     @apply font-lato text-[40px] font-normal;
+    margin: 0px;
   }
 
   /* 24px Lato 700 */
   .text-md-lato-700 {
     @apply font-lato text-[24px] font-bold not-italic;
+    margin: 0px;
   }
 
   /* 24px Lato 400 */
   .text-md-lato-400 {
     @apply font-lato text-[24px] font-normal;
+    margin: 0px;
   }
 
   /* 18px Lato 700 */
   .text-sm-lato-700 {
     @apply font-lato text-[18px] font-bold;
+    margin: 0px;
   }
 
   /* 18px Lato 400 */
   .text-sm-lato-400 {
     @apply font-lato text-[18px] font-normal;
+    margin: 0px;
   }
 
 
