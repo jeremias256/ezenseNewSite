@@ -5,11 +5,10 @@ import ComboMD from "./comboMD";
 import ComboL from "./comboL";
 import ComboS from "./comboS";
 import "../css/works.css";
-import useEzense from "../hooks/useEzenseProvider";
 
 const Works = () => {
   return (
-    <div className="works_content">
+    <div className="px-3 py-0 md:mt-[30px]">
       <div className="works-back">
         <TituloSeccion titulo="Works" />
 

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   /*Tipografías*/
   .grey-black {
     @apply text-greyBlack;
@@ -47,7 +46,6 @@
     margin: 0px;
   }
 
-
   /* 32px Nunito 400 */
   .text-lg-nunito-400 {
     @apply font-nunito text-[32px] font-medium;
@@ -84,13 +82,6 @@
     margin: 0px;
   }
 
-
-
-
-
-
-
-
   /* 40px Lato 700 */
   .text-lg-lato-700 {
     @apply font-lato text-[40px] font-bold;
@@ -126,8 +117,6 @@
     @apply font-lato text-[18px] font-normal;
     margin: 0px;
   }
-
-
 }
 
 video {
@@ -153,7 +142,7 @@ video {
 /* Botones */
 
 .btn_gris {
-  background-color: #4D4F61;
+  background-color: #4d4f61;
   color: white;
   padding: 10px 28px;
   border-radius: 555px;

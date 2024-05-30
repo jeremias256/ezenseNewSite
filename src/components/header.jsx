@@ -3,7 +3,7 @@ import imgLogo from "../assets/logo-ezense.png";
 import useEzense from "../hooks/useEzenseProvider";
 
 const Header = () => {
-  const { scrollY, screenHeight, contentHeight } = useEzense();
+  const { scrollY, screenHeight } = useEzense();
 
   return (
     <header className="w-full md:flex md:justify-between">
@@ -63,10 +63,10 @@ const Header = () => {
           />
         </svg>
       </div>
-      <div className="absolute left-[180px] top-[20px] flex flex flex-col bg-green-500 px-4 text-white md:flex-row">
-        <p>---screenHeight: {screenHeight}px</p>
+      <div className="absolute left-[180px] top-[20px] flex flex-col bg-green-500 px-4 text-white md:flex-row">
         <p>---Y: {scrollY}px</p>
-        <p>---contentHeight: {contentHeight}px</p>
+        <p>---screenHeight: {screenHeight}px</p>
+        {/* <p>---contentHeight: {contentHeight}px</p> */}
       </div>
     </header>
   );

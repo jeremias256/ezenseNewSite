@@ -2,9 +2,9 @@ import { createContext, useState } from "react";
 
 const EzenseContext = createContext();
 const EzenseProvider = ({ children }) => {
-  const [scrollY, setScrollY] = useState(0); //eje y
+  const [scrollY, setScrollY] = useState(window.scrollY); //eje y
   const [screenHeight, setScreenHeight] = useState(window.innerHeight); //height pantalla
-  const [contentHeight, setContentHeight] = useState(0); //medidas del contenedor del banner
+  const [acumuladorFrame, setAcumuladorFrame] = useState(0);
 
   return (
     <EzenseContext.Provider
@@ -13,8 +13,8 @@ const EzenseProvider = ({ children }) => {
         setScrollY,
         screenHeight,
         setScreenHeight,
-        contentHeight,
-        setContentHeight,
+        acumuladorFrame,
+        setAcumuladorFrame,
       }}
     >
       {children}
