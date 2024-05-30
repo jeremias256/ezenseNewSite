@@ -18,6 +18,9 @@ export default {
         "opacity-gradient":
           "linear-gradient(to bottom, rgba(236, 234, 229, 0), rgba(236, 234, 229, var(--tw-bg-opacity)))",
       },
+      borderRadius: {
+        "custom-br555": "555px",
+      },
     },
     screens: {
       sm: "640px",

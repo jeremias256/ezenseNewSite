@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import "../css/comboLG.css";
 
+import "../css/comboLG.css";
 import biselBig from "../assets/LogosCoca.png";
 import biselBigM from "../assets/LogosCocaM.png";
 import biselBigL from "../assets/LogosCodaL.png";
 
 const ComboLG = () => {
-  // Para ver la resolución de la pantalla
-
   useEffect(() => {
     function handleResize() {
       const screenWidth = window.innerWidth;
@@ -26,7 +24,7 @@ const ComboLG = () => {
 
   return (
     <>
-      <div className="combo_content3">
+      <div className="combo_content3 mt-[24px] flex">
         <div className="ca">
           <div className="ca-f1">
             <div className="ca-f1-f1">
