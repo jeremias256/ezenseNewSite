@@ -29,7 +29,7 @@ const ComboLG = () => {
       <div className="combo_content3">
         <div className="ca">
           <div className="ca-f1">
-            <div className="ca-f1-f1">
+            <div className="ca-f1-f1 mt-[1px] h-[30px] border-b-2 border-b-callToAction md:h-[31px]">
               <span className="text-sm-nunito-700 call-to-action">
                 GLADIATOR
               </span>
@@ -67,17 +67,17 @@ const ComboLG = () => {
               </div>
             </div>
           </div>
-          <div className="ca-f2">
+          <div className="ca-f2 flex flex-1 gap-[16px] rounded-bl-custom-br555 rounded-tl-custom-br555 border-2 border-r-0 border-callToAction py-4 pl-4">
             <img src={biselBig} />
-            <img src={biselBigM} />
-            <img src={biselBigL} />
-            <img src={biselBig} />
-            <img src={biselBig} />
+            <img className="hidden md:block" src={biselBigM} />
+            <img className="hidden md:block" src={biselBigL} />
+            <img className="hidden md:block" src={biselBig} />
+            <img className="" src={biselBig} />
           </div>
         </div>
         <div className="cb">
-          <div className="cb-f1">
-            <div className="cb-f1-f1"></div>
+          <div className="cb-f1 flex h-[159.5px] w-[78px] rounded-br-custom-br555 rounded-tr-custom-br555 border-2 border-l-0 border-callToAction pt-[69px] md:pt-[69px]">
+            <div className="cb-f1-f1 border-1 h-[32px] w-[16px] rounded-br-custom-br555 rounded-tr-custom-br555 border-l-0 border-greyBlack"></div>
           </div>
         </div>
       </div>
