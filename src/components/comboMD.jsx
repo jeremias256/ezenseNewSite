@@ -5,23 +5,7 @@ import biselBig from "../assets/LogosCoca.png";
 import biselBigM from "../assets/LogosCocaM.png";
 import biselBigL from "../assets/LogosCodaL.png";
 
-const ComboMD = () => {
-  useEffect(() => {
-    function handleResize() {
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-      console.log(
-        `Ancho de pantalla: ${screenWidth}px, Alto de pantalla: ${screenHeight}px`,
-      );
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+const ComboMD = ({ data }) => {
   return (
     <>
       <div className="md-combo_content3">
@@ -29,7 +13,7 @@ const ComboMD = () => {
           <div className="md-ca-f1">
             <div className="md-ca-f1-f1">
               <span className="text-sm-nunito-700 call-to-action">
-                GLADIATOR
+                {data[0].comboTitulo}
               </span>
             </div>
 
@@ -44,31 +28,33 @@ const ComboMD = () => {
               <div className="md-ca-f1-f2-c2">
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-700 grey-black">
-                    Innovaative design
+                    {data[0].linea1}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    45 Days process
+                    {data[0].linea2}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    + Lorem ipsum dumy text
+                    {data[0].linea3}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    + Drupal services
+                    {data[0].linea4}
                   </p>
                 </div>
-                <p className="text-sm-nunito-400 grey-black ml-2">+ Rich</p>
+                <p className="text-sm-nunito-400 grey-black ml-2">
+                  {data[0].linea5}
+                </p>
               </div>
             </div>
           </div>
           <div className="md-ca-f2">
-            <img src={biselBig} />
-            <img className="hidden md:block" src={biselBigM} />
+            <img src={data[1]} />
+            <img src={data[2]} />
           </div>
         </div>
         <div className="md-cb">

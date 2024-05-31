@@ -34,8 +34,8 @@ const Works = () => {
         </div>
 
         <div className="combo_fila3">
-          <ComboMD />
-          <ComboMD />
+          {/* <ComboMD />
+          <ComboMD /> */}
         </div>
       </div>
     </div>

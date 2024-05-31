@@ -1,97 +1,77 @@
 import React, { useEffect, useState } from "react";
-import TituloSeccionWhite from "../components/tituloSeccion";
+import { clientes, getClienteById } from "./clientes"; // Asegúrate de que la ruta sea correcta
+
 import "../css/fiat.css";
+
+/* SubComponentes */
+import TituloSeccionWhite from "../components/tituloSeccion";
 import ComboPP from "../components/comboPP";
 import Contacto from "../components/contacto";
 import ComboMD1 from "../components/comboMD";
 import ComboMD2 from "../components/comboMD-R";
 
-import fiat1 from "../assets/fotoClientes/fiat/fiat-1.png";
-import fiat2 from "../assets/fotoClientes/fiat/fiat-2.png";
-
-import fiatSlider1 from "../assets/fotoClientes/fiat/fiatSlider1.png";
-import fiatSlider2 from "../assets/fotoClientes/fiat/fiatSlider2.png";
-import fiatSlider3 from "../assets/fotoClientes/fiat/fiatSlider3.png";
-import fiatSlider4 from "../assets/fotoClientes/fiat/fiatSlider4.png";
-import fiatSlider5 from "../assets/fotoClientes/fiat/fiatSlider5.png";
-import fiatSlider6 from "../assets/fotoClientes/fiat/fiatSlider6.png";
-import fiatSlider7 from "../assets/fotoClientes/fiat/fiatSlider7.png";
-
-import videoBackImagenes from "../assets/fotoClientes/fiat/fiat-video.mp4";
-
+// #region Librerias para hacer carrousel */
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 // import required modules
 import { Pagination } from "swiper/modules";
+// #endregion Librerias para hacer carrousel */
 
-const Fiat = () => {
-  const imagenesSlider = [
-    {
-      id: 1,
-      imagen: fiatSlider1,
-    },
+const nombreCliente = "fiat"; //iplan -- fiat
 
-    {
-      id: 2,
-      imagen: fiatSlider2,
-    },
+const clienteRender = getClienteById(nombreCliente);
+const idCliente = clienteRender.id;
 
-    {
-      id: 3,
-      imagen: fiatSlider3,
-    },
-    {
-      id: 4,
-      imagen: fiatSlider4,
-    },
-    {
-      id: 5,
-      imagen: fiatSlider5,
-    },
-    {
-      id: 6,
-      imagen: fiatSlider6,
-    },
-    {
-      id: 7,
-      imagen: fiatSlider7,
-    },
-  ];
+/** Imagenes que van en la descripción */
+const img1 = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
+const img2 = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
 
-  console.log({ imagenesSlider });
+/** Imagenes que van en el carrousel */
+const videoBackImagenes = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
+const imagenesSlider = [];
+for (let index = 0; index < clienteRender.cantImagen; index++) {
+  let obj = {
+    id: index + 1,
+    imagen: `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
+  };
 
+  imagenesSlider.push(obj);
+}
+
+/* Fotos que van en los proyectos relacionados */
+
+const fotoProyRela1A = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1A.png`;
+const fotoProyRela1B = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1B.png`;
+const fotoProyRela2A = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2A.png`;
+const fotoProyRela2B = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2B.png`;
+
+const Proyecto = () => {
   return (
     <div className="pp-content">
-      <TituloSeccionWhite titulo="FIAT" />
+      <TituloSeccionWhite titulo={clienteRender.titulo} />
 
       <div className="pp-info">
         <div className="pp-info-detalle">
           <p className="text-md-lato-700 call-to-action">
             {" "}
-            “Stylish Parenting”{" "}
+            {clienteRender.descripcionText.descTitulo}
           </p>
           <p className="text-sm-nunito-400 text-greyBlack">
-            Supporting the client's brief, we designed a website blending
-            disruptive grid design with classic content. The Rich Media campaign
-            conveys that the 500L retains style and aspiration in its family
-            version, emphasizing that parenthood doesn't mean compromising on a
-            stylish car.
+            {clienteRender.descripcionText.descParrafo}
           </p>
         </div>
 
         <div className="pp-info-imagen">
-          <img src={fiat1} />
+          <img src={img1} />
           <p className="text-md-lato-700 call-to-action"> + </p>
-          <img src={fiat2} />
+          <img src={img2} />
         </div>
 
         <div className="pp-info-combo">
-          <ComboPP />
+          <ComboPP data={clienteRender.descripcionCombo} />
         </div>
       </div>
 
@@ -126,8 +106,20 @@ const Fiat = () => {
       <div className="pp-relacionados">
         <p className="text-lg-nunito-400 greyBlack"> Proyectos relacionados </p>
         <div className="pp-relacionadosCombos">
-          <ComboMD1 />
-          <ComboMD2 />
+          <ComboMD1
+            data={[
+              clienteRender.proyectoRelacionado1,
+              fotoProyRela1A,
+              fotoProyRela1B,
+            ]}
+          />
+          <ComboMD2
+            data={[
+              clienteRender.proyectoRelacionado2,
+              fotoProyRela2A,
+              fotoProyRela2B,
+            ]}
+          />
         </div>
       </div>
 
@@ -137,4 +129,4 @@ const Fiat = () => {
     </div>
   );
 };
-export default Fiat;
+export default Proyecto;
