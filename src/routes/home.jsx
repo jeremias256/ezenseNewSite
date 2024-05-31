@@ -12,7 +12,7 @@ const home = () => {
   return (
     <>
       <Banner />
-      <div className="absolute flex w-full flex-col border-4 border-green-500">
+      <div className="absolute flex w-full flex-col">
         <Works />
 
         <Servicios />
