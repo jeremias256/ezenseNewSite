@@ -7,7 +7,8 @@ import "../css/fiat.css";
 import TituloSeccionWhite from "../components/tituloSeccion";
 import ComboPP from "../components/comboPP";
 import Contacto from "../components/contacto";
-import ComboMD1 from "../components/comboMD";
+
+import ComboMD from "../components/comboMD";
 import ComboMD2 from "../components/comboMD-R";
 
 // #region Librerias para hacer carrousel */
@@ -23,6 +24,7 @@ import { Pagination } from "swiper/modules";
 const nombreCliente = "fiat"; //iplan -- fiat
 
 const clienteRender = getClienteById(nombreCliente);
+console.log(clienteRender.descripcionCombo);
 const idCliente = clienteRender.id;
 
 /** Imagenes que van en la descripción */
@@ -43,10 +45,7 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
 
 /* Fotos que van en los proyectos relacionados */
 
-const fotoProyRela1A = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1A.png`;
-const fotoProyRela1B = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1B.png`;
-const fotoProyRela2A = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2A.png`;
-const fotoProyRela2B = `/ezenseSite9/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2B.png`;
+
 
 const Proyecto = () => {
   return (
@@ -106,19 +105,18 @@ const Proyecto = () => {
       <div className="pp-relacionados">
         <p className="text-lg-nunito-400 greyBlack"> Proyectos relacionados </p>
         <div className="pp-relacionadosCombos">
-          <ComboMD1
+          {/* <ComboMD1
             data={[
               clienteRender.proyectoRelacionado1,
               fotoProyRela1A,
               fotoProyRela1B,
             ]}
-          />
+          /> */}
+          <ComboMD
+            data={clienteRender.proyectoRelacionado1.proyectoRelacionado}
+          /> 
           <ComboMD2
-            data={[
-              clienteRender.proyectoRelacionado2,
-              fotoProyRela2A,
-              fotoProyRela2B,
-            ]}
+            data={clienteRender.proyectoRelacionado2.proyectoRelacionado}
           />
         </div>
       </div>

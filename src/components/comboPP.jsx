@@ -6,7 +6,7 @@ import "../css/comboPP.css";
 
 const ComboPP = ({data}) => {
 
-  
+    console.log("data enviada: " , data);
     // Para ver la resolución de la pantalla
 
    useEffect(() => {

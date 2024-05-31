@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import "../css/comboMD.css";
+import { clientes, getClienteById } from "../routes/clientes"; 
 
 import biselBig from "../assets/LogosCoca.png";
 import biselBigM from "../assets/LogosCocaM.png";
 import biselBigL from "../assets/LogosCodaL.png";
 
 const ComboMD = ({ data }) => {
+
+  const clienteRender = getClienteById(data);
+  console.log(clienteRender);
+
   return (
     <>
       <div className="md-combo_content3">
@@ -13,7 +18,7 @@ const ComboMD = ({ data }) => {
           <div className="md-ca-f1">
             <div className="md-ca-f1-f1">
               <span className="text-sm-nunito-700 call-to-action">
-                {data[0].comboTitulo}
+                {clienteRender.descripcionCombo.comboTitulo}
               </span>
             </div>
 
@@ -28,33 +33,36 @@ const ComboMD = ({ data }) => {
               <div className="md-ca-f1-f2-c2">
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-700 grey-black">
-                    {data[0].linea1}
+                    {clienteRender.descripcionCombo.linea1}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    {data[0].linea2}
+                    {clienteRender.descripcionCombo.linea2}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    {data[0].linea3}
+                    {clienteRender.descripcionCombo.linea3}
                   </p>
                 </div>
                 <div className="md-ca-f1-f2-c2-f1">
                   <p className="text-sm-nunito-400 grey-black">
-                    {data[0].linea4}
+                    {clienteRender.descripcionCombo.linea4}
                   </p>
                 </div>
                 <p className="text-sm-nunito-400 grey-black ml-2">
-                  {data[0].linea5}
+                  {clienteRender.descripcionCombo.linea5}
                 </p>
               </div>
             </div>
           </div>
           <div className="md-ca-f2">
-            <img src={data[1]} />
-            <img src={data[2]} />
+            {Object.values(clienteRender.imgCombo).map((imgSrc, index) => (
+               <img key={index} src={imgSrc} alt={`Imagen ${index + 1}`} />
+            ))}
+            {/* <img src={data[1]} />
+            <img src={data[2]} /> */}
           </div>
         </div>
         <div className="md-cb">

@@ -19,26 +19,22 @@ const clientes = [
       linea4:"+ Ui/UX Design",
       linea5:"+ Programing",
     },
+
+    imgCombo:{
+      img1: `/ezenseSite9/src/assets/fotoClientes/proyecto3/fotoCombo1.png`,
+      img2: `/ezenseSite9/src/assets/fotoClientes/proyecto3/fotoCombo2.png`,
+      img3: `/ezenseSite9/src/assets/fotoClientes/proyecto3/fotoCombo3.png`,
+    },
     
     proyectoRelacionado1:{
       idProyectoRelacionado:1,
-      comboTitulo:"FIAT",
-      linea1:"“Stylish Parenting”",
-      linea2:"Car product Web Site",
-      linea3:"+ Ui/UX Design",
-      linea4:"+ Programming",
-      linea5:"+ Rich Media",
-     
+      proyectoRelacionado:'fiat',     
     },
 
     proyectoRelacionado2:{
       idProyectoRelacionado:2,
-      comboTitulo:"Whirlpool",
-      linea1:"New line",
-      linea2:"Bran Site Update",
-      linea3:"+ Digital Design",
-      linea4:"+ Community Management",
-      linea5:"+ Video ADs",
+      proyectoRelacionado:'clarin',
+     
      
     }
 
@@ -63,26 +59,27 @@ const clientes = [
         linea4:"+ Programming",
         linea5:"+ Rich Media",
       },
+
+      imgCombo:{
+        img1: `/ezenseSite9/src/assets/fotoClientes/proyecto7/fotoCombo1.png`,
+        img2: `/ezenseSite9/src/assets/fotoClientes/proyecto7/fotoCombo2.png`,
+      },
       
       proyectoRelacionado1:{
         idProyectoRelacionado:1,
-        comboTitulo:"IPLAN",
-        linea1:"IPLAN + Liv",
-        linea2:"Corporate Website + APP",
-        linea3:"+ IT Maintenance",
-        linea4:"+ Ui/UX Design",
-        linea5:"+ Web Production",
+        proyectoRelacionado:'clarin',
+        // comboTitulo:"IPLAN",
+        // linea1:"IPLAN + Liv",
+        // linea2:"Corporate Website + APP",
+        // linea3:"+ IT Maintenance",
+        // linea4:"+ Ui/UX Design",
+        // linea5:"+ Web Production",
        
       },
   
       proyectoRelacionado2:{
         idProyectoRelacionado:2,
-        comboTitulo:"Whirlpool",
-        linea1:"New line",
-        linea2:"Bran Site Update",
-        linea3:"+ Digital Design",
-        linea4:"+ Community Management",
-        linea5:"+ Video ADs",
+        proyectoRelacionado:'fiat',
        
       }
   

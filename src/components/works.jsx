@@ -2,6 +2,7 @@ import React from "react";
 import TituloSeccion from "./tituloSeccion";
 import ComboLG from "./comboLG";
 import ComboMD from "./comboMD";
+import ComboMDR from "./comboMD-R";
 import ComboL from "./comboL";
 import ComboS from "./comboS";
 import "../css/works.css";
@@ -9,7 +10,7 @@ import "../css/works.css";
 const Works = () => {
   return (
     <div className="works_content px-3 py-0 md:mt-[16px]">
-      <div className="works-back mx-auto w-full max-w-[1440px]">
+      <div className="works-back mx-auto w-full max-w-[1440px] px-[90px]">
         <TituloSeccion titulo="Works" />
 
         <div className="seccion-subTitulo mt-[24px] flex flex-col gap-[16px]">
@@ -34,9 +35,13 @@ const Works = () => {
         </div>
 
         <div className="combo_fila3">
-          {/* <ComboMD />
-          <ComboMD /> */}
+        
+          <ComboMD data={'clarin'}/>
+          <ComboMDR data={'fiat'}/>
+          {/* <ComboMD data={3}/> */}
         </div>
+
+
       </div>
     </div>
   );

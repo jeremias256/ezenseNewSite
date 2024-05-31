@@ -1,6 +1,6 @@
 import React,  { useEffect } from 'react'
 import "../css/comboMD-R.css";
-
+import { clientes, getClienteById } from "../routes/clientes"; 
 
 import biselBig from '../assets/LogosCoca.png';
 import biselBigM from '../assets/LogosCocaM.png';
@@ -8,6 +8,10 @@ import biselBigL from '../assets/LogosCodaL.png';
     
 
 const ComboMD = ({data}) => {
+
+
+
+    const clienteRender = getClienteById(data);
 
     // Para ver la resolución de la pantalla
 
@@ -42,7 +46,7 @@ const ComboMD = ({data}) => {
             <div className='mdr-ca'>
                 <div className='mdr-ca-f1'> 
                     <div className='mdr-ca-f1-f1'>
-                        <span className='text-sm-nunito-700 call-to-action'>{data[0].comboTitulo}</span>
+                        <span className='text-sm-nunito-700 call-to-action'>{clienteRender.descripcionCombo.comboTitulo}</span>
                     </div>
 
                     <div className='mdr-ca-f1-f2'>
@@ -50,18 +54,18 @@ const ComboMD = ({data}) => {
                         
                         <div className='mdr-ca-f1-f2-c2'>
                             <div className='mdr-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-700 grey-black'>{data[0].linea1}</p>
+                                <p className='text-sm-nunito-700 grey-black'>{clienteRender.descripcionCombo.linea1}</p>
                             </div>
                             <div className='mdr-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea2}</p>
+                                <p className='text-sm-nunito-400 grey-black'>  {clienteRender.descripcionCombo.linea2}</p>
                             </div>
                             <div className='mdr-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea3}</p>
+                                <p className='text-sm-nunito-400 grey-black'>  {clienteRender.descripcionCombo.linea3}</p>
                             </div>
                             <div className='mdr-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea4}</p>
+                                <p className='text-sm-nunito-400 grey-black'>  {clienteRender.descripcionCombo.linea4}</p>
                             </div>
-                            <p className='text-sm-nunito-400 grey-black ml-2'>{data[0].linea5}</p>
+                            <p className='text-sm-nunito-400 grey-black ml-2'>  {clienteRender.descripcionCombo.linea5}</p>
                             
                             
                         </div>
@@ -85,8 +89,9 @@ const ComboMD = ({data}) => {
                 
                 </div>
                 <div className='mdr-ca-f2'> 
-                    <img src={data[1]}/>
-                    <img src={data[2]}/>
+                    {Object.values(clienteRender.imgCombo).map((imgSrc, index) => (
+                        <img key={index} src={imgSrc} alt={`Imagen ${index + 1}`} />
+                    ))}
                 </div>
             </div>
 
