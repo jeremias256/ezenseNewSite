@@ -9,7 +9,7 @@ const Contacto = () => {
 
   return (
     <div className="contacto_content">
-      <div className="contacto-back">
+      <div className="contacto-back bg-bgGris rounded-[24px m-auto flex max-w-[1440px] flex-col gap-[60px] py-[60px] md:flex-row">
         {/* formulario */}
         <div className="cont-form">
           <div className="cont-form-r1">

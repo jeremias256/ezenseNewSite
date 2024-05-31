@@ -40,18 +40,14 @@ const Banner = () => {
   }, []);
 
   useEffect(() => {
-    console.log(playerRef.current.getCurrentTime());
     if (window.scrollY == 0) {
-      console.log("VIDEO EN 0");
       playerRef.current.seekTo(0, "seconds");
     }
     if (window.scrollY == 1000) {
-      console.log("VIDEO EN 3");
       playerRef.current.seekTo(3, "seconds");
     }
   });
 
-  //sube el scrollY a 0 cuando se recarga la pag
   useEffect(() => {
     if (window.scrollY < 1000) {
       const handleScrollToTop = () => {

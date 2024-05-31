@@ -4,20 +4,18 @@ import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
 const Servicios = () => {
   return (
-    <div className="servicios_content">
-      <div className="servicios-back">
+    <div className="servicios_content px-3 py-0 md:mt-[16px]">
+      <div className="servicios-back relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
         <div className="servicios-back2">
           <div className="servicios">
             <TituloSeccionWhite titulo="Services" />
 
             <div className="servicio-subTitulo">
               <span className="text-md-lato-700 white">
-                {" "}
                 Unites aesthetic innovation with technical prowess.{" "}
               </span>
 
               <span className="text-md-lato-400 white">
-                {" "}
                 From strategic planning that charts your digital destiny to
                 Intuitive UX Design paired with advanced Coding Techniques, we
                 architect and implement ideas into impactful digital realities{" "}
@@ -41,12 +39,9 @@ const Servicios = () => {
               </div>
 
               <div className="sc-c3">
-                {/* Web Devolepment */}
                 <div className="sc-servicio">
-                  {" "}
                   <span className="text-md-lato-700 call-to-action">
-                    {" "}
-                    Web Development{" "}
+                    Web Development
                   </span>
                 </div>
 
@@ -74,9 +69,8 @@ const Servicios = () => {
 
                 {/* Ui/UX Design */}
                 <div className="sc-servicio">
-                  {" "}
                   <span className="text-md-lato-700 call-to-action">
-                    Ui/UX Design{" "}
+                    Ui/UX Design
                   </span>
                 </div>
                 <div className="sc-content-subSerivicio">
@@ -101,12 +95,9 @@ const Servicios = () => {
                   <div className="sc-rounded-right"></div>
                 </div>
 
-                {/* Digital Strategy */}
                 <div className="sc-servicio">
-                  {" "}
                   <span className="text-md-lato-700 call-to-action">
-                    {" "}
-                    Digital Strategy{" "}
+                    Digital Strategy
                   </span>
                 </div>
                 <div className="sc-content-subSerivicio">
@@ -132,9 +123,8 @@ const Servicios = () => {
 
                 {/* Online Marketing */}
                 <div className="sc-servicio">
-                  {" "}
                   <span className="text-md-lato-700 call-to-action">
-                    Online Marketing{" "}
+                    Online Marketing
                   </span>
                 </div>
                 <div className="sc-content-subSerivicio">
@@ -160,10 +150,8 @@ const Servicios = () => {
 
                 {/* Mobile APPs */}
                 <div className="sc-servicio">
-                  {" "}
                   <span className="text-md-lato-700 call-to-action">
-                    {" "}
-                    Mobile APPs{" "}
+                    Mobile APPs
                   </span>
                 </div>
                 <div className="sc-content-subSerivicio">

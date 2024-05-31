@@ -28,7 +28,7 @@ const Works = () => {
           <ComboLG />
         </div>
 
-        <div className="combo_fila2">
+        <div className="combo_fila2 md:grid-cols-[2fr 1fr] mt-4 grid grid-cols-[1fr] gap-[60px]">
           <ComboL />
           <ComboS />
         </div>

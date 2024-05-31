@@ -24,11 +24,11 @@ const home = () => {
       >
         <Works />
 
-        {/* <Servicios />
+        <Servicios />
 
         <Bureau />
 
-        <Contacto /> */}
+        <Contacto />
       </div>
     </>
   );

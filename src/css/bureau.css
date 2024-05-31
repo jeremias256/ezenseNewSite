@@ -1,94 +1,77 @@
 .bureau-content {
-    /*margin: 24px 24px 24px 24px;*/
-
-    /* padding:0px 48px; */
-    margin-top: 60px;
-
-
+  /* margin-top: 60px; */
 }
 
 .bureau-back {
-    /* height: 1147px; */
-    /* width: auto; */
-
-    border-radius: 24px;
-    background: url("../assets/back-servicios.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.88);
-    width: 1290px;
-    margin: auto;
-    background-color: rgba(236, 234, 229, 0.9);
-
-    background-blend-mode: luminosity;
+  /* border-radius: 24px;*/
+  /* background: url("../assets/back-servicios.gif"); */
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.88);
+  width: 1290px;
+  margin: auto;
+  background-color: rgba(236, 234, 229, 0.9);
+  background-blend-mode: luminosity; */
 }
 
 .bureau-back2 {
-    background-color: rgba(236, 234, 229, 0.9);
-    padding: 60px 36px;
-    border-radius: 24px;
-    /*    
+  background-color: rgba(236, 234, 229, 0.9);
+  padding: 60px 36px;
+  border-radius: 24px;
+  /*    
     border-radius: 24px;
     background-color: rgb(236, 234, 229);
     
     background-blend-mode: luminosity;
     padding:60px 36px; */
-
 }
-
 
 .bureau-subTitulo {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 30px;
 }
 
-
 .personas {
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .persona {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .persona-nombre {
-    margin-top: 16px;
-    margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
 
 .persona-funcion {
-    border-top: 2px solid #FF3D00;
-    margin-bottom: 10px;
+  border-top: 2px solid #ff3d00;
+  margin-bottom: 10px;
 
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-
 @media (max-width: 391px) {
+  .bureau-content {
+    padding: 0px 16px;
+  }
 
-    .bureau-content {
-        padding: 0px 16px;
-    }
+  .bureau-back2 {
+    padding: 30px 16px;
+  }
 
-    .bureau-back2 {
-        padding: 30px 16px;
-    }
+  .bureau-subTitulo {
+    padding: 32px 6px;
+  }
 
-    .bureau-subTitulo {
-        padding: 32px 6px;
-    }
-
-
-    .personas {
-        padding: 20px 0px;
-        flex-direction: column;
-    }
-
-
+  .personas {
+    padding: 20px 0px;
+    flex-direction: column;
+  }
 }

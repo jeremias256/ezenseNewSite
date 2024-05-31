@@ -3,12 +3,16 @@ export default {
   content: ["./**/*.{html,jsx}"],
   theme: {
     extend: {
+      backgroundBlendMode: {
+        luminosity: "luminosity",
+      },
       colors: {
         greyBlack: "#4D4F61",
         white: "#fff",
         callToAction: "#ff3d00",
         background: "#ECEAE5",
         white50: "rgba(255, 255, 255, 0.50)",
+        bgGris: "rgba(236, 234, 229, 0.9)",
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
