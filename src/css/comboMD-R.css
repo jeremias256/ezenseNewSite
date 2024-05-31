@@ -89,7 +89,7 @@
         border-left: none;
         border-top-right-radius: 555px;
         border-bottom-right-radius: 555px;
-        overflow: hidden;
+       
         justify-content: end;
     }
 
@@ -99,7 +99,7 @@
 .mdr-cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 29px;
+padding-top: 30px;
 
 }
 
@@ -107,12 +107,12 @@ padding-top: 29px;
 .mdr-cb-f1 {
     border: 2px solid #ff3d00;
     border-right: none;
-    height: 158.5px;
+    height: 157px;
     width: 78px;
     border-top-left-radius: 555px;
     border-bottom-left-radius: 555px;
     display: flex;
-    padding-top: 62px;
+    padding-top: 60.5px;
     justify-content: end;
 }
 
@@ -121,7 +121,7 @@ padding-top: 29px;
     border-right: none;
     border-top-left-radius: 555px;
     border-bottom-left-radius: 555px;
-    height: 31px;
+    height: 32px;
     width: 16px;
    
 

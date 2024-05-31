@@ -7,7 +7,9 @@ import biselBigM from '../assets/LogosCocaM.png';
 import biselBigL from '../assets/LogosCodaL.png';
     
 
-const ComboMD = () => {
+const ComboMD = ({data}) => {
+
+   
 
     // Para ver la resolución de la pantalla
 
@@ -35,7 +37,7 @@ const ComboMD = () => {
             <div className='md-ca'>
                 <div className='md-ca-f1'> 
                     <div className='md-ca-f1-f1'>
-                        <span className='text-sm-nunito-700 call-to-action'>GLADIATOR</span>
+                        <span className='text-sm-nunito-700 call-to-action'>{data[0].comboTitulo}</span>
                     </div>
 
                     <div className='md-ca-f1-f2'>
@@ -57,18 +59,18 @@ const ComboMD = () => {
 
                         <div className='md-ca-f1-f2-c2'>
                             <div className='md-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-700 grey-black'>Innovaative design</p>
+                                <p className='text-sm-nunito-700 grey-black'>{data[0].linea1}</p>
                             </div>
                             <div className='md-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>45 Days process</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea2}</p>
                             </div>
                             <div className='md-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>+ Lorem ipsum dumy text</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea3}</p>
                             </div>
                             <div className='md-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>+ Drupal services</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data[0].linea4}</p>
                             </div>
-                            <p className='text-sm-nunito-400 grey-black ml-2'>+ Rich</p>
+                            <p className='text-sm-nunito-400 grey-black ml-2'>{data[0].linea5}</p>
                             
                             
                         </div>
@@ -77,8 +79,8 @@ const ComboMD = () => {
                 
                 </div>
                 <div className='md-ca-f2'> 
-                    <img src={biselBig}/>
-                    <img src={biselBigM}/>
+                    <img src={data[1]}/>
+                    <img src={data[2]}/>
                    
                 </div>
             </div>

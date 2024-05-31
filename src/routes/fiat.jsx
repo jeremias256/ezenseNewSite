@@ -1,107 +1,90 @@
 import React, { useEffect, useState } from 'react'
-import TituloSeccionWhite from "../components/tituloSeccion";
+import { clientes, getClienteById } from './clientes'; // Asegúrate de que la ruta sea correcta
+
+
 import "../css/fiat.css";
+
+/* SubComponentes */
+import TituloSeccionWhite from "../components/tituloSeccion";
 import ComboPP from "../components/comboPP";
 import Contacto from '../components/contacto'
 import ComboMD1 from '../components/comboMD'
 import ComboMD2 from '../components/comboMD-R'
 
 
-
-import fiat1 from "../assets/fotoClientes/fiat/fiat-1.png";
-import fiat2 from "../assets/fotoClientes/fiat/fiat-2.png";
-
-// import fiatSlider1 from "../assets/fotoClientes/fiat/fiatSlider1.png";
-// import fiatSlider2 from "../assets/fotoClientes/fiat/fiatSlider1.png";
-// import fiatSlider3 from "../assets/fotoClientes/fiat/fiatSlider1.png";
-
-
-import videoBackImagenes from "../assets/fotoClientes/fiat/fiat-video.mp4";
-
+// #region Librerias para hacer carrousel */
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 // import required modules
 import { Pagination } from 'swiper/modules';
+// #endregion Librerias para hacer carrousel */
 
+
+
+const nombreCliente = 'fiat'; //iplan -- fiat
+
+
+const clienteRender = getClienteById(nombreCliente);
+const idCliente = clienteRender.id;
+
+/** Imagenes que van en la descripción */
+const img1= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
+const img2= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
+
+
+
+
+/** Imagenes que van en el carrousel */
+const videoBackImagenes = `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
+const imagenesSlider = [];
+for (let index = 0; index < clienteRender.cantImagen; index++) {
   
-const Fiat = () => {
-
-  
-
-  const imagenesSlider = [
-
-    {
-      id:1,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider1.png",
-    },
-
-    {
-      id:2,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider2.png"
-    },
-
-    {
-      id:3,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider3.png"
-    },
-    {
-      id:4,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider4.png"
-    },
-    {
-      id:5,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider5.png"
-    },
-    {
-      id:6,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider6.png"
-    },
-    {
-      id:7,
-      imagen:"/ezenseSite3/src/assets/fotoClientes/fiat/fiatSlider7.png"
+    let obj = {
+      id:index+1,
+      imagen:`/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index+1}.png`,
     }
 
-  ];
-
+    imagenesSlider.push(obj);
   
+}
 
-  console.log({imagenesSlider});
+/* Fotos que van en los proyectos relacionados */
 
+const fotoProyRela1A= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1A.png`;
+const fotoProyRela1B= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoPR1B.png`;
+const fotoProyRela2A= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2A.png`;
+const fotoProyRela2B= `/ezenseSite3/src/assets/fotoClientes/proyecto${idCliente}/fotoPR2B.png`;
 
-
+const Proyecto = () => {
+  
   return (
     <div className='pp-content'>
       
       
-      <TituloSeccionWhite titulo="FIAT" />
+      <TituloSeccionWhite titulo={clienteRender.titulo} />
 
       <div className='pp-info'>
 
         <div className='pp-info-detalle'>
-            <p className='text-md-lato-700 call-to-action'> “Stylish Parenting” </p>
-            <p className='text-sm-nunito-400 text-greyBlack'>Supporting the client's brief, we designed a website blending disruptive grid design with classic content. The Rich Media campaign conveys that the 500L retains style and aspiration in its family version, emphasizing that parenthood doesn't mean compromising on a stylish car.
-
-            </p>
+            <p className='text-md-lato-700 call-to-action'> {clienteRender.descripcionText.descTitulo}</p>
+            <p className='text-sm-nunito-400 text-greyBlack'>{clienteRender.descripcionText.descParrafo}</p>
         </div>
 
         <div className='pp-info-imagen'>
-
-        <img src={fiat1} />
+       
+        <img src={img1} />
           <p className='text-md-lato-700 call-to-action'> + </p>
-        <img src={fiat2} />
+        <img src={img2} />
         
 
 
         </div>
 
         <div className='pp-info-combo'>
-          <ComboPP />
+          <ComboPP data= {clienteRender.descripcionCombo} />
         </div>
 
 
@@ -109,7 +92,7 @@ const Fiat = () => {
 
       <div className="video-background-container">
         <video autoPlay loop muted className="video-background">
-          <source src={videoBackImagenes} type="video/mp4" />
+          <source src={videoBackImagenes} type="video/mp4" /> 
           Your browser does not support the video tag.
         </video>
         <div className="pp-imagenes">
@@ -138,8 +121,8 @@ const Fiat = () => {
       <div className='pp-relacionados'>
         <p className='text-lg-nunito-400 greyBlack'> Proyectos relacionados </p>
         <div className='pp-relacionadosCombos'>
-          <ComboMD1 />
-          <ComboMD2 />
+          <ComboMD1 data={[clienteRender.proyectoRelacionado1, fotoProyRela1A, fotoProyRela1B]}/>
+          <ComboMD2 data={[clienteRender.proyectoRelacionado2, fotoProyRela2A, fotoProyRela2B]}/>
         </div>
       </div>
 
@@ -153,5 +136,5 @@ const Fiat = () => {
     </div>
 )
 }
-export default Fiat;
+export default Proyecto;
 

@@ -89,7 +89,7 @@
         border-right: none;
         border-top-left-radius: 555px;
         border-bottom-left-radius: 555px;
-        overflow: hidden;
+       
     }
 
     
@@ -98,26 +98,26 @@
 .md-cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 29px;
+padding-top: 30px;
 }
 
 
 .md-cb-f1 {
     border: 2px solid #ff3d00;
     border-left: none;
-    height: 158.5px;
+    height: 157px;
     width: 78px;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
     display: flex;
-   padding-top: 62px;
+   padding-top: 60.5px;
 }
 .md-cb-f1-f1 {
     border: 1px solid #4D4F61;
     border-left: none;
     border-top-right-radius: 555px;
     border-bottom-right-radius: 555px;
-    height: 31px;
+    height: 32px;
     width: 16px;
 
 }

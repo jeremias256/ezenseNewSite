@@ -4,8 +4,9 @@ import "../css/comboPP.css";
 
     
 
-const ComboMD = () => {
+const ComboPP = ({data}) => {
 
+  
     // Para ver la resolución de la pantalla
 
    useEffect(() => {
@@ -32,7 +33,7 @@ const ComboMD = () => {
             <div className='pp-ca'>
                 <div className='pp-ca-f1'> 
                     <div className='pp-ca-f1-f1'>
-                        <span className='text-md-nunito-700 call-to-action'>GLADIATOR</span>
+                        <span className='text-md-nunito-700 call-to-action'>{data.comboTitulo}</span>
                     </div>
 
                     <div className='pp-ca-f1-f2'>
@@ -54,18 +55,18 @@ const ComboMD = () => {
 
                         <div className='pp-ca-f1-f2-c2'>
                             <div className='pp-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-700 grey-black'>“Stylish Parenting”</p>
+                                <p className='text-sm-nunito-700 grey-black'>{data.linea1}</p>
                             </div>
                             <div className='pp-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>Car product Web Site</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data.linea2}</p>
                             </div>
                             <div className='pp-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>+ Ui/UX Design</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data.linea3}</p>
                             </div>
                             <div className='pp-ca-f1-f2-c2-f1'>
-                                <p className='text-sm-nunito-400 grey-black'>+ Programming</p>
+                                <p className='text-sm-nunito-400 grey-black'>{data.linea4}</p>
                             </div>
-                            <p className='text-sm-nunito-400 grey-black'>+ Rich Media</p>
+                            <p className='text-sm-nunito-400 grey-black'>{data.linea5}</p>
                         </div>
                         
                     </div>
@@ -89,4 +90,4 @@ const ComboMD = () => {
   )
 }
 
-export default ComboMD
+export default ComboPP
