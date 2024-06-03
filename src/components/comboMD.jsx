@@ -7,9 +7,13 @@ import biselBigM from "../assets/LogosCocaM.png";
 import biselBigL from "../assets/LogosCodaL.png";
 
 const ComboMD = ({ data }) => {
-
-  const clienteRender = getClienteById(data);
+  console.log(data);
+  const clienteRender = getClienteById(data[0]);
   console.log(clienteRender);
+
+  // Si la variable pp es 'pp', limita las imágenes a 2
+  const imagenes = data[1] === 'pp' ? Object.values(clienteRender.imgCombo).slice(0, 2) : Object.values(clienteRender.imgCombo);
+
 
   return (
     <>
@@ -58,11 +62,10 @@ const ComboMD = ({ data }) => {
             </div>
           </div>
           <div className="md-ca-f2">
-            {Object.values(clienteRender.imgCombo).map((imgSrc, index) => (
+            {imagenes.map((imgSrc, index) => (
                <img key={index} src={imgSrc} alt={`Imagen ${index + 1}`} />
             ))}
-            {/* <img src={data[1]} />
-            <img src={data[2]} /> */}
+           
           </div>
         </div>
         <div className="md-cb">

@@ -10,36 +10,36 @@ import "../css/works.css";
 const Works = () => {
   return (
     <div className="works_content px-3 py-0 md:mt-[16px]">
-      <div className="works-back mx-auto w-full max-w-[1440px] px-[90px]">
-        <TituloSeccion titulo="Works" />
-
-        <div className="seccion-subTitulo mt-[24px] flex flex-col gap-[16px]">
-          <span className="text-md-lato-700 grey-black mx-[16px] text-left">
-            Unites aesthetic innovation with technical prowess.
+      <div className="works-back mx-auto w-full max-w-[1440px] ">
+        <div className="works-titulo px-[60px]">
+          <TituloSeccion titulo="Works" />
+        </div>
+        <div className="seccion-subTitulo mt-[24px] flex flex-col px-[90px]">
+          <span className="text-md-lato-700 grey-black text-left">
+            Grounded in research and elevated by creativity.
           </span>
 
-          <span className="text-md-lato-400 grey-black mx-[16px] text-left">
-            From strategic planning that charts your digital destiny to
-            Intuitive UX Design paired with advanced Coding Techniques, we
-            architect and implement ideas into impactful digital realities.
+          <span className="text-md-lato-400 grey-black text-left">
+            We navigate the complexities of user behavior to deliver experiences that captivate and convert.
           </span>
         </div>
 
-        <div className="combo_fila1 mt-[16px] grid grid-cols-1">
-          <ComboLG />
+        <div className="combo_fila1 mt-[16px] px-[90px] ">
+          <ComboMDR data={['clarin','home']}/>
+          <ComboMD data={['mondelez','home']}/>
         </div>
 
-        <div className="combo_fila2 md:grid-cols-[2fr 1fr] mt-4 grid grid-cols-[1fr] gap-[60px]">
-          <ComboL />
-          <ComboS />
+        <div className="combo_fila3 mt-[47px] px-[90px] ">
+          <ComboMD data={['nissan','home']}/>
+          <ComboMDR data={['cocacola','home']}/>
         </div>
-
-        <div className="combo_fila3">
+       
+        {/* <div className="combo_fila3 mt-[16px] px-[90px]">
         
-          <ComboMD data={'clarin'}/>
-          <ComboMDR data={'fiat'}/>
-          {/* <ComboMD data={3}/> */}
-        </div>
+          <ComboMD data={['fiat','home']}/>
+          <ComboMDR data={['fiat','home']}/>
+  
+        </div> */}
 
 
       </div>

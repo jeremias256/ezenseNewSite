@@ -21,7 +21,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 // #endregion Librerias para hacer carrousel */
 
-const nombreCliente = "fiat"; //iplan -- fiat
+const nombreCliente = "cocacola"; //iplan -- fiat
 
 const clienteRender = getClienteById(nombreCliente);
 console.log(clienteRender.descripcionCombo);
@@ -105,18 +105,11 @@ const Proyecto = () => {
       <div className="pp-relacionados">
         <p className="text-lg-nunito-400 greyBlack"> Proyectos relacionados </p>
         <div className="pp-relacionadosCombos">
-          {/* <ComboMD1
-            data={[
-              clienteRender.proyectoRelacionado1,
-              fotoProyRela1A,
-              fotoProyRela1B,
-            ]}
-          /> */}
           <ComboMD
-            data={clienteRender.proyectoRelacionado1.proyectoRelacionado}
+            data={[clienteRender.proyectoRelacionado1.proyectoRelacionado, 'pp']}
           /> 
           <ComboMD2
-            data={clienteRender.proyectoRelacionado2.proyectoRelacionado}
+            data={[clienteRender.proyectoRelacionado2.proyectoRelacionado, 'pp']}
           />
         </div>
       </div>

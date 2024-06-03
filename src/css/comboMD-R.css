@@ -99,7 +99,7 @@
 .mdr-cb{
 width: 78px;
 border-bottom: 2px solid #ff3d00;
-padding-top: 30px;
+padding-top: 29.5px;
 
 }
 
@@ -107,12 +107,12 @@ padding-top: 30px;
 .mdr-cb-f1 {
     border: 2px solid #ff3d00;
     border-right: none;
-    height: 157px;
+    height: 158.5px;
     width: 78px;
     border-top-left-radius: 555px;
     border-bottom-left-radius: 555px;
     display: flex;
-    padding-top: 60.5px;
+    padding-top: 61px;
     justify-content: end;
 }
 

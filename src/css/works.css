@@ -15,9 +15,10 @@
 }
 
 .combo_fila1 {
-  /* margin-top: 16px;
+  /* margin-top: 16px; */
   display: grid;
-  grid-template-columns: 1fr; */
+  grid-template-columns: 750px 420px;
+  gap:90px
 }
 
 .combo_fila2 {

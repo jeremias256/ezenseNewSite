@@ -4,7 +4,7 @@ import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
 const Servicios = () => {
   return (
-    <div className="servicios_content px-3 py-0 md:mt-[16px]">
+    <div className="servicios_content py-0 md:mt-[40px]">
       <div className="servicios-back relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
         <div className="servicios-back2">
           <div className="servicios">

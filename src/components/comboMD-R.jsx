@@ -9,11 +9,13 @@ import biselBigL from '../assets/LogosCodaL.png';
 
 const ComboMD = ({data}) => {
 
-
-
-    const clienteRender = getClienteById(data);
+    const clienteRender = getClienteById(data[0]);
+    
+    // Si la variable pp es 'pp', limita las imágenes a 2
+    const imagenes = data[1] === 'pp' ? Object.values(clienteRender.imgCombo).slice(0, 2) : Object.values(clienteRender.imgCombo);
 
     // Para ver la resolución de la pantalla
+
 
    useEffect(() => {
    function handleResize() {
@@ -89,7 +91,7 @@ const ComboMD = ({data}) => {
                 
                 </div>
                 <div className='mdr-ca-f2'> 
-                    {Object.values(clienteRender.imgCombo).map((imgSrc, index) => (
+                    {imagenes.map((imgSrc, index) => (
                         <img key={index} src={imgSrc} alt={`Imagen ${index + 1}`} />
                     ))}
                 </div>
