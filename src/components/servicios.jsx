@@ -4,9 +4,9 @@ import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
 const Servicios = () => {
   return (
-    <div className="servicios_content py-0 md:mt-[40px]">
-      <div className="servicios-back relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
-        <div className="servicios-back2">
+    <div className="servicios_content px-[16px] py-0 mt-[60px]">
+      <div className="servicios-back  relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
+        <div className="servicios-back2 px-[16px] py-[30px] lg:py-[60px] lg:px-[36px]">
           <div className="servicios">
             <TituloSeccionWhite titulo="Services" />
 
@@ -22,15 +22,15 @@ const Servicios = () => {
               </span>
             </div>
 
-            <div className="servicio-combo">
-              <div className="sc-c1">
+            <div className="servicio-combo px-[16px] lg:px-[30px] lg:py-[16px]">
+              <div className="sc-c1 hidden lg:flex">
                 <div className="sc-c1-f1"></div>
                 <div className="sc-c1-f2"></div>
               </div>
 
-              <div className="sc-c2">
+              <div className="sc-c2 w-[0px]">
                 <div className="sc-c2-f1"></div>
-                <div className="sc-c2-f2">
+                <div className="sc-c2-f2 border-[0] w-[0px]">
                   <div className="sc-c2-f2-f1"></div>
                 </div>
                 <div className="sc-c2-f3">
@@ -45,21 +45,21 @@ const Servicios = () => {
                   </span>
                 </div>
 
-                <div className="sc-content-subSerivicio">
+                <div className="sc-content-subSerivicio w-[350px] lg:w-[692px]">
                   <div className="sc-rounded-left"></div>
 
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -75,17 +75,17 @@ const Servicios = () => {
                 </div>
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -103,17 +103,17 @@ const Servicios = () => {
                 <div className="sc-content-subSerivicio">
                   <div className="sc-rounded-left"></div>
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -129,17 +129,17 @@ const Servicios = () => {
                 </div>
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -157,17 +157,17 @@ const Servicios = () => {
                 <div className="sc-content-subSerivicio">
                   <div className="sc-rounded-left"></div>
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[404px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]7">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -176,10 +176,10 @@ const Servicios = () => {
                 </div>
               </div>
 
-              <div className="sc-c5">
+              <div className="sc-c5 ">
                 <div className="sc-c5-f1"></div>
                 <div className="sc-c5-f2">
-                  <div className="sc-c5-f2-c1">
+                  <div className="sc-c5-f2-c1 border-[0] lg:border-[2px]">
                     <div className="sc-c5-f2-c1-f1"></div>
                   </div>
                   <div className="sc-c5-f2-c2"></div>

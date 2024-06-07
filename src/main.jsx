@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { EzenseProvider } from "./context/ezenseProvider";
 import Root from "./routes/root";
 import Home from "./routes/home";
@@ -8,20 +8,25 @@ import Fiat from "./routes/fiat";
 import ErrorPage from "./error-page";
 import "./index.css";
 
-const router = createHashRouter([
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-      {
-        path: "Fiat",
-        element: <Fiat />,
-      },
+      
     ],
   },
-]);
+  { path: "/:cliente", element: <Fiat /> },
+  ],
+  {
+    basename: "/ezenseSite9",
+  }
+
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <EzenseProvider>

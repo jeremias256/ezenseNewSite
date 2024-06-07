@@ -9,7 +9,12 @@ const Contacto = () => {
 
   return (
     <div className="contacto_content">
-      <div className="contacto-back bg-bgGris rounded-[24px m-auto flex max-w-[1440px] flex-col gap-[60px] py-[60px] md:flex-row">
+      <div className="rounded-[24px] m-auto max-w-[1440px] flex flex-col gap-[60px] p-[60px] md:flex-row"
+         style={{
+          backgroundColor: 'rgba(236, 234, 229, 0.9)',
+          background: 'linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)',
+        }}
+      >
         {/* formulario */}
         <div className="cont-form">
           <div className="cont-form-r1">

@@ -8,7 +8,7 @@ import ale from "../assets/aleJeroz.png";
 
 const Bureau = () => {
   return (
-    <div className="bureau-content px-3 py-0">
+    <div className="bureau-content px-3 py-0 mt-[60px]">
       <div
         className="bureau-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
         style={{ backgroundImage: "url(src/assets/back-servicios.gif)" }}

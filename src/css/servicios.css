@@ -26,7 +26,7 @@
 
 .servicios-back2 {
   border-radius: 24px;
-  padding: 60px 36px;
+ 
   background-color: rgba(77, 77, 96, 0.88);
 }
 
@@ -43,7 +43,7 @@
 
 .servicio-combo {
   display: flex;
-  padding: 16px 30px;
+  
 }
 .sc-c1 {
 }
@@ -123,7 +123,7 @@
 
 .sc-content-subSerivicio {
   height: 124px;
-  width: 692px;
+ 
   display: flex;
 }
 

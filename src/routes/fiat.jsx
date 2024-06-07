@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { clientes, getClienteById } from "./clientes"; // Asegúrate de que la ruta sea correcta
-
+import { useParams } from 'react-router-dom';
 import "../css/fiat.css";
 
 /* SubComponentes */
@@ -21,10 +21,23 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 // #endregion Librerias para hacer carrousel */
 
-const nombreCliente = "cocacola"; //iplan -- fiat
+
+
+
+
+
+
+
+
+const Proyecto = () => {
+
+const { cliente } = useParams();
+
+const nombreCliente =  cliente; //iplan -- fiat
+
+
 
 const clienteRender = getClienteById(nombreCliente);
-console.log(clienteRender.descripcionCombo);
 const idCliente = clienteRender.id;
 
 /** Imagenes que van en la descripción */
@@ -43,11 +56,8 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
   imagenesSlider.push(obj);
 }
 
-/* Fotos que van en los proyectos relacionados */
 
 
-
-const Proyecto = () => {
   return (
     <div className="pp-content">
       <TituloSeccionWhite titulo={clienteRender.titulo} />
