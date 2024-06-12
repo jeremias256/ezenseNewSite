@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   { path: "/:cliente", element: <Fiat /> },
   ],
   {
-    basename: "/ezenseSite9",
+    basename: "/ezenseSite12",
   }
 
 );

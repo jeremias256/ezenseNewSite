@@ -1,19 +1,19 @@
 .pp-content{
-    width: 1440px;
+    /* width: 1440px;
     margin: auto;
-    margin-top: 76px;
+    margin-top: 76px; */
 }
 
 /* Detalle */
 
 .pp-info{
-    display: flex;
+    /* display: flex;
     flex:1;
     justify-content: space-between;
     align-items: start;
     margin-top: 40px;
     gap:90px;
-    padding: 0px 90px 0px 90px;
+    padding: 0px 90px 0px 90px; */
 }
 
 .pp-info-detalle, .pp-info-imagen, .pp-info-combo{ 
@@ -103,13 +103,13 @@
 
 /* Proyecto relacionados */
 
-.pp-relacionados{
+.pp-relacionados4{
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
  
   margin-top: 40px;
-  padding: 0px 90px 0px 90px;
+  padding: 0px 90px 0px 90px; */
 
 }
 
@@ -118,8 +118,8 @@
 }
 
 .pp-relacionadosCombos{
-    margin-top: 16px;
+    /* margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 60px; */
 }

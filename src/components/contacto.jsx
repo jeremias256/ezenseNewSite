@@ -9,14 +9,17 @@ const Contacto = () => {
 
   return (
     <div className="contacto_content">
-      <div className="rounded-[24px] m-auto max-w-[1440px] flex flex-col gap-[60px] p-[60px] md:flex-row"
+      <div className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
+                      lg:flex lg:flex-row lg:gap-[60px]
+                      sm:flex sm:flex-col sm:gap-[30px]
+                      lg:p-[60px] sm:p-[30px] "
          style={{
           backgroundColor: 'rgba(236, 234, 229, 0.9)',
           background: 'linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)',
         }}
       >
         {/* formulario */}
-        <div className="cont-form">
+        <div className="cont-form ">
           <div className="cont-form-r1">
             <div className="cont-form-r1-c1"></div>
             <div className="cont-form-r1-c2">
@@ -35,7 +38,8 @@ const Contacto = () => {
             <div className="cont-form-r1-c4"></div>
             <div className="cont-form-r1-c5"></div>
           </div>
-          <div className="cont-form-r2">
+
+          <div className="cont-form-r2 sm:h-[550px] lg:h-[406px]">
             {stepContacto === 1 ? (
               <Contacto_step1 setStepContacto={setStepContacto} />
             ) : stepContacto === 2 ? (
@@ -48,8 +52,9 @@ const Contacto = () => {
 
         {/* datos */}
         <div className="cont-datos">
-          <div className="cont-datos-data">
-            <div className="cont-dato-data-pais">
+          <div className="cont-datos-data lg:flex lg:flex-row sm:flex sm:flex-col sm:gap-[30px]">
+
+            <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
               <span className="text-sm-nunito-400 grey-black">
                 {" "}
@@ -65,7 +70,7 @@ const Contacto = () => {
               </span>
             </div>
 
-            <div className="cont-dato-data-pais">
+            <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Chile </span>
               <span className="text-sm-nunito-400 grey-black">
                 {" "}
@@ -80,6 +85,7 @@ const Contacto = () => {
                 santiago@e-zense.com{" "}
               </span>
             </div>
+
           </div>
 
           <div className="cont-datos-jobs">
@@ -115,6 +121,7 @@ const Contacto = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

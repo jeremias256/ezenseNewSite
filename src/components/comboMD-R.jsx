@@ -12,7 +12,7 @@ const ComboMD = ({ data }) => {
 
     // Para ver la resolución de la pantalla
 
-
+  
     useEffect(() => {
         function handleResize() {
             const screenWidth = window.innerWidth;
@@ -29,6 +29,8 @@ const ComboMD = ({ data }) => {
     }, []);
 
     
+   // import ale from "../assets/aleJeroz.png";
+
 
 
     return (

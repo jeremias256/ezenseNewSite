@@ -28,8 +28,10 @@ const Bureau = () => {
             </span>
           </div>
 
-          <div className="personas">
+          <div className="personas sm:flex sm:flex-col lg:flex lg:flex-row">
+           
             <div className="persona">
+
               <div className="persona-foto">
                 <img src={flavio} />
               </div>
@@ -83,10 +85,11 @@ const Bureau = () => {
               <div className="persona-funcion">
                 <span className="text-sm-nunito-400 grey-black">
                   {" "}
-                  Operative Director / Asociated{" "}
+                  Operations Director / Asociated{" "}
                 </span>
               </div>
             </div>
+
           </div>
         </div>
       </div>

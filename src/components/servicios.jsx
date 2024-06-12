@@ -23,23 +23,98 @@ const Servicios = () => {
             </div>
 
             <div className="servicio-combo px-[16px] lg:px-[30px] lg:py-[16px]">
+
               <div className="sc-c1 hidden lg:flex">
-                <div className="sc-c1-f1"></div>
+                <div className="lg:h-[37.5px] lg:w-[341px] lg:border-b-[2px] lg:border-[#ff3d00]"></div>
                 <div className="sc-c1-f2"></div>
               </div>
 
-              <div className="sc-c2 w-[0px]">
-                <div className="sc-c2-f1"></div>
-                <div className="sc-c2-f2 border-[0] w-[0px]">
-                  <div className="sc-c2-f2-f1"></div>
+              <div className="sc-c2 w-[16px] lg:w-[78px]">
+                
+                <div className="
+                  lg:h-[37.5px]
+                  sm:h-[37.5px]
+                  lg:w-[78px] 
+                  border-b-[2px] 
+                  border-[#ff3d00]">
+                
                 </div>
-                <div className="sc-c2-f3">
-                  <div className="sc-c2-f3-f1"></div>
+
+                <div className="lg:h-[160px] sm:h-[160px]">
+
                 </div>
+
+                <div className="sc-c2-f2 
+                  lg:h-[163px]
+                  sm:h-[163px]
+                  lg:w-[78px];
+                  lg:border-[2px]
+                  lg:border-[#ff3d00]
+                  lg:border-r-0
+                  lg:rounded-tl-[555px]
+                  lg:rounded-bl-[555px]
+                  flex
+                  flex-col
+                  items-end
+                  lg:pt-[63.5px]
+                  sm:pt-[63px]
+                  sm:border-t-[2px]
+                  sm:border-b-[2px]
+                  sm:border-[#ff3d00]
+
+                  ">
+
+                    <div className="sc-c2-f2-f1
+                      h-[32.5px]
+                      w-[16px]
+                      border-[1px]
+                      border-[white]
+                      border-r-[0]
+                      rounded-tl-[555px]
+                      rounded-bl-[555px]">
+ 
+                    </div>
+                </div>
+
+                <div className="lg:h-[160px] sm:h-[160px]">
+
+                </div>
+
+                <div className="sc-c2-f2 
+                  lg:h-[163px]
+                  sm:h-[163px]
+                  lg:w-[78px];
+                  lg:border-[2px]
+                  lg:border-[#ff3d00]
+                  lg:border-r-0
+                  lg:rounded-tl-[555px]
+                  lg:rounded-bl-[555px]
+                  flex
+                  flex-col
+                  items-end
+                  lg:pt-[63.5px]
+                  sm:pt-[63px]
+                  sm:border-t-[2px]
+                  sm:border-[#ff3d00]
+                  sm:border-b-[2px]">
+
+                    <div className="sc-c2-f2-f1
+                      h-[32.5px]
+                      w-[16px]
+                      border-[1px]
+                      border-[white]
+                      border-r-[0]
+                      rounded-tl-[555px]
+                      rounded-bl-[555px]">
+ 
+                    </div>
+                </div>
+
               </div>
 
-              <div className="sc-c3">
-                <div className="sc-servicio">
+              <div className="sc-c3" >
+
+                <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Web Development
                   </span>
@@ -68,11 +143,12 @@ const Servicios = () => {
                 </div>
 
                 {/* Ui/UX Design */}
-                <div className="sc-servicio">
+                <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Ui/UX Design
                   </span>
                 </div>
+
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
@@ -95,11 +171,12 @@ const Servicios = () => {
                   <div className="sc-rounded-right"></div>
                 </div>
 
-                <div className="sc-servicio">
+                <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Digital Strategy
                   </span>
                 </div>
+
                 <div className="sc-content-subSerivicio">
                   <div className="sc-rounded-left"></div>
                   <div className="sc-list-subservicio">
@@ -122,11 +199,12 @@ const Servicios = () => {
                 </div>
 
                 {/* Online Marketing */}
-                <div className="sc-servicio">
+                <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Online Marketing
                   </span>
                 </div>
+
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
@@ -149,25 +227,36 @@ const Servicios = () => {
                 </div>
 
                 {/* Mobile APPs */}
-                <div className="sc-servicio">
+                <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Mobile APPs
                   </span>
                 </div>
+
                 <div className="sc-content-subSerivicio">
-                  <div className="sc-rounded-left"></div>
+
+                  <div className="sc-rounded-left">
+
+                  </div>
+
                   <div className="sc-list-subservicio">
+
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                     
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
+
                     </div>
+
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
+
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]7">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
@@ -176,22 +265,120 @@ const Servicios = () => {
                 </div>
               </div>
 
-              <div className="sc-c5 ">
-                <div className="sc-c5-f1"></div>
+              <div className="sc-c5">
+
+                <div className="sc-c5-f1 lg:h-[36px] sm:h-[37.5px] sm:border-b-[2px] sm:border-b-[#ff3d00] lg:border-b-[0px]">
+
+                </div>
+
                 <div className="sc-c5-f2">
-                  <div className="sc-c5-f2-c1 border-[0] lg:border-[2px]">
-                    <div className="sc-c5-f2-c1-f1"></div>
+                  
+                  <div className="sc-c5-f2-c1
+                   lg:h-[163px]
+                   sm:h-[161.5px]
+                   lg:w-[78px]
+                   
+                   lg:border-[2px]
+                   lg:border-[#ff3d00]
+                   lg:border-l-0
+                   lg:rounded-tr-[555px]
+                   lg:rounded-br-[555px]
+                   flex
+                   flex-col
+                   items-start
+                   lg:pt-[63px]
+                   sm:pt-[63px]
+                   sm:border-b-[2px]
+                   sm:border-b-[#ff3d00]
+                  
+
+                  ">
+                    <div className="sc-c5-f2-c1-f1
+                      h-[33px]
+                      w-[16px]
+                      border-[1px]
+                      border-[white]
+                      border-l-[0]
+                      rounded-tr-[555px]
+                      rounded-br-[555px]
+                    ">
+
+                    </div>
                   </div>
-                  <div className="sc-c5-f2-c2"></div>
-                  <div className="sc-c5-f2-c3">
-                    <div className="sc-c5-f2-c3-f1"></div>
+                  
+                  <div className="sc-c5-f2-c2 sm:h-[160px] lg:h-[160px]">
+                    
                   </div>
-                  <div className="sc-c5-f2-c4"></div>
-                  <div className="sc-c5-f2-c5">
-                    <div className="sc-c5-f2-c5-f1"></div>
+                  
+                  <div className="sc-c5-f2-c3
+                     lg:h-[163px]
+                     sm:h-[163.5px]
+                     lg:w-[78px];
+                     lg:border-[2px]
+                     lg:border-[#ff3d00]
+                     lg:border-l-0
+                     lg:rounded-tr-[555px]
+                     lg:rounded-br-[555px]
+                     flex
+                     flex-col
+                     items-start
+                     lg:pt-[63px]
+                     sm:pt-[63px]
+                     sm:border-b-[2px]
+                     sm:border-b-[#ff3d00]
+                     sm:border-t-[2px]
+                     sm:border-t-[#ff3d00]
+                    
+                    
+                    
+                    ">
+
+                      <div className="sc-c5-f2-c3-f1
+                         h-[33px]
+                         w-[16px]
+                         border-[1px]
+                         border-[white]
+                         border-l-[0]
+                         rounded-tr-[555px]
+                         rounded-br-[555px]
+                      ">
+
+                    </div>
                   </div>
+
+                  <div className="sc-c5-f2-c4 sm:h-[160px] lg:h-[160px]">
+
+                  </div>
+
+                  <div className="
+                     lg:h-[163px]
+                     sm:h-[163.5px]
+                     lg:w-[78px];
+                     lg:border-t-[2px]
+                     lg:border-[#ff3d00]
+                     flex
+                     flex-col
+                     items-start
+                     lg:pt-[63px]
+                     sm:pt-[63px]
+                     sm:border-t-[2px]
+                     sm:border-t-[#ff3d00]">
+
+                      <div className="sc-c5-f2-c5-f1
+                          h-[33px]
+                          w-[16px]
+                          border-[1px]
+                          border-[white]
+                          border-l-[0]
+                          rounded-tr-[555px]
+                          rounded-br-[555px]">
+
+                    </div>
+                  </div>
+
                 </div>
               </div>
+
             </div>
           </div>
         </div>
