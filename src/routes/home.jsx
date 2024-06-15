@@ -12,7 +12,7 @@ const home = () => {
       <Banner />
 
       <div
-        className="flex w-full flex-col"
+        className="flex w-full flex-col z-50"
       >
         <Works />
 

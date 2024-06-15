@@ -74,7 +74,23 @@ export const Banner = () => {
         </div>
       </StickyBox>
 
-      <div className="h-[2000px] w-[0px]"></div>
+      <div className="h-[2000px] w-[0px] z-20"></div>
+      {/* <div className="absolute top-[500px]">
+        <div className="mt-[500px]">
+          <p className="text-banner">Design</p>
+          <p className="text-banner">Technology</p>
+        </div>
+
+        <div className="mt-[500px]">
+          <p className="text-banner">Transforming the</p>
+          <p className="text-banner">Digital Landscape</p>
+        </div>
+
+        <div className="my-[500px]">
+          <p className="text-banner">Design and Technology</p>
+          <p className="text-banner">via Cutting-Edge</p>
+        </div>
+      </div> */}
     </div>
   );
 };
