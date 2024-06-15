@@ -128,7 +128,7 @@
 }
 
 .sc-rounded-left {
-  height: 32.4px;
+  height: 32.5px;
   width: 16px;
   border: 1px solid white;
   border-right: none;
@@ -153,13 +153,13 @@
 }
 
 .sc-rounded-right {
-  height: 33px;
+  height: 32.5px;
   width: 16px;
   border: 1px solid white;
   border-left: none;
   border-top-right-radius: 555px;
   border-bottom-right-radius: 555px;
-  margin-top: 31px;
+  margin-top: 31.5px;
 }
 /* 
 .sc-c5 {
@@ -283,21 +283,13 @@
     border: none;
   }
 
-  .sc-c2 {
-    order: 2;
-    position: absolute;
-    top: 536px;
-    left: -16px;
-  }
+  
 
   .sc-c2-f1 {
     border: none;
   }
 
-  .sc-c2-f2 {
-    border: none;
-    padding-top: 63.5px;
-  }
+ 
 
   .sc-c2-f2-f1 {
     height: 32.5px;

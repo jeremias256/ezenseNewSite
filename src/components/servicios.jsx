@@ -4,10 +4,10 @@ import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
 const Servicios = () => {
   return (
-    <div className="servicios_content px-[16px] py-0 mt-[60px]">
+    <div className="servicios_content px-[16px] py-0 mt-[60px]" id="services">
       <div className="servicios-back  relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
         <div className="servicios-back2 px-[16px] py-[30px] lg:py-[60px] lg:px-[36px]">
-          <div className="servicios">
+          <div className="servicios" >
             <TituloSeccionWhite titulo="Services" />
 
             <div className="servicio-subTitulo">
@@ -25,14 +25,14 @@ const Servicios = () => {
             <div className="servicio-combo px-[16px] lg:px-[30px] lg:py-[16px]">
 
               <div className="sc-c1 hidden lg:flex">
-                <div className="lg:h-[37.5px] lg:w-[341px] lg:border-b-[2px] lg:border-[#ff3d00]"></div>
+                <div className="lg:h-[38px] lg:w-[341px] lg:border-b-[2px] lg:border-[#ff3d00]"></div>
                 <div className="sc-c1-f2"></div>
               </div>
 
               <div className="sc-c2 w-[16px] lg:w-[78px]">
                 
                 <div className="
-                  lg:h-[37.5px]
+                  lg:h-[38px]
                   sm:h-[37.5px]
                   lg:w-[78px] 
                   border-b-[2px] 
@@ -47,7 +47,7 @@ const Servicios = () => {
                 <div className="sc-c2-f2 
                   lg:h-[163px]
                   sm:h-[163px]
-                  lg:w-[78px];
+                  lg:w-[78px]
                   lg:border-[2px]
                   lg:border-[#ff3d00]
                   lg:border-r-0
@@ -71,12 +71,13 @@ const Servicios = () => {
                       border-[white]
                       border-r-[0]
                       rounded-tl-[555px]
-                      rounded-bl-[555px]">
+                      rounded-bl-[555px]
+                     ">
  
                     </div>
                 </div>
 
-                <div className="lg:h-[160px] sm:h-[160px]">
+                <div className="lg:h-[160px]  sm:h-[160px]">
 
                 </div>
 
@@ -93,19 +94,21 @@ const Servicios = () => {
                   flex-col
                   items-end
                   lg:pt-[63.5px]
-                  sm:pt-[63px]
+                  sm:pt-[63.5px]
                   sm:border-t-[2px]
                   sm:border-[#ff3d00]
-                  sm:border-b-[2px]">
+                  sm:border-b-[2px]" 
+                  >
 
                     <div className="sc-c2-f2-f1
-                      h-[32.5px]
+                      h-[33px]
                       w-[16px]
                       border-[1px]
                       border-[white]
                       border-r-[0]
                       rounded-tl-[555px]
-                      rounded-bl-[555px]">
+                      rounded-bl-[555px]
+                      ">
  
                     </div>
                 </div>
@@ -114,6 +117,7 @@ const Servicios = () => {
 
               <div className="sc-c3" >
 
+                 {/*Web Development */}
                 <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Web Development
@@ -121,25 +125,36 @@ const Servicios = () => {
                 </div>
 
                 <div className="sc-content-subSerivicio w-[350px] lg:w-[692px]">
-                  <div className="sc-rounded-left"></div>
+                  
+                  <div className="sc-rounded-left ">
+
+                  </div>
 
                   <div className="sc-list-subservicio">
+
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
                     </div>
+                    
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
+                    
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Seamless Service Integration
                       </span>
                     </div>
+
+                    
+
                   </div>
+
+                 
                 </div>
 
                 {/* Ui/UX Design */}
@@ -151,19 +166,19 @@ const Servicios = () => {
 
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Platform-Agnostic Solutions
+                        Intuitive User Interfaces
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Responsive Design
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        CSS3/HTML5 Expertise
                       </span>
                     </div>
                   </div>
@@ -171,6 +186,7 @@ const Servicios = () => {
                   <div className="sc-rounded-right"></div>
                 </div>
 
+                 {/* Digital Strategy */}
                 <div className="border-b-[2px] border-[#ff3d00]">
                   <span className="text-md-lato-700 call-to-action">
                     Digital Strategy
@@ -182,17 +198,17 @@ const Servicios = () => {
                   <div className="sc-list-subservicio">
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Platform-Agnostic Solutions
+                        Real-Time Analytics
                       </span>
                     </div>
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Community Engagement
                       </span>
                     </div>
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Creative Storytelling
                       </span>
                     </div>
                   </div>
@@ -207,19 +223,19 @@ const Servicios = () => {
 
                 <div className="sc-content-subSerivicio">
                   <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Platform-Agnostic Solutions
+                        Targeted Google Ads
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Comprehensive SEO
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Digital Visibility
                       </span>
                     </div>
                   </div>
@@ -244,7 +260,7 @@ const Servicios = () => {
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                      
                       <span className="text-sm-nunito-400 white">
-                        Platform-Agnostic Solutions
+                        Cross-Platform Development
                       </span>
 
                     </div>
@@ -252,13 +268,13 @@ const Servicios = () => {
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
 
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        User Engagement Focus
                       </span>
 
                     </div>
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Integrated Web Applications
                       </span>
                     </div>
                   </div>
@@ -286,7 +302,7 @@ const Servicios = () => {
                    flex
                    flex-col
                    items-start
-                   lg:pt-[63px]
+                   lg:pt-[63.5px]
                    sm:pt-[63px]
                    sm:border-b-[2px]
                    sm:border-b-[#ff3d00]
@@ -301,12 +317,13 @@ const Servicios = () => {
                       border-l-[0]
                       rounded-tr-[555px]
                       rounded-br-[555px]
+                     
                     ">
 
                     </div>
                   </div>
                   
-                  <div className="sc-c5-f2-c2 sm:h-[160px] lg:h-[160px]">
+                  <div className="sc-c5-f2-c2 sm:h-[160px] lg:h-[160.5px]">
                     
                   </div>
                   
@@ -322,7 +339,7 @@ const Servicios = () => {
                      flex
                      flex-col
                      items-start
-                     lg:pt-[63px]
+                     lg:pt-[63.5px]
                      sm:pt-[63px]
                      sm:border-b-[2px]
                      sm:border-b-[#ff3d00]
@@ -334,13 +351,13 @@ const Servicios = () => {
                     ">
 
                       <div className="sc-c5-f2-c3-f1
-                         h-[33px]
+                         h-[32.5px]
                          w-[16px]
                          border-[1px]
                          border-[white]
                          border-l-[0]
                          rounded-tr-[555px]
-                         rounded-br-[555px]
+                         rounded-br-[555px] 
                       ">
 
                     </div>
@@ -359,7 +376,7 @@ const Servicios = () => {
                      flex
                      flex-col
                      items-start
-                     lg:pt-[63px]
+                     lg:pt-[63.5px]
                      sm:pt-[63px]
                      sm:border-t-[2px]
                      sm:border-t-[#ff3d00]">
@@ -371,7 +388,7 @@ const Servicios = () => {
                           border-[white]
                           border-l-[0]
                           rounded-tr-[555px]
-                          rounded-br-[555px]">
+                          rounded-br-[555px] ">
 
                     </div>
                   </div>

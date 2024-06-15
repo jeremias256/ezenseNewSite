@@ -18,7 +18,7 @@
 
   /* Menu */
   .titulo {
-    @apply font-nunito text-[40px] font-light not-italic leading-normal tracking-tighter;
+    @apply font-nunito text-[40px] font-light not-italic leading-[0] tracking-tighter;
     margin: 0px;
   }
 
@@ -149,3 +149,59 @@ video {
   padding: 10px 28px;
   border-radius: 555px;
 } */
+
+/* index.css */
+
+.container {
+  position: relative;
+}
+
+.background {
+  background: #f3f3f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.chevron-mask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.chevron-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 16px;
+}
+
+.copy {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
