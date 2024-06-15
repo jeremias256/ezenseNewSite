@@ -1,8 +1,8 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 /* -------------------------------------------- libs -------------------------------------------- */
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-/* ------------------------------------------- context ------------------------------------------ */
-import { EzenseProvider } from "context";
+import { EzenseProvider } from "context/ezenseProvider.jsx";
 /* ----------------------------------------- components ----------------------------------------- */
 import { Home, Proyecto, Root } from "routes";
 import { ErrorPage } from "./error-page";

@@ -1,8 +1,8 @@
 import { useState } from "react";
 /* ------------------------------------------- context ------------------------------------------ */
-import { useEzense } from "context";
+import useEzense from "hooks/useEzenseProvider";
 /* ------------------------------------------- assets ------------------------------------------- */
-import imgLogoEzense from "../assets/logo-ezense.png";
+import imgLogoEzense from "assets/logo-ezense.png";
 
 export const Header = () => {
   const { scrollY, screenHeight } = useEzense();
