@@ -7,7 +7,7 @@ import ComboL from "./comboL";
 import ComboS from "./comboS";
 import "../css/works.css";
 
-const Works = () => {
+export const Works = () => {
   return (
     <div className="works_content px-3 py-0 md:mt-[16px] relative">
       <div className="works-back mx-auto w-full max-w-[1440px] ">
@@ -94,4 +94,3 @@ const Works = () => {
   );
 };
 
-export default Works;

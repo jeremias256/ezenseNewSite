@@ -17,11 +17,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-      
+
     ],
   },
   { path: "/:cliente", element: <Fiat /> },
-  ],
+],
   {
     basename: "/ezenseSite12",
   }

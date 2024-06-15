@@ -127,25 +127,3 @@ video {
   height: 100%;
   object-fit: cover;
 }
-
-/* .fade-out {
-  animation: fadeOut 3s;
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-} */
-
-/* Botones */
-/* .btn_gris {
-  background-color: #4d4f61;
-  color: white;
-  padding: 10px 28px;
-  border-radius: 555px;
-} */

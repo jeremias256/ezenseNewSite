@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import ezenseVideo from "../assets/ezenseVideo.mp4";
 import useEzense from "../hooks/useEzenseProvider";
-import StickyBox from "react-sticky-box";
 
 export const Banner = () => {
-  const { setScrollY, acumuladorFrame, setAcumuladorFrame } =
+  const { setScrollY, screenHeight, acumuladorFrame, setAcumuladorFrame } =
     useEzense();
+  const adjustedHeight = screenHeight * 1.1;
   /* --------------------------------------- estados locales -------------------------------------- */
   const contentBannerDivRef = useRef(null); //div contenedor video
   const bannerDivRef = useRef(null); //div video
@@ -25,6 +25,12 @@ export const Banner = () => {
       anteriorY.current = newY;
 
       setScrollY(newY); //actualiza estado de eje Y
+
+      if (newY <= contentBannerDivRef.current.getBoundingClientRect().height)
+        bannerDivRef.current.classList.add("fixed");
+
+      if (newY > contentBannerDivRef.current.getBoundingClientRect().height)
+        bannerDivRef.current.classList.remove("fixed");
     };
 
     window.addEventListener("scroll", updateScrollY);
@@ -42,6 +48,16 @@ export const Banner = () => {
     }
   });
 
+  useEffect(() => {
+    if (window.scrollY < 1000) {
+      const handleScrollToTop = () => {
+        window.scrollTo(0, 0);
+      };
+      const timeoutId = setTimeout(handleScrollToTop, 500);
+      return () => clearTimeout(timeoutId);
+    }
+  }, []);
+
   const adelantarVideo = () => {
     playerRef.current.seekTo(
       playerRef.current.getCurrentTime() + frame,
@@ -56,25 +72,22 @@ export const Banner = () => {
   };
 
   return (
-    <div className="flex items-start w-screen min-h-[2400px]"
+    <div
       ref={contentBannerDivRef}
     >
-      <StickyBox offsetTop={0} offsetBottom={20}>
-        <div
-          className="w-screen h-screen"
-          ref={bannerDivRef}
-        >
-          <ReactPlayer
-            ref={playerRef}
-            url={ezenseVideo}
-            width="100%"
-            height="100%"
-            muted
-          />
-        </div>
-      </StickyBox>
-
-      <div className="h-[2000px] w-[0px]"></div>
+      <div
+        className="fixed top-[110px] w-full md:top-0"
+        ref={bannerDivRef}
+        style={{ height: `${screenHeight}px`, width: 'full' }}
+      >
+        <ReactPlayer
+          ref={playerRef}
+          url={ezenseVideo}
+          width="100%"
+          height="100%"
+          muted
+        />
+      </div>
     </div>
   );
 };

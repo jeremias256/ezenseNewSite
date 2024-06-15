@@ -31,30 +31,30 @@ import { Pagination } from "swiper/modules";
 
 const Proyecto = () => {
 
-const { cliente } = useParams();
+  const { cliente } = useParams();
 
-const nombreCliente =  cliente; //iplan -- fiat
+  const nombreCliente = cliente; //iplan -- fiat
 
 
 
-const clienteRender = getClienteById(nombreCliente);
-const idCliente = clienteRender.id;
+  const clienteRender = getClienteById(nombreCliente);
+  const idCliente = clienteRender.id;
 
-/** Imagenes que van en la descripción */
-const img1 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
-const img2 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
+  /** Imagenes que van en la descripción */
+  const img1 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
+  const img2 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
 
-/** Imagenes que van en el carrousel */
-const videoBackImagenes = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
-const imagenesSlider = [];
-for (let index = 0; index < clienteRender.cantImagen; index++) {
-  let obj = {
-    id: index + 1,
-    imagen: `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
-  };
+  /** Imagenes que van en el carrousel */
+  const videoBackImagenes = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
+  const imagenesSlider = [];
+  for (let index = 0; index < clienteRender.cantImagen; index++) {
+    let obj = {
+      id: index + 1,
+      imagen: `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
+    };
 
-  imagenesSlider.push(obj);
-}
+    imagenesSlider.push(obj);
+  }
 
 
 
@@ -92,15 +92,15 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
       </div>
 
       <div className="imagenesMovile lg:hidden mx-[16px] flex flex-col gap-[24px]">
-           {imagenesSlider.map((img) => (
-              
-                <img
-                  src={img.imagen}
-                  alt={`Slider ${img.id}`}
-                  className="d-block w-100"
-                />
-              
-            ))}
+        {imagenesSlider.map((img) => (
+
+          <img
+            src={img.imagen}
+            alt={`Slider ${img.id}`}
+            className="d-block w-100"
+          />
+
+        ))}
 
       </div>
 
@@ -134,24 +134,24 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
       </div>
 
       <div className="pp-relacionados my-[20px] mx-[16px] flex flex-col gap-[30px]">
-       
+
         <p className="text-lg-nunito-400 greyBlack"> Proyectos relacionados </p>
-       
+
         <div className="
             lg:flex
             lg:gap-[60px]
             lg:px-[90px]">
-          
+
           <div className="w-full">
-          <ComboMD
-            data={[clienteRender.proyectoRelacionado1.proyectoRelacionado, 'pp']}
-          /> 
+            <ComboMD
+              data={[clienteRender.proyectoRelacionado1.proyectoRelacionado, 'pp']}
+            />
           </div>
           <div className=" w-full">
-          <ComboMD2
-            data={[clienteRender.proyectoRelacionado2.proyectoRelacionado, 'pp']}
-          />
-         </div>
+            <ComboMD2
+              data={[clienteRender.proyectoRelacionado2.proyectoRelacionado, 'pp']}
+            />
+          </div>
         </div>
 
       </div>
@@ -163,3 +163,4 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
   );
 };
 export default Proyecto;
+

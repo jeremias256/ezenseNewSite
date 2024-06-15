@@ -2,7 +2,7 @@ import React from "react";
 import imgLogoEzense from "../assets/logo-ezense.png";
 import useEzense from "../hooks/useEzenseProvider";
 
-const Header = () => {
+export const Header = () => {
   const { scrollY, screenHeight } = useEzense();
 
   return (
@@ -40,4 +40,3 @@ const Header = () => {
   );
 };
 
-export default Header;

@@ -13,7 +13,7 @@ const Contacto = () => {
                       lg:flex lg:flex-row lg:gap-[60px]
                       sm:flex sm:flex-col sm:gap-[30px]
                       lg:p-[60px] sm:p-[30px] "
-         style={{
+        style={{
           backgroundColor: 'rgba(236, 234, 229, 0.9)',
           background: 'linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)',
         }}

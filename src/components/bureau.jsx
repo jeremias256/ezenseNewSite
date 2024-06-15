@@ -6,7 +6,7 @@ import flavio from "../assets/flavioVillan.png";
 import javi from "../assets/javiMartinez.png";
 import ale from "../assets/aleJeroz.png";
 
-const Bureau = () => {
+export const Bureau = () => {
   return (
     <div className="bureau-content px-3 py-0 mt-[60px]">
       <div
@@ -29,7 +29,7 @@ const Bureau = () => {
           </div>
 
           <div className="personas sm:flex sm:flex-col lg:flex lg:flex-row">
-           
+
             <div className="persona">
 
               <div className="persona-foto">
@@ -97,4 +97,3 @@ const Bureau = () => {
   );
 };
 
-export default Bureau;

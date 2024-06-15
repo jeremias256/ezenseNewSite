@@ -2,7 +2,7 @@ import React from "react";
 import "../css/servicios.css";
 import TituloSeccionWhite from "../components/tituloSeccionWhite";
 
-const Servicios = () => {
+export const Servicios = () => {
   return (
     <div className="servicios_content px-[16px] py-0 mt-[60px]">
       <div className="servicios-back  relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
@@ -30,14 +30,14 @@ const Servicios = () => {
               </div>
 
               <div className="sc-c2 w-[16px] lg:w-[78px]">
-                
+
                 <div className="
                   lg:h-[37.5px]
                   sm:h-[37.5px]
                   lg:w-[78px] 
                   border-b-[2px] 
                   border-[#ff3d00]">
-                
+
                 </div>
 
                 <div className="lg:h-[160px] sm:h-[160px]">
@@ -64,7 +64,7 @@ const Servicios = () => {
 
                   ">
 
-                    <div className="sc-c2-f2-f1
+                  <div className="sc-c2-f2-f1
                       h-[32.5px]
                       w-[16px]
                       border-[1px]
@@ -72,8 +72,8 @@ const Servicios = () => {
                       border-r-[0]
                       rounded-tl-[555px]
                       rounded-bl-[555px]">
- 
-                    </div>
+
+                  </div>
                 </div>
 
                 <div className="lg:h-[160px] sm:h-[160px]">
@@ -98,7 +98,7 @@ const Servicios = () => {
                   sm:border-[#ff3d00]
                   sm:border-b-[2px]">
 
-                    <div className="sc-c2-f2-f1
+                  <div className="sc-c2-f2-f1
                       h-[32.5px]
                       w-[16px]
                       border-[1px]
@@ -106,8 +106,8 @@ const Servicios = () => {
                       border-r-[0]
                       rounded-tl-[555px]
                       rounded-bl-[555px]">
- 
-                    </div>
+
+                  </div>
                 </div>
 
               </div>
@@ -242,7 +242,7 @@ const Servicios = () => {
                   <div className="sc-list-subservicio">
 
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
-                     
+
                       <span className="text-sm-nunito-400 white">
                         Platform-Agnostic Solutions
                       </span>
@@ -272,7 +272,7 @@ const Servicios = () => {
                 </div>
 
                 <div className="sc-c5-f2">
-                  
+
                   <div className="sc-c5-f2-c1
                    lg:h-[163px]
                    sm:h-[161.5px]
@@ -305,11 +305,11 @@ const Servicios = () => {
 
                     </div>
                   </div>
-                  
+
                   <div className="sc-c5-f2-c2 sm:h-[160px] lg:h-[160px]">
-                    
+
                   </div>
-                  
+
                   <div className="sc-c5-f2-c3
                      lg:h-[163px]
                      sm:h-[163.5px]
@@ -333,7 +333,7 @@ const Servicios = () => {
                     
                     ">
 
-                      <div className="sc-c5-f2-c3-f1
+                    <div className="sc-c5-f2-c3-f1
                          h-[33px]
                          w-[16px]
                          border-[1px]
@@ -364,7 +364,7 @@ const Servicios = () => {
                      sm:border-t-[2px]
                      sm:border-t-[#ff3d00]">
 
-                      <div className="sc-c5-f2-c5-f1
+                    <div className="sc-c5-f2-c5-f1
                           h-[33px]
                           w-[16px]
                           border-[1px]
@@ -387,4 +387,3 @@ const Servicios = () => {
   );
 };
 
-export default Servicios;
