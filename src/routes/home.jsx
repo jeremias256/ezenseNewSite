@@ -18,7 +18,7 @@ const home = () => {
 
       <Banner />
 
-      <div
+      {/* <div
         className="absolute flex w-full flex-col"
         style={{ top: `${adjustedHeight}px` }}
       >
@@ -29,7 +29,7 @@ const home = () => {
         <Bureau />
 
         <Contacto />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -75,12 +75,11 @@ const Banner = () => {
     <div
       className="relative"
       ref={contentBannerDivRef}
-      style={{ height: `${adjustedHeight}px` }}
     >
       <div
         className="fixed top-[110px] w-full md:top-0"
         ref={bannerDivRef}
-        style={{ height: `${screenHeight}px` }}
+        style={{ height: `${screenHeight}px`, width: 'full' }}
       >
         <ReactPlayer
           ref={playerRef}
@@ -89,7 +88,7 @@ const Banner = () => {
           height="100%"
           muted
         />
-        <div className="pointer-events-none absolute bottom-0 left-0 h-1/3 w-full bg-opacity-gradient"></div>
+        {/* <div className="pointer-events-none absolute bottom-0 left-0 h-1/3 w-full bg-opacity-gradient"></div> */}
       </div>
     </div>
   );
