@@ -29,7 +29,7 @@ import { Pagination } from "swiper/modules";
 
 
 
-const Proyecto = () => {
+export const Proyecto = () => {
 
   const { cliente } = useParams();
 
@@ -41,16 +41,16 @@ const Proyecto = () => {
   const idCliente = clienteRender.id;
 
   /** Imagenes que van en la descripción */
-  const img1 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
-  const img2 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
+  const img1 = `/ezenseSite15/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
+  const img2 = `/ezenseSite15/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
 
   /** Imagenes que van en el carrousel */
-  const videoBackImagenes = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
+  const videoBackImagenes = `/ezenseSite15/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
   const imagenesSlider = [];
   for (let index = 0; index < clienteRender.cantImagen; index++) {
     let obj = {
       id: index + 1,
-      imagen: `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
+      imagen: `/ezenseSite15/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
     };
 
     imagenesSlider.push(obj);
@@ -162,5 +162,4 @@ const Proyecto = () => {
     </div>
   );
 };
-export default Proyecto;
 

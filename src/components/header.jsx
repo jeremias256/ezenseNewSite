@@ -1,42 +1,102 @@
-import React from "react";
+import { useState } from "react";
+/* ------------------------------------------- context ------------------------------------------ */
+import { useEzense } from "context";
+/* ------------------------------------------- assets ------------------------------------------- */
 import imgLogoEzense from "../assets/logo-ezense.png";
-import useEzense from "../hooks/useEzenseProvider";
 
 export const Header = () => {
   const { scrollY, screenHeight } = useEzense();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+
+  };
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      let yOffset;
+      if (isMenuOpen == true) {
+        yOffset = -70; // Ajuste de 54px
+      } else {
+        yOffset = -120; // Ajuste de 54px
+      }
+
+      const yPosition = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: yPosition, behavior: 'smooth' });
+    }
+  };
   return (
-    <header className="relative w-full md:flex md:justify-start">
-      <div className="flex cursor-pointer items-center justify-between px-[16px] md:px-0">
-        <div className="flex items-center">
-          <img src={imgLogoEzense} width="31px" height="31px" alt="Logo de e-zense" />
-          <span className="titulo text-greyBlack"> e-zense</span>
+
+
+    <header className={`relative w-full flex ${isMenuOpen ? 'lg:h-[54px] h-[62px]' : 'lg:h-[54px] h-[115px]'}`}>
+      <div className="flex flex-col lg:flex-row items-center justify-between w-full px-[16px] md:px-0 ">
+
+        <div className="flex w-full lg:w-[auto] lg:items-center justify-between h-[62px]">
+
+          <div className="flex items-center gap-[8px]">
+            <img src={imgLogoEzense} width="31px" height="31px" alt="Logo de e-zense" />
+            <div className="mt-[10px]">
+              <span className="titulo grey-black">e-zense</span>
+            </div>
+          </div>
+
+          <button
+            className="md:hidden flex items-center"
+            onClick={toggleMenu}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+
+        <div className={`${isMenuOpen ? 'hidden md:flex md:m-auto md:gap-[14px]'
+          : 'lg:hidden border-t-[2px] p-[12px] border-[#ff3d00] w-full flex justify-between'}`}>
+
+
+          <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('works')}>
+            Works
+          </span>
+
+          <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('services')}>
+            Services
+          </span>
+
+          <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('clients')}>
+            Clients
+          </span>
+
+          <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('bureau')}>
+            Bureau
+          </span>
+
+
+          <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('contact')}>
+            Contact
+          </span>
+        </div>
+
+        <div className="absolute left-[180px] top-[20px] flex flex-col bg-green-500 px-4 text-white md:flex-row">
+          <p>---Y: {scrollY}px</p>
+          <p>---screenHeight: {screenHeight}px</p>
         </div>
       </div>
-
-      <div className="flex justify-between rounded-b-[12px] border-t-2 border-callToAction px-[16px] py-[12px] md:absolute md:left-1/2 md:top-1/2 md:mt-[8px] md:-translate-x-1/2 md:-translate-y-1/2 md:transform md:items-center md:gap-[16px] md:border-none md:px-0 md:py-0">
-        <span className="opciones flex cursor-pointer hover:text-callToAction md:text-[18px]">
-          Works
-        </span>
-        <span className="opciones flex cursor-pointer  hover:text-callToAction md:text-[18px] ">
-          Bureau
-        </span>
-        <span className="opciones flex cursor-pointer hover:text-callToAction md:text-[18px]">
-          Services
-        </span>
-        <span className="opciones flex cursor-pointer hover:text-callToAction md:text-[18px]">
-          Clients
-        </span>
-        <span className="opciones flex cursor-pointer hover:text-callToAction md:text-[18px]">
-          Team
-        </span>
-      </div>
-
-      {/* <div className="absolute left-[180px] top-[20px] flex flex-col bg-green-500 px-4 text-white md:flex-row">
-        <p>---Y: {scrollY}px</p>
-        <p>---screenHeight: {screenHeight}px</p>
-      </div> */}
-    </header>
+    </header >
   );
 };
 

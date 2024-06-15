@@ -16,20 +16,11 @@
 
 .bureau-back2 {
   background-color: rgba(236, 234, 229, 0.9);
-  padding: 60px 36px;
   border-radius: 24px;
-  /*    
-    border-radius: 24px;
-    background-color: rgb(236, 234, 229);
-    
-    background-blend-mode: luminosity;
-    padding:60px 36px; */
 }
 
 .bureau-subTitulo {
-  display: flex;
-  flex-direction: column;
-  padding: 32px 30px;
+ 
 }
 
 .personas {

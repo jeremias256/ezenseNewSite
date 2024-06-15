@@ -1,8 +1,6 @@
 import { stringify } from "postcss";
 
-
 const clientes = [
-
   /* 1- Clarin */
   {
     id: 1,
@@ -11,7 +9,8 @@ const clientes = [
     cantImagen: 10,
     descripcionText: {
       descTitulo: "Hombres de Olé bajo el brazo",
-      descParrafo: "Young & Rubicam nos encargó una serie de Brand Games para la campaña online: #HombresDeOleBajoElBrazo. Siguiendo la comunicación, desarrollamos el look & feel y la jugabilidad de los mismos para que reflejen ese hombre distinto, ducho, perseverante; como los lectores de Olé.",
+      descParrafo:
+        "Young & Rubicam nos encargó una serie de Brand Games para la campaña online: #HombresDeOleBajoElBrazo. Siguiendo la comunicación, desarrollamos el look & feel y la jugabilidad de los mismos para que reflejen ese hombre distinto, ducho, perseverante; como los lectores de Olé.",
     },
 
     descripcionCombo: {
@@ -24,23 +23,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto1/fotoCombo0.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto1/fotoCombo2.png`,pant:"d"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto1/fotoCombo3.png`,pant:"m"},
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto1/fotoCombo0.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto1/fotoCombo2.png`,
+        pant: "d",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto1/fotoCombo3.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 1,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'clarin',
-
-
-    }
-
+      proyectoRelacionado: "clarin",
+    },
   },
 
   /* 2- Mondelez */
@@ -65,24 +70,25 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto2/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto2/fotoCombo2.png`,pant:"m"},
-     
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto2/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto2/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 1,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'clarin',
-
-
-    }
-
+      proyectoRelacionado: "clarin",
+    },
   },
 
   /* 3- Nissan */
@@ -106,22 +112,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto2/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto3/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto3/fotoCombo3.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto2/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto3/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto3/fotoCombo3.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 1,
-      proyectoRelacionado: 'clarin',
+      proyectoRelacionado: "clarin",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 4 - Cocacola */
@@ -145,21 +158,25 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto4/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto4/fotoCombo2.png`,pant:"m"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto4/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto4/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 5 - Molinos */
@@ -183,21 +200,25 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto5/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto5/fotoCombo2.png`,pant:"m"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto5/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto5/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 6 - Unilever */
@@ -221,22 +242,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto6/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto6/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto6/fotoCombo3.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto6/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto6/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto6/fotoCombo3.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 7 - Fiat */
@@ -247,7 +275,8 @@ const clientes = [
     cantImagen: 7,
     descripcionText: {
       descTitulo: "“Stylish Parenting”",
-      descParrafo: "Supporting the client's brief, we designed a website blending disruptive grid design with classic content. The Rich Media campaign conveys that the 500L retains style and aspiration in its family version, emphasizing that parenthood doesn't mean compromising on a stylish car.",
+      descParrafo:
+        "Supporting the client's brief, we designed a website blending disruptive grid design with classic content. The Rich Media campaign conveys that the 500L retains style and aspiration in its family version, emphasizing that parenthood doesn't mean compromising on a stylish car.",
     },
 
     descripcionCombo: {
@@ -260,22 +289,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto7/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto7/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto7/fotoCombo2.png`,pant:"d"},
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto7/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto7/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto7/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 1,
-      proyectoRelacionado: 'clarin',
+      proyectoRelacionado: "clarin",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'fiat',
-
-    }
-
+      proyectoRelacionado: "fiat",
+    },
   },
 
   /* 8 -Whirlpool */
@@ -300,22 +336,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto8/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto8/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto8/fotoCombo3.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto8/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto8/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto8/fotoCombo3.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 9 -Estrada */
@@ -339,22 +382,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto9/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto9/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto9/fotoCombo3.png`,pant:"m"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto9/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto9/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto9/fotoCombo3.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 10 -disney baby */
@@ -378,23 +428,29 @@ const clientes = [
     },
 
     imgCombo: {
-      
-     
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto10/fotoCombo1.png`,pant:"m"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto10/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto10/fotoCombo2.png`,pant:"d"},
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto10/fotoCombo1.png`,
+        pant: "m",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto10/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto10/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 11 - Iplan */
@@ -419,22 +475,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto11/fotoCombo1.png`,pant:"m"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto11/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto11/fotoCombo2.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto11/fotoCombo1.png`,
+        pant: "m",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto11/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto11/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 12 - Givaudan */
@@ -458,22 +521,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto12/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto12/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto12/fotoCombo2.png`,pant:"m"},
-
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto12/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto12/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto12/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 13 - Procter & Gamble */
@@ -497,23 +567,29 @@ const clientes = [
     },
 
     imgCombo: {
-      
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto13/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto13/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto13/fotoCombo2.png`,pant:"m"},
-
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto13/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto13/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto13/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 14 - Beiersdorf*/
@@ -537,22 +613,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto14/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto14/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto14/fotoCombo3.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto14/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto14/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto14/fotoCombo3.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 15 - Peugeot*/
@@ -576,22 +659,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto15/fotoCombo1.png`,pant:"m"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto15/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto15/fotoCombo2.png`,pant:"d"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto15/fotoCombo1.png`,
+        pant: "m",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto15/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto15/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 16 - Televisa*/
@@ -615,21 +705,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto16/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto16/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto16/fotoCombo2.png`,pant:"m"},
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto16/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto16/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto16/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 17 - GM*/
@@ -653,22 +751,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto17/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto17/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto17/fotoCombo3.png`,pant:"m"},
-
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto17/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto17/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto17/fotoCombo3.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 18 - Turner*/
@@ -692,21 +797,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto18/fotoCombo1.png`,pant:"m"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto18/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto18/fotoCombo2.png`,pant:"d"},
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto18/fotoCombo1.png`,
+        pant: "m",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto18/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto18/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 19 - NIKE*/
@@ -731,21 +844,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto19/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto19/fotoCombo2.png`,pant:"d"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto19/fotoCombo0.png`,pant:"onlyMovile"},
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto19/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto19/fotoCombo2.png`,
+        pant: "d",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto19/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 20 -Mc Donalds*/
@@ -770,23 +891,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto20/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto20/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto20/fotoCombo2.png`,pant:"m"},
-
-
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto20/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto20/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto20/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 21 -Philip Starck*/
@@ -810,24 +937,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto21/fotoCombo0.png`,pant:"onlyMovile"},
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto21/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto21/fotoCombo2.png`,pant:"m"},
-
-
-
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto21/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto21/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto21/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 22 -ABInBev*/
@@ -851,21 +983,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto22/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto22/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto22/fotoCombo3.png`,pant:"d"},
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto22/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto22/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto22/fotoCombo3.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 23 -Disney*/
@@ -889,24 +1029,31 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto23/fotoCombo1.png`,pant:"m"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto23/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto23/fotoCombo2.png`,pant:"d"}
-      
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto23/fotoCombo1.png`,
+        pant: "m",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto23/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto23/fotoCombo2.png`,
+        pant: "d",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
-  
+
   /* 24 - Kimberly-Clark */
   {
     id: 24,
@@ -928,22 +1075,29 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto24/fotoCombo1.png`,pant:"d"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto24/fotoCombo0.png`,pant:"onlyMovile"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto24/fotoCombo2.png`,pant:"m"}
-      
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto24/fotoCombo1.png`,
+        pant: "d",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto24/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto24/fotoCombo2.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 25 - PEPSICO */
@@ -967,26 +1121,33 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto25/fotoCombo1.png`,pant:"d"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto25/fotoCombo2.png`,pant:"m"},
-      img3: {url:`/ezenseSite12/assets/fotoClientes/proyecto25/fotoCombo3.png`,pant:"m"},
-      
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto25/fotoCombo1.png`,
+        pant: "d",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto25/fotoCombo2.png`,
+        pant: "m",
+      },
+      img3: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto25/fotoCombo3.png`,
+        pant: "m",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 
-   /* 26 - paco rabanne */
-   {
+  /* 26 - paco rabanne */
+  {
     id: 26,
     cliente: "pacoRabanne",
     titulo: "paco rabanne",
@@ -1006,29 +1167,34 @@ const clientes = [
     },
 
     imgCombo: {
-      img1: {url:`/ezenseSite12/assets/fotoClientes/proyecto26/fotoCombo1.png`,pant:"m"},
-      img2: {url:`/ezenseSite12/assets/fotoClientes/proyecto26/fotoCombo2.png`,pant:"d"},
-      img0: {url:`/ezenseSite12/assets/fotoClientes/proyecto26/fotoCombo0.png`,pant:"onlyMovile"}
+      img1: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto26/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto26/fotoCombo2.png`,
+        pant: "d",
+      },
+      img0: {
+        url: `/ezenseSite15/assets/fotoClientes/proyecto26/fotoCombo0.png`,
+        pant: "onlyMovile",
+      },
     },
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
-
+      proyectoRelacionado: "mondelez",
+    },
   },
 ];
 
-
-
 function getClienteById(nombreCliente) {
-  return clientes.find(cliente => cliente.cliente === nombreCliente);
-};
-
+  return clientes.find((cliente) => cliente.cliente === nombreCliente);
+}
 
 export { clientes, getClienteById };

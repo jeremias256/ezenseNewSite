@@ -1,11 +1,11 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
+/* -------------------------------------------- libs -------------------------------------------- */
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { EzenseProvider } from "./context/ezenseProvider";
-import Root from "./routes/root";
-import Home from "./routes/home";
-import Fiat from "./routes/fiat";
-import ErrorPage from "./error-page";
+/* ------------------------------------------- context ------------------------------------------ */
+import { EzenseProvider } from "context";
+/* ----------------------------------------- components ----------------------------------------- */
+import { Home, Proyecto, Root } from "routes";
+import { ErrorPage } from "./error-page";
 import "./index.css";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -20,10 +20,10 @@ const router = createBrowserRouter([
 
     ],
   },
-  { path: "/:cliente", element: <Fiat /> },
+  { path: "/:cliente", element: <Proyecto /> },
 ],
   {
-    basename: "/ezenseSite12",
+    basename: "/ezenseSite15",
   }
 
 );

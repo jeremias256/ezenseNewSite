@@ -8,8 +8,8 @@ const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div className="contacto_content">
-      <div className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
+    <div  className="contacto_content" id="contact" >
+      <div  className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
                       lg:flex lg:flex-row lg:gap-[60px]
                       sm:flex sm:flex-col sm:gap-[30px]
                       lg:p-[60px] sm:p-[30px] "
@@ -19,10 +19,10 @@ const Contacto = () => {
         }}
       >
         {/* formulario */}
-        <div className="cont-form ">
+        <div className="cont-form " >
           <div className="cont-form-r1">
             <div className="cont-form-r1-c1"></div>
-            <div className="cont-form-r1-c2">
+            <div className="cont-form-r1-c2" >
               {" "}
               <span className="text-lg-nunito-400 grey-black">
                 {" "}
@@ -51,7 +51,7 @@ const Contacto = () => {
         </div>
 
         {/* datos */}
-        <div className="cont-datos">
+        <div className="cont-datos" >
           <div className="cont-datos-data lg:flex lg:flex-row sm:flex sm:flex-col sm:gap-[30px]">
 
             <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">

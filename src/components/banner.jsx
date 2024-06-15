@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+/* -------------------------------------------- libs -------------------------------------------- */
 import ReactPlayer from "react-player";
-import ezenseVideo from "../assets/ezenseVideo.mp4";
-import useEzense from "../hooks/useEzenseProvider";
 import StickyBox from "react-sticky-box";
+/* ------------------------------------------- context ------------------------------------------ */
+import { useEzense } from "context";
+/* ------------------------------------------- assets ------------------------------------------- */
+import ezenseVideo from "assets/ezenseVideo.mp4";
 
 export const Banner = () => {
   const { setScrollY, acumuladorFrame, setAcumuladorFrame } =
@@ -13,6 +16,7 @@ export const Banner = () => {
   const playerRef = useRef(null); //idVideo
   const anteriorY = useRef(0); //eje y actual
   const frame = 0.025; //fps
+
 
   useEffect(() => {
     const updateScrollY = () => {
@@ -75,22 +79,22 @@ export const Banner = () => {
       </StickyBox>
 
       <div className="h-[2000px] w-[0px] z-20"></div>
-      {/* <div className="absolute top-[500px]">
-        <div className="mt-[500px]">
+      <div className="absolute top-[600px] left-1/2 transform -translate-x-1/2">
+        <div className="mt-[350px]">
           <p className="text-banner">Design</p>
           <p className="text-banner">Technology</p>
         </div>
 
-        <div className="mt-[500px]">
+        <div className="mt-[350px]">
           <p className="text-banner">Transforming the</p>
           <p className="text-banner">Digital Landscape</p>
         </div>
 
-        <div className="my-[500px]">
+        <div className="my-[350px]">
           <p className="text-banner">Design and Technology</p>
           <p className="text-banner">via Cutting-Edge</p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
