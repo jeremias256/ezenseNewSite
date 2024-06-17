@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "../css/contacto.css";
 import { useState } from "react";
 
@@ -8,11 +9,11 @@ const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div className="contacto_content" id="contact" >
+    <div className="contacto_content px-3 w-full" id="contact" >
       <div className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
                       lg:flex lg:flex-row lg:gap-[60px]
                       sm:flex sm:flex-col sm:gap-[30px]
-                      lg:p-[60px] sm:p-[30px] "
+                      lg:p-[60px]"
         style={{
           backgroundColor: 'rgba(236, 234, 229, 0.9)',
           background: 'linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)',
@@ -37,7 +38,7 @@ const Contacto = () => {
             <div className="cont-form-r1-c5"></div>
           </div>
 
-          <div className="cont-form-r2 sm:h-[550px] lg:h-[406px]">
+          <div className="cont-form-r2">
             {stepContacto === 1 ? (
               <Contacto_step1 setStepContacto={setStepContacto} />
             ) : stepContacto === 2 ? (
@@ -49,19 +50,15 @@ const Contacto = () => {
         </div>
 
         {/* datos */}
-        <div className="cont-datos" >
-          <div className="cont-datos-data lg:flex lg:flex-row sm:flex sm:flex-col sm:gap-[30px] items-start">
+        <div className="cont-datos mb-8">
+          <div className="cont-datos-data flex flex-col items-center">
 
             <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
-              <span className="text-sm-nunito-400 grey-black">
-                {" "}
-                Av Dorrego 2133{" "}
+              <span className="text-sm-nunito-400 grey-black text-[16px]">
+                Av Dorrego 2133 - CABA - Buenos Aires{" "}
               </span>
-              <span className="text-sm-nunito-400 grey-black">
-                {" "}
-                CABA - Buenos Aires{" "}
-              </span>
+
               <span className="text-sm-nunito-400 call-to-action">
                 {" "}
                 bue@e-zense.com{" "}
@@ -70,14 +67,11 @@ const Contacto = () => {
 
             <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Chile </span>
-              <span className="text-sm-nunito-400 grey-black">
+              <span className="text-sm-nunito-400 grey-black text-[16px]">
                 {" "}
-                Dr Manuel Barros 71{" "}
+                Dr Manuel Barros 71 - Santiago{" "}
               </span>
-              <span className="text-sm-nunito-400 grey-black">
-                {" "}
-                Providencia - Santiago{" "}
-              </span>
+
               <span className="text-sm-nunito-400 call-to-action">
                 {" "}
                 santiago@e-zense.com{" "}
@@ -121,7 +115,7 @@ const Contacto = () => {
         </div>
 
       </div>
-    </div>
+    </div >
   );
 };
 
@@ -158,6 +152,7 @@ const Contacto_step1 = ({ setStepContacto }) => {
 };
 
 const Contacto_step2 = ({ setStepContacto }) => {
+  const [cargando, setCargando] = useState(false);
   const [inputName, setInputName] = useState("");
   const [inputLastName, setInputLastName] = useState("");
   const [inputEmail, setInputEmail] = useState("");
@@ -166,21 +161,39 @@ const Contacto_step2 = ({ setStepContacto }) => {
 
   const handleNameChange = (event) => {
     const value = event.target.value;
-    setInputName(value);
+    let regex = /^[a-zA-Z]*$/;
+    let filteredValue = value.replace(/[^a-zA-Z]/g, "").slice(0, 30);
+    if (regex.test(filteredValue)) {
+      setInputName(filteredValue);
+    }
   };
 
   const handleLastNameChange = (event) => {
     const value = event.target.value;
-    setInputLastName(value);
+    let regex = /^[a-zA-Z]*$/;
+    let filteredValue = value.replace(/[^a-zA-Z]/g, "").slice(0, 30);
+    if (regex.test(filteredValue)) {
+      setInputLastName(filteredValue);
+    }
   };
 
   const handleEmailChange = (event) => {
     const value = event.target.value;
+    console.log("👀 - handleEmailChange - value:", value);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setInputEmail(value);
+
+    if (emailRegex.test(value)) {
+      console.log("HOLA")
+      // setIsValidEmail(true); // Marcar como válido si la validación pasa
+    } else {
+      // setIsValidEmail(false); // Marcar como inválido si la validación falla
+    }
   };
 
+
   const handlePhoneChange = (event) => {
-    const value = event.target.value;
+    const value = event.target.value.replace(/\D/g, "").slice(0, 10);
     setInputPhone(value);
   };
 
@@ -189,10 +202,53 @@ const Contacto_step2 = ({ setStepContacto }) => {
     setInputMessage(value);
   };
 
-  const enviarMensaje = () => {
+  const enviarMensaje = async () => {
+    setCargando(true);
+    const url = "sendMail.php?sent=OK";
+    let fData = new FormData();
+    try {
+      const response = await axios.post(url, fData);
+      console.log("👀 - enviarMensaje - response:", response);
+
+      // if (response.request.responseURL.includes("?error_validation")) {
+      //   setExpireCookie("carritoErrorLogin", "error");
+      // } else {
+      //   delete_cookie("carritoErrorLogin");
+      // }
+    } catch (error) {
+      console.log(
+        "🚀 - file: FormularioLogin.jsx:47 - handleSubmit - error:",
+        error,
+      );
+    } finally {
+      setCargando(false);
+    }
     setStepContacto(3);
   };
-
+  function readCookie(name) {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) {
+        return decodeURIComponent(c.substring(nameEQ.length, c.length));
+      }
+    }
+    return null;
+  }
+  function delete_cookie(name) {
+    document.cookie = name + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+  }
+  function setExpireCookie(name, value, expire) {
+    var expires = "";
+    if (expire) {
+      let date = new Date();
+      date.setTime(date.getTime() + expire);
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
   return (
     <>
       <div className="cont-form-st2-r2-r1">
