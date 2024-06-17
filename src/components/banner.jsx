@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import StickyBox from "react-sticky-box";
 /* ------------------------------------------- context ------------------------------------------ */
-import { useEzense } from "context";
+import { useEzense } from "./src/context";
 /* ------------------------------------------- assets ------------------------------------------- */
 import ezenseVideo from "assets/ezenseVideo.mp4";
 
