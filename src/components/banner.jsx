@@ -3,13 +3,11 @@ import { useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import StickyBox from "react-sticky-box";
 /* ------------------------------------------- context ------------------------------------------ */
-import { useEzense } from "./src/context";
+import useEzense from "hooks/useEzenseProvider";
 /* ------------------------------------------- assets ------------------------------------------- */
 import ezenseVideo from "assets/ezenseVideo.mp4";
-
 export const Banner = () => {
-  const { setScrollY, acumuladorFrame, setAcumuladorFrame } =
-    useEzense();
+  const { setScrollY, acumuladorFrame, setAcumuladorFrame, setScreenHeight } = useEzense();
   /* --------------------------------------- estados locales -------------------------------------- */
   const contentBannerDivRef = useRef(null); //div contenedor video
   const bannerDivRef = useRef(null); //div video
@@ -28,7 +26,7 @@ export const Banner = () => {
 
       anteriorY.current = newY;
 
-      setScrollY(newY); //actualiza estado de eje Y
+      setScrollY(newY);
     };
 
     window.addEventListener("scroll", updateScrollY);
@@ -38,12 +36,15 @@ export const Banner = () => {
   }, []);
 
   useEffect(() => {
+    console.log("USE EFFECT PARA ACTUALIZAR VIDEO x EJE Y")
     if (window.scrollY == 0) {
       playerRef.current.seekTo(0, "seconds");
     }
-    if (window.scrollY == 1000) {
+
+    if (window.scrollY > 1000) {
       playerRef.current.seekTo(3, "seconds");
     }
+    setScreenHeight(window.innerHeight);
   });
 
   const adelantarVideo = () => {

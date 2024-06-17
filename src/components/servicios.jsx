@@ -25,22 +25,22 @@ export const Servicios = () => {
             <div className="servicio-combo px-[16px] lg:px-[30px] lg:py-[16px]">
 
               <div className="sc-c1 hidden lg:flex">
-                <div className="lg:h-[38px] lg:w-[341px] lg:border-b-[2px] lg:border-[#ff3d00]"></div>
+                <div className="lg:h-[37.5px] lg:w-[341px] lg:border-b-[2px] lg:border-[#ff3d00]"></div>
                 <div className="sc-c1-f2"></div>
               </div>
 
-              <div className="sc-c2 w-[16px] lg:w-[78px]">
+              <div className="sc-c2 w-[16px] lg:w-[78px] absolute lg:relative lg:block">
 
                 <div className="
-                  lg:h-[38px]
-                  sm:h-[37.5px]
+                  lg:h-[37.5px]
+                  h-[37.5px]
                   lg:w-[78px] 
                   border-b-[2px] 
                   border-[#ff3d00]">
 
                 </div>
 
-                <div className="lg:h-[160px] sm:h-[160px]">
+                <div className="lg:h-[160px] h-[225px]">
 
                 </div>
 
@@ -60,7 +60,7 @@ export const Servicios = () => {
                   sm:pt-[63px]
                   sm:border-t-[2px]
                   sm:border-b-[2px]
-                  sm:border-[#ff3d00]
+                  sm:border-[#ff3d00] 
 
                   ">
 
@@ -77,7 +77,7 @@ export const Servicios = () => {
                   </div>
                 </div>
 
-                <div className="lg:h-[160px]  sm:h-[160px]">
+                <div className="lg:h-[160px]  h-[290.5px]">
 
                 </div>
 
@@ -100,7 +100,7 @@ export const Servicios = () => {
                   sm:border-b-[2px]"
                 >
 
-                  <div className="sc-c2-f2-f1
+                  <div className="sc-c2-f2-f1 
                       h-[33px]
                       w-[16px]
                       border-[1px]
@@ -115,7 +115,7 @@ export const Servicios = () => {
 
               </div>
 
-              <div className="sc-c3" >
+              <div className="sc-c3 " >
 
                 {/*Web Development */}
                 <div className="border-b-[2px] border-[#ff3d00]">
@@ -124,9 +124,9 @@ export const Servicios = () => {
                   </span>
                 </div>
 
-                <div className="sc-content-subSerivicio w-[350px] lg:w-[692px]">
+                <div className="sc-content-subSerivicio w-[350px] lg:w-[692px] lg:pl-[0px]">
 
-                  <div className="sc-rounded-left ">
+                  <div className="sc-rounded-left">
 
                   </div>
 
@@ -140,7 +140,7 @@ export const Servicios = () => {
 
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Continuous Maintenance
                       </span>
                     </div>
 
@@ -164,19 +164,19 @@ export const Servicios = () => {
                   </span>
                 </div>
 
-                <div className="sc-content-subSerivicio">
-                  <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                <div className="sc-content-subSerivicio w-[265px] lg:w-[auto] ml-[16px] lg:ml-[0px]">
+                  <div className="sc-list-subservicio w-[90%]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         Intuitive User Interfaces
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         Responsive Design
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         CSS3/HTML5 Expertise
                       </span>
@@ -193,25 +193,32 @@ export const Servicios = () => {
                   </span>
                 </div>
 
-                <div className="sc-content-subSerivicio">
+                <div className="sc-content-subSerivicio w-[350px] lg:w-[692px] lg:pl-[0px]">
                   <div className="sc-rounded-left"></div>
-                  <div className="sc-list-subservicio">
+
+                  <div className="sc-list-subservicio w-[242px]">
+
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Real-Time Analytics
                       </span>
                     </div>
+
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
                         Community Engagement
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
+
+                    <div className="sc-subServicio w-full  pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Creative Storytelling
+                      Creative Storytelling
                       </span>
                     </div>
-                  </div>
+
+
+
+                    </div>
                 </div>
 
                 {/* Online Marketing */}
@@ -221,19 +228,19 @@ export const Servicios = () => {
                   </span>
                 </div>
 
-                <div className="sc-content-subSerivicio">
-                  <div className="sc-list-subservicio">
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                <div className="sc-content-subSerivicio w-[265px] lg:w-[auto] ml-[16px] lg:ml-[0px]">
+                  <div className="sc-list-subservicio w-[90%]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         Targeted Google Ads
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         Comprehensive SEO
                       </span>
                     </div>
-                    <div className="sc-subServicio pl-[16px] lg:pl-[420px]">
+                    <div className="sc-subServicio pl-[0px] lg:pl-[420px]">
                       <span className="text-sm-nunito-400 white">
                         Digital Visibility
                       </span>
@@ -281,17 +288,17 @@ export const Servicios = () => {
                 </div>
               </div>
 
-              <div className="sc-c5">
+              <div className="sc-c5 absolute right-[38px] lg:right-0 lg:relative lg:block">
 
-                <div className="sc-c5-f1 lg:h-[36px] sm:h-[37.5px] sm:border-b-[2px] sm:border-b-[#ff3d00] lg:border-b-[0px]">
+                <div className="sc-c5-f1 lg:h-[36px] h-[37.5px] border-b-[2px] border-b-[#ff3d00] lg:border-b-[0px]">
 
                 </div>
 
-                <div className="sc-c5-f2">
+                <div className="sc-c5-f2 ">
 
                   <div className="sc-c5-f2-c1
                    lg:h-[163px]
-                   sm:h-[161.5px]
+                   h-[161.5px]
                    lg:w-[78px]
                    
                    lg:border-[2px]
@@ -302,10 +309,10 @@ export const Servicios = () => {
                    flex
                    flex-col
                    items-start
-                   lg:pt-[63.5px]
-                   sm:pt-[63px]
-                   sm:border-b-[2px]
-                   sm:border-b-[#ff3d00]
+                   lg:pt-[63px]
+                   pt-[63px]
+                   border-b-[2px]
+                   border-b-[#ff3d00]
                   
 
                   ">
@@ -323,7 +330,7 @@ export const Servicios = () => {
                     </div>
                   </div>
 
-                  <div className="sc-c5-f2-c2 sm:h-[160px] lg:h-[160.5px]">
+                  <div className="sc-c5-f2-c2 h-[225px] lg:h-[160.5px]">
 
                   </div>
 
@@ -339,7 +346,7 @@ export const Servicios = () => {
                      flex
                      flex-col
                      items-start
-                     lg:pt-[63.5px]
+                     lg:pt-[63px]
                      sm:pt-[63px]
                      sm:border-b-[2px]
                      sm:border-b-[#ff3d00]
@@ -363,7 +370,7 @@ export const Servicios = () => {
                     </div>
                   </div>
 
-                  <div className="sc-c5-f2-c4 sm:h-[160px] lg:h-[160px]">
+                  <div className="sc-c5-f2-c4 h-[290.5px] lg:h-[160px]">
 
                   </div>
 
@@ -376,7 +383,7 @@ export const Servicios = () => {
                      flex
                      flex-col
                      items-start
-                     lg:pt-[63.5px]
+                     lg:pt-[63px]
                      sm:pt-[63px]
                      sm:border-t-[2px]
                      sm:border-t-[#ff3d00]">
@@ -394,6 +401,7 @@ export const Servicios = () => {
                   </div>
 
                 </div>
+             
               </div>
 
             </div>

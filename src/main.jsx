@@ -1,7 +1,7 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 /* -------------------------------------------- libs -------------------------------------------- */
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-/* ------------------------------------------- context ------------------------------------------ */
+import { createHashRouter, createBrowserRouter, RouterProvider } from "react-router-dom";
 import { EzenseProvider } from "context";
 /* ----------------------------------------- components ----------------------------------------- */
 import { Home, Proyecto, Root } from "routes";
@@ -9,7 +9,7 @@ import { ErrorPage } from "./error-page";
 import "./index.css";
 
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
@@ -19,12 +19,8 @@ const router = createBrowserRouter([
 
     ],
   },
-  { path: "/:cliente", element: <Proyecto /> },
-],
-  {
-    basename: "/ezenseSite15",
-  }
-
+  { path: ":cliente", element: <Proyecto /> },
+]
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -2,8 +2,8 @@ import { createContext, useState } from "react";
 
 const EzenseContext = createContext();
 const EzenseProvider = ({ children }) => {
-  const [scrollY, setScrollY] = useState(window.scrollY); //eje y
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight); //height pantalla
+  const [scrollY, setScrollY] = useState(window.scrollY);
+  const [screenHeight, setScreenHeight] = useState(0);
   const [acumuladorFrame, setAcumuladorFrame] = useState(0);
 
   return (
