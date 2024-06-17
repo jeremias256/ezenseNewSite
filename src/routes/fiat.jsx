@@ -7,6 +7,7 @@ import "../css/fiat.css";
 import TituloSeccionWhite from "../components/tituloSeccion";
 import ComboPP from "../components/comboPP";
 import Contacto from "../components/contacto";
+import HeaderPP from '../components/headerPP'
 
 import ComboMD from "../components/comboMD";
 import ComboMD2 from "../components/comboMD-R";
@@ -23,43 +24,45 @@ import { Pagination } from "swiper/modules";
 
 
 
-
-
-
-
-
-
 const Proyecto = () => {
 
-const { cliente } = useParams();
+  const { cliente } = useParams();
 
-const nombreCliente =  cliente; //iplan -- fiat
-
-
-
-const clienteRender = getClienteById(nombreCliente);
-const idCliente = clienteRender.id;
-
-/** Imagenes que van en la descripción */
-const img1 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
-const img2 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
-
-/** Imagenes que van en el carrousel */
-const videoBackImagenes = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
-const imagenesSlider = [];
-for (let index = 0; index < clienteRender.cantImagen; index++) {
-  let obj = {
-    id: index + 1,
-    imagen: `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
-  };
-
-  imagenesSlider.push(obj);
-}
+  const nombreCliente =  cliente; //iplan -- fiat
 
 
+
+  const clienteRender = getClienteById(nombreCliente);
+  const idCliente = clienteRender.id;
+
+  /** Imagenes que van en la descripción */
+  const img1 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto1.png`;
+  const img2 = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/foto2.png`;
+
+  /** Imagenes que van en el carrousel */
+  const videoBackImagenes = `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider.mp4`;
+  const imagenesSlider = [];
+  for (let index = 0; index < clienteRender.cantImagen; index++) {
+    let obj = {
+      id: index + 1,
+      imagen: `/ezenseSite12/assets/fotoClientes/proyecto${idCliente}/fotoSlider${index + 1}.png`,
+    };
+
+    imagenesSlider.push(obj);
+  }
+
+  useEffect(() => {
+    // Esto desplazará la ventana hacia la parte superior cuando el componente se monte
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="pp-content mt-[86px] lg:w-[1440px] lg:m-[auto] lg:mt-[76px]">
+    <>  
+    <div className="fixed left-1/2 z-50  w-full -translate-x-1/2 transform bg-white50 backdrop-blur-sm md:top-0 md:flex md:h-auto md:w-[98%] md:rounded-[555px] md:px-[16px] lg:mt-[8px]">
+      <HeaderPP />
+    </div>
+
+    <div className="pp-content pt-[80px] lg:w-[1440px] lg:m-[auto] ">
       <div className="works-titulo px-[16px] lg:px-[60px]">
         <TituloSeccionWhite titulo={clienteRender.titulo} />
       </div>
@@ -133,13 +136,13 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
         </div>
       </div>
 
-      <div className="pp-relacionados my-[20px] mx-[16px] flex flex-col gap-[30px]">
+      <div className="pp-relacionados my-[18px] mx-[16px] flex flex-col gap-[30px]">
        
         <p className="text-lg-nunito-400 greyBlack"> Proyectos relacionados </p>
        
         <div className="
             lg:flex
-            lg:gap-[60px]
+            lg:gap-[70px]
             lg:px-[90px]">
           
           <div className="w-full">
@@ -160,6 +163,8 @@ for (let index = 0; index < clienteRender.cantImagen; index++) {
         <Contacto />
       </div>
     </div>
+    </>
+
   );
 };
 export default Proyecto;

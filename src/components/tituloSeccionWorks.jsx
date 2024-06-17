@@ -31,8 +31,8 @@ const TituloSeccion = (props) => {
         </div>
 
         <div className="tc-c5 w-[24px]">
-          <div className="tc-c5-r1 mt-[32px] h-[25px] w-full border-t-[2px] border-callToAction"></div>
-          <div className="tc-c5-r2 rounded-tr-custom-br555 rounded-br-custom-br555 h-[31px] border-b-[2px] border-r-[2px] border-t-[2px] border-callToAction"></div>
+          <div className="tc-c5-r1 mt-[32px] h-[24px] w-full border-t-[2px] border-callToAction"></div>
+          <div className="tc-c5-r2 rounded-tr-custom-br555 rounded-br-custom-br555 h-[32px] border-b-[2px] border-r-[2px] border-t-[2px] border-callToAction"></div>
         </div>
       </div>
     </>
