@@ -48,12 +48,12 @@ const Works = () => {
 
         <div className="contenedorCombos">
 
-          <div className=" filaCombos grid lg:mt-[46px] lg:px-[90px] lg:grid-cols-[750px_420px] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]">
+          <div className=" filaCombos grid lg:mt-[45px] lg:px-[90px] lg:grid-cols-[750px_420px] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]">
             <ComboMDR data={['clarin','home']}/>
             <ComboMD data={['mondelez','home']}/>
           </div>
 
-          <div className=" filaCombos grid lg:mt-[46px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
+          <div className=" filaCombos grid lg:mt-[45px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
             <ComboMD data={['nissan','home']}/>
             <ComboMDR data={['cocacola','home']}/>
           </div>
@@ -64,17 +64,17 @@ const Works = () => {
           </div>
           
           
-          <div className=" filaCombos grid lg:mt-[46px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
+          <div className=" filaCombos grid lg:mt-[44px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
             <ComboMD data={['fiat','home']}/>
             <ComboMDR data={['whirlpool','home']}/>
           </div>
         
-          <div className=" filaCombos grid lg:mt-[46px] lg:px-[90px] lg:grid-cols-[750px_420px] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]">
+          <div className=" filaCombos grid lg:mt-[45px] lg:px-[90px] lg:grid-cols-[750px_420px] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]">
             <ComboMDR data={['estrada','home']}/>
             <ComboMD data={['disneyBaby','home']}/>
           </div>
 
-          <div className=" filaCombos grid lg:mt-[46px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
+          <div className=" filaCombos grid lg:mt-[45px] lg:px-[90px] lg:grid-cols-[1fr_1fr] lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px] ">
             <ComboMD data={['iplan','home']}/>
             <ComboMDR data={['givaudan','home']}/>
           </div>
