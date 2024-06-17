@@ -1,11 +1,8 @@
 import { useState } from "react";
-/* ------------------------------------------- context ------------------------------------------ */
-// import useEzense from "hooks/useEzenseProvider";
 /* ------------------------------------------- assets ------------------------------------------- */
 import imgLogoEzense from "assets/logo-ezense.png";
 
 export const Header = () => {
-  // const { scrollY, screenHeight } = useEzense();
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
@@ -29,8 +26,6 @@ export const Header = () => {
     }
   };
   return (
-
-
     <header className={`relative w-full flex ${isMenuOpen ? 'lg:h-[54px] h-[62px]' : 'lg:h-[54px] h-[115px]'}`}>
       <div className="flex flex-col lg:flex-row items-center justify-between w-full px-[16px] md:px-0 ">
 
@@ -90,11 +85,6 @@ export const Header = () => {
             Contact
           </span>
         </div>
-
-        {/* <div className="absolute left-[180px] top-[20px] flex flex-col bg-green-500 px-4 text-white md:flex-row">
-          <p>---Y: {scrollY}px</p>
-          <p>---screenHeight: {screenHeight}px</p>
-        </div> */}
       </div>
     </header >
   );

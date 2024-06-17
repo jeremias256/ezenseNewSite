@@ -8,8 +8,8 @@ const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div  className="contacto_content" id="contact" >
-      <div  className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
+    <div className="contacto_content" id="contact" >
+      <div className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
                       lg:flex lg:flex-row lg:gap-[60px]
                       sm:flex sm:flex-col sm:gap-[30px]
                       lg:p-[60px] sm:p-[30px] "
@@ -23,11 +23,9 @@ const Contacto = () => {
           <div className="cont-form-r1">
             <div className="cont-form-r1-c1"></div>
             <div className="cont-form-r1-c2" >
-              {" "}
               <span className="text-lg-nunito-400 grey-black">
-                {" "}
-                hello{" "}
-              </span>{" "}
+                hello
+              </span>
             </div>
             <div className="cont-form-r1-c3">
               <div className="cont-form-r1-c3-f1">
@@ -52,7 +50,7 @@ const Contacto = () => {
 
         {/* datos */}
         <div className="cont-datos" >
-          <div className="cont-datos-data lg:flex lg:flex-row sm:flex sm:flex-col sm:gap-[30px]">
+          <div className="cont-datos-data lg:flex lg:flex-row sm:flex sm:flex-col sm:gap-[30px] items-start">
 
             <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
@@ -88,7 +86,7 @@ const Contacto = () => {
 
           </div>
 
-          <div className="cont-datos-jobs">
+          {/* <div className="cont-datos-jobs">
             <div className="cont-form">
               <div className="cont-form-r1">
                 <div className="cont-form-r1-c1"></div>
@@ -119,7 +117,7 @@ const Contacto = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
       </div>
