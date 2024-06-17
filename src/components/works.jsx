@@ -30,7 +30,7 @@ const Works = () => {
 
 
   return (
-    <div className="works_content px-3 py-0 md:mt-[16px] relative mt-[32px]">
+    <div className="works_content px-3 py-0 relative mt-[48px]">
       <div className="works-back mx-auto w-full max-w-[1440px] ">
         <div className="works-titulo px-[16px] lg:px-[60px]" id="works">
           <TituloSeccionWorks titulo="Works" />
