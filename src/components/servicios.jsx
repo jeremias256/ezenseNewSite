@@ -140,7 +140,7 @@ export const Servicios = () => {
 
                     <div className="sc-subServicio pl-[0px] lg:pl-[404px]">
                       <span className="text-sm-nunito-400 white">
-                        Seamless Service Integration
+                        Continuous Maintenance
                       </span>
                     </div>
 

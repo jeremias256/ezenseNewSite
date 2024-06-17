@@ -1,5 +1,6 @@
-import { Header, Banner, Works, Servicios, Bureau } from "../components";
+import { Header, Banner, Servicios, Bureau } from "../components";
 import Contacto from "../components/contacto";
+import Works from "../components/works";
 
 export const Home = () => {
   return (
