@@ -2,6 +2,7 @@ import React from "react";
 import imgLogo from "../assets/logo-ezense.png";
 import useEzense from "../hooks/useEzenseProvider";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { scrollY, screenHeight } = useEzense();
@@ -41,29 +42,28 @@ const Header = () => {
         <div className="flex items-center gap-[8px]">
           <img src={imgLogo} width="31px" height="31px" alt="Logo de e-zense" />
           <div className="mt-[10px]">
-            <span className="titulo grey-black">e-zenses</span>
+            <span className="titulo grey-black">e-zense</span>
           </div>
         </div>
 
-        <button
-          className="flex items-center"
-          onClick={toggleMenu}
-        >
-           <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-        </button>
+        <Link to={`/#`} className="flex">
+          <button className="flex items-center" >
+            <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+          </button>
+        </Link>
 
       </div>
 

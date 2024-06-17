@@ -38,13 +38,13 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 1,
-      proyectoRelacionado: "fiat",
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 2,
-      proyectoRelacionado: "clarin",
+      idProyectoRelacionado: 3,
+      proyectoRelacionado: "nissan",
     },
   },
 
