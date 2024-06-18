@@ -8,6 +8,7 @@ export function Root() {
         <Header />
       </div>
       <Outlet />
+
     </>
   );
 }

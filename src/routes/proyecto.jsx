@@ -20,6 +20,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
+import { Footer } from "../components";
 // #endregion Librerias para hacer carrousel */
 
 
@@ -162,6 +163,8 @@ export const Proyecto = () => {
           <Contacto />
         </div>
       </div>
+
+      <Footer />
     </>
 
   );
