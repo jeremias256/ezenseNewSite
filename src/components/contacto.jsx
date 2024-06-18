@@ -198,8 +198,20 @@ const Contacto_step2 = ({ setStepContacto }) => {
   };
 
   const handleMessageChange = (event) => {
-    const value = event.target.value;
-    setInputMessage(value);
+    let value = event.target.value;
+    const maxLength = 200; // Máximo de 200 caracteres
+
+    // Filtrar solo letras y números, y limitar a 200 caracteres
+    value = value.replace(/[^a-zA-Z0-9]/g, '').slice(0, maxLength);
+
+    // Validar que el valor no esté vacío y sea válido
+    if (value.length > 0) {
+      setInputMessage(value);
+      // setIsValidMessage(true); // Marcar como válido si la validación pasa
+    } else {
+      setInputMessage(''); // Limpiar el input si no es válido
+      // setIsValidMessage(false); // Marcar como inválido si la validación falla
+    }
   };
 
   const enviarMensaje = async () => {
@@ -267,7 +279,7 @@ const Contacto_step2 = ({ setStepContacto }) => {
         <div className="cont-form-st2-r2-r3-f1">
           <div className="grupo-input">
             <label
-              for="input-name"
+              htmlFor="input-name"
               className={`label-grey ${inputName ? "label-greyVisible" : ""}`}
             >
               {" "}
@@ -284,7 +296,7 @@ const Contacto_step2 = ({ setStepContacto }) => {
           </div>
           <div className="grupo-input">
             <label
-              for="input-name"
+              htmlFor="input-name"
               className={`label-grey ${inputLastName ? "label-greyVisible" : ""}`}
             >
               {" "}
@@ -302,7 +314,7 @@ const Contacto_step2 = ({ setStepContacto }) => {
         <div className="cont-form-st2-r2-r3-f2">
           <div className="grupo-input">
             <label
-              for="input-name"
+              htmlFor="input-name"
               className={`label-grey ${inputEmail ? "label-greyVisible" : ""}`}
             >
               {" "}
@@ -318,7 +330,7 @@ const Contacto_step2 = ({ setStepContacto }) => {
           </div>
           <div className="grupo-input">
             <label
-              for="input-name"
+              htmlFor="input-name"
               className={`label-grey ${inputPhone ? "label-greyVisible" : ""}`}
             >
               {" "}
@@ -336,13 +348,13 @@ const Contacto_step2 = ({ setStepContacto }) => {
         <div className="cont-form-st2-r2-r3-f3">
           <div className="grupo-input">
             <label
-              for="input-name"
+              htmlFor="input-name"
               className={`label-grey ${inputMessage ? "label-greyVisible" : ""}`}
             >
               {" "}
               MESSAGE{" "}
             </label>
-            <input
+            <textarea
               type="text"
               className="input-grey"
               placeholder="Message"

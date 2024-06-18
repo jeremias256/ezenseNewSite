@@ -5,7 +5,7 @@ import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ezenseSite24/",
+  base: "/ezenseSite25/",
   resolve: {
     alias: {
       assets: resolve(__dirname, "src/assets"),
