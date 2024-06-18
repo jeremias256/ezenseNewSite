@@ -1,4 +1,4 @@
-import { Header, Servicios, Bureau, Banner2, Clientes } from "../components";
+import { Header, Servicios, Bureau, Banner2, Clientes, Footer } from "../components";
 import Contacto from "../components/contacto";
 import Works from "../components/works";
 
@@ -19,6 +19,8 @@ export const Home = () => {
         <Bureau />
 
         <Contacto />
+
+        <Footer />
       </div>
     </>
   );

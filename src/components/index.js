@@ -6,3 +6,4 @@ export * from "./bureau";
 export * from "./servicios";
 export * from "./contacto";
 export * from "./clientes";
+export * from "./footer";

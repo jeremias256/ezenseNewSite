@@ -85,11 +85,6 @@ const Works = () => {
           </div>
 
 
-          <div className={`text-center my-[32px] ${paginacionCombos == 1 ? 'hidden' : 'block'}`} >
-            <ButtonVerMas text={'Mostrar más'} onClick={mostrarMas} />
-          </div>
-
-
           {paginacionCombos == 1 &&
 
             (
