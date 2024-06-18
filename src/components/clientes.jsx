@@ -29,7 +29,7 @@ export const Clientes = () => {
 
       <div
         className="luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
-        style={{ backgroundImage: "url(src/assets/back-clientes.gif)" }}
+        style={{ backgroundImage: "url(/imgClientesSitioEzense/back-clientes.gif)" }}
       >
 
         <div className="bg-callToAction bg-opacity-90 rounded-[24px] px-[16px] py-[40px] lg:py-[60px] lg:px-[60px]" >
@@ -50,7 +50,7 @@ export const Clientes = () => {
 
       <div
         className="luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
-        style={{ backgroundImage: "url(src/assets/back-clientes.gif)" }}
+        style={{ backgroundImage: "url(/imgClientesSitioEzense/back-clientes.gif)" }}
       >
 
         <div className="bg-[#4A4C58] bg-opacity-90 rounded-[24px] px-[16px] py-[40px] lg:py-[60px] lg:px-[60px] mt-[40px]" >
