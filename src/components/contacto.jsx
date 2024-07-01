@@ -2,6 +2,9 @@ import React from "react";
 import axios from "axios";
 import "../css/contacto.css";
 import { useState } from "react";
+/* ------------------------------------------- formik ------------------------------------------- */
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 import BiselSmall from "./bisel/biselSmall";
 
@@ -79,39 +82,6 @@ const Contacto = () => {
             </div>
 
           </div>
-
-          {/* <div className="cont-datos-jobs">
-            <div className="cont-form">
-              <div className="cont-form-r1">
-                <div className="cont-form-r1-c1"></div>
-                <div className="cont-form-r1-c2">
-                  {" "}
-                  <span className="text-lg-nunito-400 grey-black">
-                    {" "}
-                    jobs{" "}
-                  </span>{" "}
-                </div>
-                <div className="cont-form-r1-c3">
-                  <div className="cont-form-r1-c3-f1">
-                    <BiselSmall />
-                  </div>
-                  <div className="cont-form-r1-c3-f2"></div>
-                </div>
-                <div className="cont-form-r1-c4"></div>
-                <div className="cont-form-r1-c5"></div>
-              </div>
-              <div className="cont-form-r2-jobs">
-                <span className="text-md-lato-700 grey-black">
-                  {" "}
-                  Work whit Us:{" "}
-                </span>
-                <span className="cv-subtitulo grey-black"> Submit CV </span>
-                <div className="content_btn_submitCv">
-                  <button className="btn_gris"> Submit CV </button>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
 
       </div>
@@ -153,69 +123,9 @@ const Contacto_step1 = ({ setStepContacto }) => {
 
 const Contacto_step2 = ({ setStepContacto }) => {
   const [cargando, setCargando] = useState(false);
-  const [inputName, setInputName] = useState("");
-  const [inputLastName, setInputLastName] = useState("");
-  const [inputEmail, setInputEmail] = useState("");
-  const [inputPhone, setInputPhone] = useState("");
-  const [inputMessage, setInputMessage] = useState("");
 
-  const handleNameChange = (event) => {
-    const value = event.target.value;
-    let regex = /^[a-zA-Z]*$/;
-    let filteredValue = value.replace(/[^a-zA-Z]/g, "").slice(0, 30);
-    if (regex.test(filteredValue)) {
-      setInputName(filteredValue);
-    }
-  };
-
-  const handleLastNameChange = (event) => {
-    const value = event.target.value;
-    let regex = /^[a-zA-Z]*$/;
-    let filteredValue = value.replace(/[^a-zA-Z]/g, "").slice(0, 30);
-    if (regex.test(filteredValue)) {
-      setInputLastName(filteredValue);
-    }
-  };
-
-  const handleEmailChange = (event) => {
-    const value = event.target.value;
-    console.log("👀 - handleEmailChange - value:", value);
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    setInputEmail(value);
-
-    if (emailRegex.test(value)) {
-      console.log("HOLA")
-      // setIsValidEmail(true); // Marcar como válido si la validación pasa
-    } else {
-      // setIsValidEmail(false); // Marcar como inválido si la validación falla
-    }
-  };
-
-
-  const handlePhoneChange = (event) => {
-    const value = event.target.value.replace(/\D/g, "").slice(0, 10);
-    setInputPhone(value);
-  };
-
-  const handleMessageChange = (event) => {
-    let value = event.target.value;
-    const maxLength = 200; // Máximo de 200 caracteres
-
-    // Filtrar solo letras y números, y limitar a 200 caracteres
-    value = value.replace(/[^a-zA-Z0-9]/g, '').slice(0, maxLength);
-
-    // Validar que el valor no esté vacío y sea válido
-    if (value.length > 0) {
-      setInputMessage(value);
-      // setIsValidMessage(true); // Marcar como válido si la validación pasa
-    } else {
-      setInputMessage(''); // Limpiar el input si no es válido
-      // setIsValidMessage(false); // Marcar como inválido si la validación falla
-    }
-  };
-
-  const enviarMensaje = async () => {
-    setCargando(true);
+  const handleSubmit = async (values) => {
+    console.log("👀 - handleSubmit - values:", values);
     const url = "sendMail.php?sent=OK";
     let fData = new FormData();
     try {
@@ -262,115 +172,112 @@ const Contacto_step2 = ({ setStepContacto }) => {
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
   }
   return (
-    <>
-      <div className="cont-form-st2-r2-r1">
-        <span className="text-md-lato-700 grey-black">
-          {" "}
-          Are you poised to elevate your digital presence?{" "}
-        </span>
-      </div>
-      <div className="cont-form-st2-r2-r2">
-        <span className="text-sm-nunito-400 call-to-action">
-          Every inquiry sparks the beginning of a new digital success story.
-          Lets connect and craft a future that excites!!
-        </span>
-      </div>
-      <div className="cont-form-st2-r2-r3">
-        <div className="cont-form-st2-r2-r3-f1">
-          <div className="grupo-input">
-            <label
-              htmlFor="input-name"
-              className={`label-grey ${inputName ? "label-greyVisible" : ""}`}
-            >
-              {" "}
-              NAME{" "}
-            </label>
-            <input
-              type="text"
-              className="input-grey"
-              id="input-name"
-              placeholder="Name"
-              value={inputName}
-              onChange={handleNameChange}
-            />
+    <Formik
+      initialValues={{
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+      }}
+      validationSchema={Yup.object({
+        firstName: Yup.string()
+          .max(50, 'El nombre es muy largo')
+          .required('El nombre es obligatorio'),
+        lastName: Yup.string()
+          .max(50, 'El apellido es muy largo')
+          .required('El apellido es obligatorio'),
+        email: Yup.string()
+          .email('Correo electrónico inválido')
+          .required('El email es obligatorio'),
+        phone: Yup.string()
+          .matches(/^[0-9]+$/, "El celular solo debe contener números")
+          .min(10, 'El celular debe tener al menos 10 dígitos')
+          .required('El celular es obligatorio'),
+        message: Yup.string()
+          .max(500, 'El mensaje es muy largo')
+      })}
+      onSubmit={(values, { setSubmitting }) => {
+        handleSubmit(values);
+        setSubmitting(false);
+      }}
+    >
+      {({ errors, touched }) => (
+        <Form>
+          <div className="cont-form-st2-r2-r1">
+            <span className="text-md-lato-700 grey-black">
+              Are you poised to elevate your digital presence?
+            </span>
           </div>
-          <div className="grupo-input">
-            <label
-              htmlFor="input-name"
-              className={`label-grey ${inputLastName ? "label-greyVisible" : ""}`}
-            >
-              {" "}
-              LAST NAME{" "}
-            </label>
-            <input
-              type="text"
-              className="input-grey"
-              placeholder="Last Name"
-              value={inputLastName}
-              onChange={handleLastNameChange}
-            />
+          <div className="cont-form-st2-r2-r2">
+            <span className="text-sm-nunito-400 call-to-action">
+              Every inquiry sparks the beginning of a new digital success story.
+              Lets connect and craft a future that excites!!
+            </span>
           </div>
-        </div>
-        <div className="cont-form-st2-r2-r3-f2">
-          <div className="grupo-input">
-            <label
-              htmlFor="input-name"
-              className={`label-grey ${inputEmail ? "label-greyVisible" : ""}`}
-            >
-              {" "}
-              EMAIL{" "}
-            </label>
-            <input
-              type="text"
-              className="input-grey"
-              placeholder="Email"
-              value={inputEmail}
-              onChange={handleEmailChange}
-            />
+          <div className="cont-form-st2-r2-r3">
+            <div className="cont-form-st2-r2-r3-f1">
+              <div className="grupo-input">
+                <label
+                  htmlFor="input-name"
+                  className={`label-grey`}
+                >
+                  NAME
+                </label>
+                <Field className={errors.firstName && touched.firstName ? ' input-error' : 'input-grey'} name="firstName" placeholder="Name" type="text" />
+                <ErrorMessage className="text-callToAction" name="firstName" component="div" />
+              </div>
+              <div className="grupo-input">
+                <label
+                  htmlFor="input-name"
+                  className={`label-grey`}
+                >
+                  LAST NAME
+                </label>
+                <Field className={errors.lastName && touched.lastName ? ' input-error' : 'input-grey'} name="lastName" placeholder="Surname" type="text" />
+                <ErrorMessage className="text-callToAction" name="lastName" component="div" />
+              </div>
+            </div>
+            <div className="cont-form-st2-r2-r3-f2">
+              <div className="grupo-input">
+                <label
+                  htmlFor="input-name"
+                  className={`label-grey`}
+                >
+                  EMAIL
+                </label>
+                <Field className={errors.email && touched.email ? ' input-error' : 'input-grey'} name="email" placeholder='email' type="email" />
+                <ErrorMessage className="text-callToAction" name="email" component="div" />
+              </div>
+              <div className="grupo-input">
+                <label
+                  htmlFor="input-name"
+                  className={`label-grey`}
+                >
+                  PHONE
+                </label>
+                <Field className={errors.phone && touched.phone ? ' input-error' : 'input-grey'} name="phone" placeholder="Phone" type="text" />
+                <ErrorMessage className="text-callToAction" name="phone" component="div" />
+              </div>
+            </div>
+            <div className="cont-form-st2-r2-r3-f3">
+              <div className="grupo-input">
+                <label
+                  htmlFor="input-name"
+                  className={`label-grey`}
+                >
+                  MESSAGE
+                </label>
+                <Field className="input-grey" name="message" as="textarea" placeholder="Message" />
+              </div>
+            </div>
           </div>
-          <div className="grupo-input">
-            <label
-              htmlFor="input-name"
-              className={`label-grey ${inputPhone ? "label-greyVisible" : ""}`}
-            >
-              {" "}
-              PHONE
-            </label>
-            <input
-              type="text"
-              className="input-grey"
-              placeholder="Phone"
-              value={inputPhone}
-              onChange={handlePhoneChange}
-            />
+          <div className="cont-form-st2-r2-r4">
+            <button className="btn_gris" type="submit">Send</button>
           </div>
-        </div>
-        <div className="cont-form-st2-r2-r3-f3">
-          <div className="grupo-input">
-            <label
-              htmlFor="input-name"
-              className={`label-grey ${inputMessage ? "label-greyVisible" : ""}`}
-            >
-              {" "}
-              MESSAGE{" "}
-            </label>
-            <textarea
-              type="text"
-              className="input-grey"
-              placeholder="Message"
-              value={inputMessage}
-              onChange={handleMessageChange}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="cont-form-st2-r2-r4">
-        <button className="btn_gris" onClick={enviarMensaje}>
-          {" "}
-          Send{" "}
-        </button>
-      </div>
-    </>
+        </Form>
+      )}
+    </Formik>
   );
 };
 

@@ -133,8 +133,18 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.input-error {
+  background-color: var(--background);
+  border-bottom: 1px solid #ff3d00;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Nunito", "sans-serif";
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-.input-grey:focus {
+.input-grey:focus,
+.input-error:focus {
   border-bottom: 2px solid #ff3d00;
   outline: none;
 }
