@@ -14,7 +14,6 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-
     ],
   },
   { path: ":cliente", element: <Proyecto /> },
