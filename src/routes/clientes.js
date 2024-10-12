@@ -39,13 +39,13 @@ const clientes = [
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
+      proyectoRelacionado: "mondelez",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 3,
-      proyectoRelacionado: 'nissan',
-    }
+      proyectoRelacionado: "nissan",
+    },
   },
 
   /* 2- Mondelez */
@@ -85,16 +85,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 3,
-      proyectoRelacionado: 'nissan',
+      idProyectoRelacionado: 1,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 4,
-      proyectoRelacionado: 'cocacola',
-
-
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "clarin",
+    },
   },
 
   /* 3- Nissan */
@@ -133,14 +131,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 4,
-      proyectoRelacionado: 'cocacola',
+      idProyectoRelacionado: 1,
+      proyectoRelacionado: "clarin",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 5,
-      proyectoRelacionado: 'molinos',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 4 - Cocacola */
@@ -179,14 +177,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 5,
-      proyectoRelacionado: 'molinos',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 6,
-      proyectoRelacionado: 'unilever',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 5 - Molinos */
@@ -225,14 +223,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 6,
-      proyectoRelacionado: 'unilever',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 6 - Unilever */
@@ -272,13 +270,13 @@ const clientes = [
 
     proyectoRelacionado1: {
       idProyectoRelacionado: 7,
-      proyectoRelacionado: 'fiat',
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 8,
-      proyectoRelacionado: 'whirlpool',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 7 - Fiat */
@@ -318,15 +316,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 8,
-      proyectoRelacionado: 'whirlpool',
+      idProyectoRelacionado: 1,
+      proyectoRelacionado: "clarin",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 9,
-      proyectoRelacionado: 'estrada',
-
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "fiat",
+    },
   },
 
   /* 8 -Whirlpool */
@@ -366,14 +363,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 9,
-      proyectoRelacionado: 'estrada',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 10,
-      proyectoRelacionado: 'disneyBaby',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 9 -Estrada */
@@ -412,14 +409,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 10,
-      proyectoRelacionado: 'disneyBaby',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 11,
-      proyectoRelacionado: 'iplan',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 10 -disney baby */
@@ -458,14 +455,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 11,
-      proyectoRelacionado: 'iplan',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 12,
-      proyectoRelacionado: 'givaudan',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 11 - Iplan */
@@ -505,14 +502,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 12,
-      proyectoRelacionado: 'givaudan',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 13,
-      proyectoRelacionado: 'procter',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 12 - Givaudan */
@@ -551,14 +548,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 13,
-      proyectoRelacionado: 'procter',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 14,
-      proyectoRelacionado: 'beiersdorf',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 13 - Procter & Gamble */
@@ -597,14 +594,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 14,
-      proyectoRelacionado: 'beiersdorf',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 15,
-      proyectoRelacionado: 'peugeot',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 14 - Beiersdorf*/
@@ -643,14 +640,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 15,
-      proyectoRelacionado: 'peugeot',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 16,
-      proyectoRelacionado: 'televisa',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 15 - Peugeot*/
@@ -689,14 +686,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 16,
-      proyectoRelacionado: 'televisa',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 17,
-      proyectoRelacionado: 'gm',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 16 - Televisa*/
@@ -735,14 +732,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 17,
-      proyectoRelacionado: 'gm',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 18,
-      proyectoRelacionado: 'turner',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 17 - GM*/
@@ -781,14 +778,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 18,
-      proyectoRelacionado: 'turner',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 19,
-      proyectoRelacionado: 'nike',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 18 - Turner*/
@@ -827,14 +824,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 19,
-      proyectoRelacionado: 'nike',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 20,
-      proyectoRelacionado: 'mcdonalds',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 19 - NIKE*/
@@ -874,14 +871,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 20,
-      proyectoRelacionado: 'mcdonalds',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 21,
-      proyectoRelacionado: 'philip',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 20 -Mc Donalds*/
@@ -921,14 +918,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 21,
-      proyectoRelacionado: 'philip',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 22,
-      proyectoRelacionado: 'abinbev',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 21 -Philip Starck*/
@@ -967,14 +964,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 22,
-      proyectoRelacionado: 'abinbev',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 23,
-      proyectoRelacionado: 'disney',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 22 -ABInBev*/
@@ -1012,16 +1009,15 @@ const clientes = [
       },
     },
 
-   
     proyectoRelacionado1: {
-      idProyectoRelacionado: 23,
-      proyectoRelacionado: 'disney',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 24,
-      proyectoRelacionado: 'kimberly',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 23 -Disney*/
@@ -1060,14 +1056,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 24,
-      proyectoRelacionado: 'kimberly',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 25,
-      proyectoRelacionado: 'pepsico',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 24 - Kimberly-Clark */
@@ -1106,15 +1102,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 25,
-      proyectoRelacionado: 'pepsico',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 26,
-      proyectoRelacionado: 'pacoRabanne',
-    }
-
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 25 - PEPSICO */
@@ -1153,14 +1148,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 26,
-      proyectoRelacionado: 'pacoRabanne',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
-      idProyectoRelacionado: 1,
-      proyectoRelacionado: 'clarin',
-    }
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
   },
 
   /* 26 - paco rabanne */
@@ -1199,14 +1194,14 @@ const clientes = [
     },
 
     proyectoRelacionado1: {
-      idProyectoRelacionado: 1,
-      proyectoRelacionado: 'clarin',
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
     },
 
     proyectoRelacionado2: {
       idProyectoRelacionado: 2,
-      proyectoRelacionado: 'mondelez',
-    }
+      proyectoRelacionado: "mondelez",
+    },
   },
 ];
 
