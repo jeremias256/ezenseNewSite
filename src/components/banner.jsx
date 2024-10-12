@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 /* -------------------------------------------- libs -------------------------------------------- */
 import ReactPlayer from "react-player";
 import StickyBox from "react-sticky-box";
+import { throttle } from "lodash";
 /* ------------------------------------------- context ------------------------------------------ */
 import useEzense from "hooks/useEzenseProvider";
 /* ------------------------------------------- assets ------------------------------------------- */
@@ -13,21 +14,26 @@ export const Banner = () => {
   const bannerDivRef = useRef(null); //div video
   const playerRef = useRef(null); //idVideo
   const anteriorY = useRef(0); //eje y actual
-  const frame = 0.025; //fps
+  const frame = 0.03; //fps
 
 
   useEffect(() => {
-    const updateScrollY = () => {
+    const updateScrollY = throttle (() => {
       setAcumuladorFrame(acumuladorFrame + frame);
       const newY = window.scrollY;
 
-      if (newY > anteriorY.current) adelantarVideo();
-      else retrasarVideo();
+      const deltaY = newY - anteriorY.current;
+      const framesToAdvance = deltaY / (2400/90);
+
+      console.log(window.scrollY)
+
+      if (framesToAdvance > 0) adelantarVideo(framesToAdvance);
+      else retrasarVideo(Math.abs(framesToAdvance));
 
       anteriorY.current = newY;
 
       setScrollY(newY);
-    };
+    },100);
 
     window.addEventListener("scroll", updateScrollY);
     return () => {
@@ -41,30 +47,28 @@ export const Banner = () => {
       playerRef.current.seekTo(0, "seconds");
     }
 
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 2480) {
       playerRef.current.seekTo(3, "seconds");
     }
     setScreenHeight(window.innerHeight);
   });
 
-  const adelantarVideo = () => {
-    playerRef.current.seekTo(
-      playerRef.current.getCurrentTime() + frame,
-      "fraction ",
-    );
+  const adelantarVideo = (frames) => {
+    const currentTime = playerRef.current.getCurrentTime();
+    const secondsPerFrame = 1 / 30;
+    playerRef.current.seekTo(currentTime + frames * secondsPerFrame, "seconds")
   };
-  const retrasarVideo = () => {
-    playerRef.current.seekTo(
-      playerRef.current.getCurrentTime() - frame,
-      "fraction ",
-    );
+  const retrasarVideo = (frames) => {
+    const currentTime = playerRef.current.getCurrentTime();
+    const secondsPerFrame = 1 / 30;
+    playerRef.current.seekTo(currentTime - frames * secondsPerFrame, "seconds");
   };
 
   return (
-    <div className="flex items-start w-screen min-h-[2400px]"
+    <div className="flex items-start w-screen min-h-[2800px]"
       ref={contentBannerDivRef}
     >
-      <StickyBox offsetTop={0} offsetBottom={20}>
+      <StickyBox offsetTop={0} offsetBottom={0}>
         <div
           className="w-screen h-screen"
           ref={bannerDivRef}
