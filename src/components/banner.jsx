@@ -43,10 +43,12 @@ export const Banner = () => {
     const adjustScrollHeightFactor = () => {
       const width = window.innerWidth;
 
-      if (width > 1024) {
+      if (width > 1560) {
+        setScrollHeightFactor(1700);
+      }else if (width > 1024) {
         setScrollHeightFactor(1960);
       } else if (width > 768) {
-        setScrollHeightFactor(1950);
+        setScrollHeightFactor(1980);
       } else if (width > 640){
         setScrollHeightFactor(1290);
       } else {
@@ -80,7 +82,7 @@ export const Banner = () => {
   };
 
   return (
-    <div className="flex items-start w-screen min-h-[1900px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2800px] lg:h-[270vw] lg:max-h-[2745px]"
+    <div className="flex items-start w-screen min-h-[1900px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2750px] lg:max-h-[2750px] xl:max-h-[2750px] 2xl:max-h-[2600px]"
       ref={contentBannerDivRef}
     >
       <StickyBox offsetTop={0} offsetBottom={20}>
