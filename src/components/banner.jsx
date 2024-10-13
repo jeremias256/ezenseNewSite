@@ -20,36 +20,11 @@ export const Banner = () => {
   const [scrollHeightFactor, setScrollHeightFactor] = useState(2000);
 
   useEffect(() => {
-    const adjustScrollHeightFactor = () => {
-      const width = window.innerWidth;
-
-      if (width > 1024) {
-        setScrollHeightFactor(2000); // Pantallas grandes
-      } else if (width > 768) {
-        setScrollHeightFactor(1950); // Pantallas medianas
-      } else {
-        setScrollHeightFactor(1350); // Pantallas pequeñas
-      }
-    };
-
-    // Inicializa el factor y añade un listener para cuando se redimensione la ventana
-    adjustScrollHeightFactor();
-    window.addEventListener("resize", adjustScrollHeightFactor);
-
-    return () => {
-      window.removeEventListener("resize", adjustScrollHeightFactor);
-    };
-  }, []);
-
-  useEffect(() => {
     const updateScrollY = throttle (() => {
       setAcumuladorFrame(acumuladorFrame + frame);
       const newY = window.scrollY;
-
       const deltaY = newY - anteriorY.current;
       const framesToAdvance = deltaY / (scrollHeightFactor/90);
-
-      console.log(window.scrollY)
 
       if (framesToAdvance > 0) adelantarVideo(framesToAdvance);
       else retrasarVideo(Math.abs(framesToAdvance));
@@ -65,35 +40,52 @@ export const Banner = () => {
   }, [scrollHeightFactor]);
 
   useEffect(() => {
-    console.log("USE EFFECT PARA ACTUALIZAR VIDEO x EJE Y")
-    if (window.scrollY == 0) {
-      playerRef.current.seekTo(0, "seconds");
-    }
+    const adjustScrollHeightFactor = () => {
+      const width = window.innerWidth;
 
-    if (window.scrollY > 2480) {
-      playerRef.current.seekTo(3, "seconds");
-    }
+      if (width > 1024) {
+        setScrollHeightFactor(1960);
+      } else if (width > 768) {
+        setScrollHeightFactor(1950);
+      } else if (width > 640){
+        setScrollHeightFactor(1290);
+      } else {
+        setScrollHeightFactor(1270);
+      }
+    };
+
+    adjustScrollHeightFactor();
+    window.addEventListener("resize", adjustScrollHeightFactor);
+
+    return () => {
+      window.removeEventListener("resize", adjustScrollHeightFactor);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("USE EFFECT PARA ACTUALIZAR VIDEO x EJE Y")
+    if (window.scrollY == 0) { playerRef.current.seekTo(0, "seconds"); }
+
+    if (window.scrollY > 2480) { playerRef.current.seekTo(3, "seconds"); }
     setScreenHeight(window.innerHeight);
   });
 
   const adelantarVideo = (frames) => {
     const currentTime = playerRef.current.getCurrentTime();
-    const secondsPerFrame = 1 / 30;
-    playerRef.current.seekTo(currentTime + frames * secondsPerFrame, "seconds")
+    playerRef.current.seekTo(currentTime + frames * (1/30), "seconds")
   };
   const retrasarVideo = (frames) => {
     const currentTime = playerRef.current.getCurrentTime();
-    const secondsPerFrame = 1 / 30;
-    playerRef.current.seekTo(currentTime - frames * secondsPerFrame, "seconds");
+    playerRef.current.seekTo(currentTime - frames * (1/30), "seconds");
   };
 
   return (
-    <div className="flex items-start w-screen h-[380vw] max-h-[2280px] md:h-[350vw] md:max-h-[2800px] lg:h-[270vw] border border-x-blue-950"
+    <div className="flex items-start w-screen min-h-[1900px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2800px] lg:h-[270vw] lg:max-h-[2745px]"
       ref={contentBannerDivRef}
     >
       <StickyBox offsetTop={0} offsetBottom={20}>
         <div
-          className="w-full h-screen"
+          className="w-screen h-screen"
           ref={bannerDivRef}
         >
           <ReactPlayer
@@ -106,7 +98,7 @@ export const Banner = () => {
         </div>
       </StickyBox>
 
-      {/* <div className=" w-[0px] z-20"></div> */}
+      <div className=" w-[0px] z-20"></div>
       <div className="absolute top-[180px]  md:top-[600px] left-1/2 transform -translate-x-1/2">
         <div className="mt-[350px]">
           <p className="text-banner">Design</p>

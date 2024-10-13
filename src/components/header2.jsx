@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 export default function Header2() {
   return (
-    <header className="flex flex-col w-full bg-red-500">
+    <header className="flex flex-col w-full">
       <div className="flex h-[54px] items-center justify-between px-6">
         <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
