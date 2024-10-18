@@ -1,8 +1,8 @@
 import React from "react";
 
-const BiselSmall = () => {
+const BiselSmall = ({className}) => {
   return (
-    <>
+    <div className={className}>
       <svg
         width="45"
         height="34"
@@ -31,7 +31,7 @@ const BiselSmall = () => {
           />
         </g>
       </svg>
-    </>
+    </div>
   );
 };
 

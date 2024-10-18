@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/bureau.css";
-import TituloSeccionWhite from "./tituloSeccion";
+import TituloSeccion from "./tituloSeccion";
 
 import flavio from "../assets/Flavio.png";
 import javi from "../assets/Javier.png";
@@ -14,7 +14,7 @@ export const Bureau = () => {
         style={{ backgroundImage: "url(src/assets/back-servicios.gif)" }}
       >
         <div className="bureau-back2 px-[16px] py-[40px] lg:py-[60px] lg:px-[36px]" id="bureau">
-          <TituloSeccionWhite titulo="Bureau" />
+          <TituloSeccion titulo="Bureau" customWidth="w-[165px]"/>
 
           <div className="bureau-subTitulo flex flex-col gap-[24px] py-[32px] px-[12px] lg:px-[30px]">
             <p className="text-md-lato-700 grey-black">
