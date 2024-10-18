@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/servicios.css";
-import TituloSeccionWhite from "../components/tituloSeccionWhite";
+import TituloSeccion from "../components/tituloSeccion";
 
 export const Servicios = () => {
   return (
@@ -8,7 +8,7 @@ export const Servicios = () => {
       <div className="servicios-back  relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
         <div className="servicios-back2 px-[16px] py-[30px] lg:py-[60px] lg:px-[36px]">
           <div className="servicios" >
-            <TituloSeccionWhite titulo="Services" />
+            <TituloSeccion titulo="Services" customColor="text-bgGris" customWidth="w-[195px]"/>
 
             <div className="servicio-subTitulo">
               <span className="text-md-lato-700 white">
