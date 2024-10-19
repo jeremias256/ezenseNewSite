@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <>
       <div className="flex w-full flex-col z-0 absolute mt-[60px] md:mt-0">
-        {/* <Banner />
+        <Banner />
 
         <Works />
 
@@ -12,7 +12,7 @@ export const Home = () => {
 
         <Clientes />
 
-        <Bureau /> */}
+        <Bureau />
 
         <Contacto />
 

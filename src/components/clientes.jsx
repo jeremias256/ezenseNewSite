@@ -35,8 +35,8 @@ export const Clientes = () => {
         <div className="bg-callToAction bg-opacity-90 rounded-[24px] px-[16px] py-[40px] lg:py-[60px] lg:px-[60px]" >
             
             <div className="flex flex-col gap-[24px] mb-[24px]">
-             <p className="text-md-lato-700 text-white"> BRANDS </p>
-             <p className="text-sm-nunito-400 text-white"> At the nexus of state-of-the-art design and cutting-edge technology, we transforms your business imperatives and communication goals into vibrant dynamic digital solutions. We go beyond traditional design. </p>
+              <p className="text-md-lato-700 text-white"> BRANDS </p>
+              <p className="text-sm-nunito-400 text-white"> At the nexus of state-of-the-art design and cutting-edge technology, we transforms your business imperatives and communication goals into vibrant dynamic digital solutions. We go beyond traditional design. </p>
             </div>
             <div className="lg:hidden px-[16px]">
                 <img src={clientesMovile} />
