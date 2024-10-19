@@ -98,8 +98,7 @@ const Contacto_step1 = ({ setStepContacto }) => {
           className="btn_gris text-sm-nunito-400"
           onClick={abirFormulario}
         >
-          {" "}
-          Let's talk!{" "}
+          Let's talk!
         </button>
       </div>
     </>
