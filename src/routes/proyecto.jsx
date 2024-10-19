@@ -6,7 +6,7 @@ import "../css/fiat.css";
 /* SubComponentes */
 import TituloSeccionWhite from "../components/tituloSeccion";
 import ComboPP from "../components/comboPP";
-import Contacto from "../components/contacto";
+import { Contacto } from "../components/contacto";
 import HeaderPP from '../components/headerPP'
 
 import ComboMD from "../components/comboMD";

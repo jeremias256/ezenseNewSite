@@ -9,7 +9,8 @@ import ButtonVerMas from "./buttonVerMas";
 import { useState } from "react";
 import "../css/works.css";
 
-const Works = () => {
+export const Works = () => {
+
   const [paginacionCombos, setPaginacionCombos] = useState(0);
 
   const combosData = [
@@ -129,5 +130,4 @@ const Works = () => {
   );
 };
 
-export default Works;
 

@@ -1,3 +1,4 @@
+export * from "./svg";
 export * from "./banner";
 export * from "./banner2";
 export * from "./header";
@@ -7,3 +8,5 @@ export * from "./servicios";
 export * from "./contacto";
 export * from "./clientes";
 export * from "./footer";
+export * from "./works";
+export * from "./contacto";

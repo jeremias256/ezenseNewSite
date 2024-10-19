@@ -8,40 +8,33 @@ import * as Yup from 'yup';
 
 import BiselSmall from "./bisel/biselSmall";
 
-const Contacto = () => {
+export const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div className="contacto_content px-3 w-full" id="contact" >
-      <div className="rounded-[24px] lg:m-auto sm:m-[12px] max-w-[1440px] 
-                      lg:flex lg:flex-row lg:gap-[60px]
-                      sm:flex sm:flex-col sm:gap-[30px]
-                      lg:p-[60px]"
-        style={{
-          backgroundColor: 'rgba(236, 234, 229, 0.9)',
-          background: 'linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)',
-        }}
+    <div className="px-3 w-full" id="contact" >
+      <div className="rounded-[24px] pt-6 px-4 lg:m-auto sm:m-[12px] max-w-[1440px] lg:flex lg:flex-row lg:gap-[60px]sm:flex sm:flex-col sm:gap-[30px] lg:p-[60px] bg-custom-gradient"
       >
         {/* formulario */}
-        <div className="cont-form " >
-          <div className="cont-form-r1">
-            <div className="cont-form-r1-c1"></div>
-            <div className="cont-form-r1-c2" >
+        <div className="">
+          <div className="flex">
+            <div className="pl-6 border-t-[2px] border-callToAction border-l-[2px] rounded-tl-[24px]"></div>
+            <div className="border-y-[2px] border-callToAction" >
               <span className="text-lg-nunito-400 grey-black">
                 hello
               </span>
             </div>
-            <div className="cont-form-r1-c3">
-              <div className="cont-form-r1-c3-f1">
+            <div className="flex flex-col">
+              <div className="h-[34px] w-[45px]">
                 <BiselSmall />
               </div>
-              <div className="cont-form-r1-c3-f2"></div>
+              <div className="h-[24px] w-[45px] border-b-[2px] border-callToAction"></div>
             </div>
-            <div className="cont-form-r1-c4"></div>
-            <div className="cont-form-r1-c5"></div>
+            <div className="flex-1 border-y-[2px] border-callToAction h-[26px] mt-8"></div>
+            <div className="pr-6 border-t-[2px] border-r-[2px] border-callToAction h-[26px] mt-8 rounded-tr-[24px]"></div>
           </div>
 
-          <div className="cont-form-r2">
+          <div className="border-callToAction border-x-[2px] border-b-[2px] py-6 px-4 rounded-b-[24px]">
             {stepContacto === 1 ? (
               <Contacto_step1 setStepContacto={setStepContacto} />
             ) : stepContacto === 2 ? (
@@ -53,22 +46,21 @@ const Contacto = () => {
         </div>
 
         {/* datos */}
-        <div className="cont-datos mb-8">
-          <div className="cont-datos-data flex flex-col items-center">
+        <div className="mt-[60px] flex flex-col justify-center">
+          <div className="flex flex-col items-center">
 
-            <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
+            <div className="flex flex-col items-center lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
               <span className="text-sm-nunito-400 grey-black text-[16px]">
-                Av Dorrego 2133 - CABA - Buenos Aires{" "}
+                Av Santa Fe 3778 - Piso 3 - CABA - Buenos Aires
               </span>
 
               <span className="text-sm-nunito-400 call-to-action">
-                {" "}
-                bue@e-zense.com{" "}
+                bue@e-zense.com
               </span>
             </div>
 
-            <div className="cont-dato-data-pais lg:flex sm:flex sm:justify-center sm:items-center">
+            <div className="flex flex-col items-center lg:flex sm:flex sm:justify-center sm:items-center">
               <span className="text-md-lato-700 grey-black"> Chile </span>
               <span className="text-sm-nunito-400 grey-black text-[16px]">
                 {" "}
@@ -85,7 +77,7 @@ const Contacto = () => {
         </div>
 
       </div>
-    </div >
+    </div>
   );
 };
 
@@ -96,23 +88,21 @@ const Contacto_step1 = ({ setStepContacto }) => {
 
   return (
     <>
-      <div className="cont-form-r2-r1">
+      <div className="">
         <span className="text-md-lato-700 grey-black"> contact Us: </span>
       </div>
-      <div className="cont-form-r2-r2">
+      <div className="mt-6">
         <span className="contacto-subtitulo grey-black">
-          {" "}
-          We want to know you, contact us from here
+          We want to know you, contact us:
         </span>
       </div>
-      <div className="cont-form-r2-r3">
+      <div className="mt-[40px]">
         <span className="text-md-lato-400 call-to-action">
-          {" "}
-          Initiate Your Digital Journey:{" "}
+          Initiate Your Digital Journey:
         </span>
       </div>
-      <div className="cont-form-r2-r4">
-        <button className="btn_gris" onClick={abirFormulario}>
+      <div className="mt-6 flex justify-end">
+        <button className="btn_gris text-sm-nunito-400" onClick={abirFormulario}>
           {" "}
           Let's talk!{" "}
         </button>
@@ -294,4 +284,3 @@ const Contacto_step3 = () => {
   );
 };
 
-export default Contacto;

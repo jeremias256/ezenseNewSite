@@ -21,6 +21,8 @@ export default {
       backgroundImage: {
         "opacity-gradient":
           "linear-gradient(to bottom, rgba(236, 234, 229, 0), rgba(236, 234, 229, var(--tw-bg-opacity)))",
+        "custom-gradient":
+          "linear-gradient(180deg, #fff 10.97%, rgba(255, 255, 255, 0) 53.45%)",
       },
       borderRadius: {
         "custom-br555": "555px",
@@ -30,8 +32,8 @@ export default {
       sm: "440px",
       md: "768px",
       lg: "1024px",
-      xl: '1280px',
-      '2xl': '1536px',
+      xl: "1280px",
+      "2xl": "1536px",
     },
   },
   plugins: [],

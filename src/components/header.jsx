@@ -1,15 +1,13 @@
 import { useState } from "react";
 /* ------------------------------------------- assets ------------------------------------------- */
 import imgLogoEzense from "assets/logo-ezense.png";
+import { HamburguesaSVG } from "./svg";
 
 export const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-
-  };
+  const toggleMenu = () => { setIsMenuOpen(!isMenuOpen); };
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -42,25 +40,12 @@ export const Header = () => {
             className="md:hidden flex items-center"
             onClick={toggleMenu}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
+            <HamburguesaSVG />
           </button>
         </div>
 
 
-        <div className={`${isMenuOpen ? 'hidden md:flex md:m-auto md:gap-[14px]':'lg:hidden border-t-[2px] p-[12px] border-[#ff3d00] w-full flex justify-between'}`}>
+        <div className={`${isMenuOpen ? 'hidden md:flex md:m-auto md:gap-[14px]' : 'lg:hidden border-t-[2px] p-[12px] border-callToAction w-full flex justify-between'}`}>
 
 
           <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('works')}>

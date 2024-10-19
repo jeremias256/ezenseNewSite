@@ -20,18 +20,18 @@ export const Banner = () => {
   const [scrollHeightFactor, setScrollHeightFactor] = useState(2000);
 
   useEffect(() => {
-    const updateScrollY = throttle (() => {
+    const updateScrollY = throttle(() => {
       setAcumuladorFrame(acumuladorFrame + frame);
       const newY = window.scrollY;
       const deltaY = newY - anteriorY.current;
-      const framesToAdvance = deltaY / (scrollHeightFactor/90);
+      const framesToAdvance = deltaY / (scrollHeightFactor / 90);
 
       if (framesToAdvance > 0) adelantarVideo(framesToAdvance);
       else retrasarVideo(Math.abs(framesToAdvance));
 
       anteriorY.current = newY;
       setScrollY(newY);
-    },100);
+    }, 100);
 
     window.addEventListener("scroll", updateScrollY);
     return () => {
@@ -45,11 +45,11 @@ export const Banner = () => {
 
       if (width > 1560) {
         setScrollHeightFactor(1700);
-      }else if (width > 1024) {
+      } else if (width > 1024) {
         setScrollHeightFactor(1960);
       } else if (width > 768) {
         setScrollHeightFactor(1980);
-      } else if (width > 640){
+      } else if (width > 640) {
         setScrollHeightFactor(1290);
       } else {
         setScrollHeightFactor(1270);
@@ -65,7 +65,6 @@ export const Banner = () => {
   }, []);
 
   useEffect(() => {
-    console.log("USE EFFECT PARA ACTUALIZAR VIDEO x EJE Y")
     if (window.scrollY == 0) { playerRef.current.seekTo(0, "seconds"); }
 
     if (window.scrollY > 2480) { playerRef.current.seekTo(3, "seconds"); }
@@ -74,11 +73,11 @@ export const Banner = () => {
 
   const adelantarVideo = (frames) => {
     const currentTime = playerRef.current.getCurrentTime();
-    playerRef.current.seekTo(currentTime + frames * (1/30), "seconds")
+    playerRef.current.seekTo(currentTime + frames * (1 / 30), "seconds")
   };
   const retrasarVideo = (frames) => {
     const currentTime = playerRef.current.getCurrentTime();
-    playerRef.current.seekTo(currentTime - frames * (1/30), "seconds");
+    playerRef.current.seekTo(currentTime - frames * (1 / 30), "seconds");
   };
 
   return (

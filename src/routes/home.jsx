@@ -1,12 +1,10 @@
-import { Header, Servicios, Bureau, Banner2, Banner, Clientes, Footer } from "../components";
-import Contacto from "../components/contacto";
-import Works from "../components/works";
+import { Works, Servicios, Bureau, Banner2, Banner, Clientes, Contacto, Footer } from "../components";
 
 export const Home = () => {
   return (
     <>
       <div className="flex w-full flex-col z-0 absolute mt-[60px] md:mt-0">
-        <Banner />
+        {/* <Banner />
 
         <Works />
 
@@ -14,7 +12,7 @@ export const Home = () => {
 
         <Clientes />
 
-        <Bureau />
+        <Bureau /> */}
 
         <Contacto />
 
