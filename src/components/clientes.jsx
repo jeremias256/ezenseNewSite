@@ -14,7 +14,7 @@ export const Clientes = () => {
   return (
     <div className="mt-[58px] lg:mt-[58px] mx-[16px] lg:m-auto max-w-[1440px] lg:px-[36px] " id="clients">
 
-        <TituloSeccionWhite titulo="Clients" customWidth="w-[160px]" />
+        <TituloSeccionWhite titulo="Clients"/>
 
         <div className="bureau-subTitulo flex flex-col py-[32px] px-[12px] lg:px-[30px]">
         <p className="text-md-lato-700 grey-black">

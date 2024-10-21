@@ -1,16 +1,11 @@
 import React from "react";
 import TituloSeccion from "./tituloSeccion";
-import ComboLG from "./comboLG";
 import ComboMD from "./comboMD";
 import ComboMDR from "./comboMD-R";
-import ComboL from "./comboL";
-import ComboS from "./comboS";
 import ButtonVerMas from "./buttonVerMas";
 import { useState } from "react";
-import "../css/works.css";
 
 export const Works = () => {
-
   const [paginacionCombos, setPaginacionCombos] = useState(0);
 
   const combosData = [
@@ -88,17 +83,18 @@ export const Works = () => {
   }
 
   return (
-    <div className="works_content px-3 py-0 relative mt-[48px]">
-      <div className="works-back mx-auto w-full max-w-[1440px] ">
+    <div className="px-3 py-0 relative mt-[48px]">
+      <div className="mx-auto w-full max-w-[1440px] ">
         <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo px-[16px] ml:px-[40px] lg:px-[50px] 1.5xl:px-[90px]"/>
-        <div className="seccion-subTitulo flex flex-col px-[16px] mt-[24px] ml:px-[40px] lg:px-[50px]">
+
+        <div className="flex flex-col px-[16px] mt-[24px] ml:px-[40px] lg:px-[50px]">
           <span className="text-md-lato-700 grey-black text-left">Grounded in research and elevated by creativity.</span>
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
         <div className="">
           {combosData.map((combo, index) => (
-            <div key={index} className={`filaCombos grid lg:mt-[45px] ml:px-[40px] lg:px-[50px] 1.5xl:px-[90px] ${combo.gridCols} lg:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]`}>
+            <div key={index} className={`grid lg:mt-[45px] ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[90px] ${combo.gridCols} xl:gap-[70px] 1.5xl:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]`}>
               <ComboMDR data={combo.data1} />
               <ComboMD data={combo.data2} />
             </div>
@@ -112,7 +108,7 @@ export const Works = () => {
             (
               <>
                 {filaCombosData.map((fila, index) => (
-                  <div key={index} className={`filaCombos grid lg:mt-[46px] lg:px-[90px] lg:gap-[90px] grid-cols-[1fr] ${fila.className}`}>
+                  <div key={index} className={`grid lg:mt-[46px] lg:px-[90px] lg:gap-[90px] grid-cols-[1fr] ${fila.className}`}>
                     {fila.combos.map((combo, idx) => {
                       const ComboComponent = combo.component;
                       return <ComboComponent key={idx} data={combo.data} />;
@@ -122,7 +118,6 @@ export const Works = () => {
               </>
             )
           }
-
         </div>
       </div>
     </div>

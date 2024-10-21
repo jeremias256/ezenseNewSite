@@ -1,85 +1,39 @@
-import React, { useEffect } from "react";
-import "../css/comboMD.css";
-import { clientes, getClienteById } from "../routes/clientes"; 
-
+import React, { useEffect, useState } from "react";
+import { getClienteById } from "../routes/clientes"; 
 import { Link } from 'react-router-dom';
 
 const ComboMD = ({ data }) => {
-  
   const clienteRender = getClienteById(data[0]);
- 
 
   // Si la variable pp es 'pp', limita las imágenes a 2
   const imagenes = data[1] === 'pp' ? Object.values(clienteRender.imgCombo).slice(0, 2) : Object.values(clienteRender.imgCombo);
-  
 
   return (
     <>
-      <div className="md-combo_content3">
-        <div className="md-ca">
-          <div className="md-ca-f1">
-            <div className="md-ca-f1-f1">
-              <span className="text-sm-nunito-700 call-to-action">
-                {clienteRender.descripcionCombo.comboTitulo}
-              </span>
+      <div className="flex flex-col mt-[53px] rounded-e-[84px] w-full border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction">
+        <div className="absolute -top-8 left-0 text-sm-nunito-700 call-to-action">{clienteRender.descripcionCombo.comboTitulo}</div>
+        <div className="relative border-y-0 border-l-0 rounded-e-full border-2 border-callToAction">
+            <div className="h-[155px] flex-col pr-[80.5px] pl-4">
+              {[clienteRender.descripcionCombo.linea1, clienteRender.descripcionCombo.linea2, clienteRender.descripcionCombo.linea3, clienteRender.descripcionCombo.linea4].map((linea, index) => (
+                <div key={index} className="border-b border-[#4d4f61] h-[31px] pt-2 pb-[10px] pl-2 items-center flex">
+                  <p className={`text-sm-nunito-${index === 0 ? '700' : '400'} grey-black`}>{linea}</p>
+                </div>
+              ))}
+              <p className="text-sm-nunito-400 grey-black ml-2">{clienteRender.descripcionCombo.linea5}</p>
             </div>
-
-            <div className="md-ca-f1-f2">
-              <div className="md-ca-f1-f2-c1">
-                <div className="md-ca-f1-f2-c1-relleno1"></div>
-                <div className="md-ca-f1-f2-c1-f1"></div>
-                <div className="md-ca-f1-f2-c1-relleno2"></div>
-                <div className="md-ca-f1-f2-c1-f2"></div>
-              </div>
-
-              <div className="md-ca-f1-f2-c2">
-                <div className="md-ca-f1-f2-c2-f1">
-                  <p className="text-sm-nunito-700 grey-black">
-                    {clienteRender.descripcionCombo.linea1}
-                  </p>
-                </div>
-                <div className="md-ca-f1-f2-c2-f1">
-                  <p className="text-sm-nunito-400 grey-black">
-                    {clienteRender.descripcionCombo.linea2}
-                  </p>
-                </div>
-                <div className="md-ca-f1-f2-c2-f1">
-                  <p className="text-sm-nunito-400 grey-black">
-                    {clienteRender.descripcionCombo.linea3}
-                  </p>
-                </div>
-                <div className="md-ca-f1-f2-c2-f1">
-                  <p className="text-sm-nunito-400 grey-black">
-                    {clienteRender.descripcionCombo.linea4}
-                  </p>
-                </div>
-                <p className="text-sm-nunito-400 grey-black ml-2">
-                  {clienteRender.descripcionCombo.linea5}
-                </p>
-              </div>
-            </div>
-          </div>
-          <Link to={`/${clienteRender.cliente}`}> 
-          <div className="md-ca-f2 ">
+            <div className='absolute top-[61px] right-16 border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
+            <div className='absolute top-[92px] left-0 border border-[#4d4f61] border-r-0 rounded-s-full h-[32px] w-[16px]'></div>
+            <div className='absolute top-[30px] left-0 border border-[#4d4f61] border-r-0 rounded-s-full h-[32px] w-[16px]'></div>
+        </div>
+        <div className='absolute w-[75%] top-0 right-0 h-[154.5px] border-b-2 rounded-e-full border-callToAction'></div>
+        <div className='absolute w-[80%] top-[153.2px] h-[200px] border-t-2 rounded-s-full border-callToAction'></div>
+        <Link to={`/${clienteRender.cliente}`}> 
+          <div className="flex flex-1 gap-4 py-4 pr-0 pl-4 border-2 border-callToAction border-r-0 border-t-0 rounded-s-full">
             {imagenes.map((imgSrc, index) => (
-                 <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd'
-                 ? ' hidden lg:block'  // Ocultar en pantallas grandes, mostrar en pantallas pequeñas
-                 :  imgSrc.pant === 'onlyMovile'
-                     ? 'lg:hidden' 
-                 
-                 :' block'} // Ocultar en pantallas pequeñas, mostrar en pantallas grandes
-             
-                 />
+                <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd' ? ' hidden md:block' :  imgSrc.pant === 'onlyMovile' ? 'xl:hidden' :' block'} />
             ))}
-           
           </div>
-          </Link>
-        </div>
-        <div className="md-cb">
-          <div className="md-cb-f1">
-            <div className="md-cb-f1-f1"></div>
-          </div>
-        </div>
+        </Link>
       </div>
     </>
   );

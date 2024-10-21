@@ -33,6 +33,7 @@ export default {
       md: "768px",
       ml:"840px",
       lg: "1024px",
+      "2lg":"1090px",
       xl: "1280px",
       "1.5xl":"1440",
       "2xl": "1536px",
