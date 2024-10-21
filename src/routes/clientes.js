@@ -71,12 +71,12 @@ const clientes = [
 
     imgCombo: {
       img0: {
-        url: `/imgClientesSitioEzense/fotoClientes/proyecto2/fotoCombo0.png`,
-        pant: "onlyMovile",
-      },
-      img1: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto2/fotoCombo1.png`,
         pant: "m",
+      },
+      img1: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto2/fotoCombo0.png`,
+        pant: "onlyMovile",
       },
       img2: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto2/fotoCombo2.png`,

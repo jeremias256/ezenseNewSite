@@ -83,19 +83,19 @@ export const Banner = () => {
   };
 
   return (
-    <div className="flex items-start w-screen min-h-[1900px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2750px] lg:max-h-[2750px] xl:max-h-[2750px] 2xl:max-h-[2600px]"
+    <div className="flex items-start w-full min-h-[1900px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2750px] lg:max-h-[2750px] xl:max-h-[2750px] 2xl:max-h-[2600px]"
       ref={contentBannerDivRef}
     >
       <StickyBox offsetTop={0} offsetBottom={20}>
         <div
-          className="w-screen h-screen"
+          className="w-full lg:w-[98.3vw] 2lg:w-[98.49vw] xl:w-[98.7vw] h-screen"
           ref={bannerDivRef}
         >
           <ReactPlayer
             ref={playerRef}
             url={ezenseVideo}
             width="100%"
-            height="100%"
+            height="103%"
             muted
           />
         </div>

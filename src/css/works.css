@@ -1,17 +1,17 @@
 .works_content {
-  /* margin-top: 30px; */
+  margin-top: 30px;
 }
 
 .works-back {
-  /* width: 1290px;
-  margin: auto; */
+  width: 1290px;
+  margin: auto;
 }
 .seccion-subTitulo {
-  /* margin-top: 16px;
+  margin-top: 16px;
   margin-left: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px; */
+  gap: 16px;
 }
 
 .combo_fila1 {
@@ -22,10 +22,10 @@
 }
 
 .combo_fila2 {
-  /* margin-top: 16px;
+  margin-top: 16px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 60px; */
+  gap: 60px;
 }
 
 .combo_fila3 {
@@ -41,7 +41,7 @@
   }
 
   .combo_fila2 {
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr;
   }
 
   .combo_fila3 {

@@ -8,7 +8,7 @@ export const Servicios = () => {
       <div className="servicios-back  relative m-auto mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px]">
         <div className="servicios-back2 px-[16px] py-[30px] lg:py-[60px] lg:px-[36px]">
           <div className="servicios" >
-            <TituloSeccion titulo="Services" customColor="text-bgGris" customWidth="w-[195px]"/>
+            <TituloSeccion titulo="Services" customColor="text-white"/>
 
             <div className="servicio-subTitulo">
               <span className="text-md-lato-700 white">
