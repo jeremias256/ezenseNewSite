@@ -17,13 +17,15 @@ export const Banner = () => {
   const anteriorY = useRef(0); //eje y actual
   const frame = 0.03; //fps
 
+  
   const [scrollHeightFactor, setScrollHeightFactor] = useState(2000);
-
+  
   useEffect(() => {
     const updateScrollY = throttle(() => {
       setAcumuladorFrame(acumuladorFrame + frame);
       const newY = window.scrollY;
       const deltaY = newY - anteriorY.current;
+      // 1s * 30fps (para este caso es: 3s * 3fps = 90)
       const framesToAdvance = deltaY / (scrollHeightFactor / 90);
 
       if (framesToAdvance > 0) adelantarVideo(framesToAdvance);
@@ -42,7 +44,7 @@ export const Banner = () => {
   useEffect(() => {
     const adjustScrollHeightFactor = () => {
       const width = window.innerWidth;
-
+      
       if (width > 1560) {
         setScrollHeightFactor(1700);
       } else if (width > 1024) {
