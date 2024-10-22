@@ -35,8 +35,8 @@ const ComboMD = ({ data, className }) => {
                         ))}
                     </div>
                     <div className='absolute top-[61px] left-[60px] border border-[#4d4f61] border-r-0 rounded-s-full h-[32px] w-[16px]'></div>
-                    <div className='absolute top-[92px] right-0 border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
-                    <div className='absolute top-[30px] right-0 border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
+                    <div className='absolute top-[92px] right-[0.8px] border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
+                    <div className='absolute top-[30px] right-[0.8px] border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
                 </div>
                 <div className='flex-1'>
                     <div className='absolute w-[75%] top-0  h-[154.5px] border-b-2 rounded-s-full border-callToAction'></div>
@@ -44,7 +44,7 @@ const ComboMD = ({ data, className }) => {
                     <Link to={`/${clienteRender.cliente}`}>
                         <div className='flex flex-1 justify-end gap-4 py-4 pr-4 border-b-2 border-r-2 border-callToAction border-l-0 rounded-e-full '>
                             {imagenes.map((imgSrc, index) => (
-                                <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd' ? ' hidden md:block' :  imgSrc.pant === 'onlyMovile'? 'xl:hidden':' block'} />
+                                <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd' ? ' hidden ml:block' :  imgSrc.pant === 'onlyMovile'? 'xl:hidden':' block'} />
                             ))}
                         </div>
                     </Link>
