@@ -23,6 +23,7 @@
     "react-router-dom": "^6.23.0",
     "react-sticky-box": "^2.0.5",
     "react-sticky-el": "^2.1.0",
+    "resend": "^4.0.0",
     "sass": "^1.77.2",
     "sort-by": "^0.0.2",
     "swiper": "^11.1.3",
