@@ -10,3 +10,7 @@ export * from "./clientes";
 export * from "./footer";
 export * from "./works";
 export * from "./contacto";
+export * from "./Step1";
+export * from "./Step2";
+export * from "./Step3";
+export * from "./Loader";

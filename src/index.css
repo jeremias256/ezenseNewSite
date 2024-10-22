@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+  /* inputs */
+  .input-grey {
+    @apply w-full border-b border-greyBlack bg-transparent font-nunito text-[11px] font-bold uppercase focus:border-b focus:border-callToAction focus:outline-none;
+  }
+  .input-error {
+    @apply w-full border-b border-callToAction bg-transparent font-nunito text-[11px] font-bold uppercase text-callToAction focus:border-b focus:border-callToAction focus:outline-none;
+  }
+  .label-grey {
+    @apply relative hidden font-nunito text-[11px] font-bold uppercase text-callToAction;
+  }
+
   /*Tipografías*/
   .grey-black {
     @apply text-greyBlack;

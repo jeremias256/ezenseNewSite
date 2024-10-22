@@ -5,6 +5,7 @@ const EzenseProvider = ({ children }) => {
   const [scrollY, setScrollY] = useState(window.scrollY);
   const [screenHeight, setScreenHeight] = useState(0);
   const [acumuladorFrame, setAcumuladorFrame] = useState(0);
+  const [loaderForm, setLoaderForm] = useState(false);
 
   return (
     <EzenseContext.Provider
@@ -15,6 +16,8 @@ const EzenseProvider = ({ children }) => {
         setScreenHeight,
         acumuladorFrame,
         setAcumuladorFrame,
+        loaderForm,
+        setLoaderForm
       }}
     >
       {children}
