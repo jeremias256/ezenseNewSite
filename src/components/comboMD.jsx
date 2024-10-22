@@ -20,7 +20,7 @@ const ComboMD = ({ data, className }) => {
             ))}
             <p className="text-sm-nunito-400 grey-black ml-2">{clienteRender.descripcionCombo.linea5}</p>
           </div>
-          <div className='absolute top-[61px] right-16 border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
+          <div className='absolute top-[61px] right-[64.5px] border border-[#4d4f61] border-l-0 rounded-e-full h-[32px] w-[16px]'></div>
           <div className='absolute top-[92px] left-0 border border-[#4d4f61] border-r-0 rounded-s-full h-[32px] w-[16px]'></div>
           <div className='absolute top-[30px] left-0 border border-[#4d4f61] border-r-0 rounded-s-full h-[32px] w-[16px]'></div>
       </div>
