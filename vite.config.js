@@ -13,6 +13,7 @@ export default defineConfig({
       routes: resolve(__dirname, "src/routes"),
       context: resolve(__dirname, "src/context"),
       hooks: resolve(__dirname, "src/hooks"),
+      env: resolve(__dirname, "src/Env"),
     },
   },
 });
