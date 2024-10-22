@@ -12,32 +12,32 @@ export const Works = () => {
     { 
       data1: ['clarin', 'home'], 
       data2: ['mondelez', 'home'], 
-      gridCols: 'xl:grid-cols-[750px_420px]'
+      gridCols: 'xl:grid-cols-[61.5%_34.5%]'
     },
     { 
       data1: ['nissan', 'home'], 
       data2: ['cocacola', 'home'], 
-      gridCols: 'xl:grid-cols-[1fr_1fr]'
+      gridCols: 'xl:grid-cols-[48%_48%]'
     },
     { 
       data1: ['molinos', 'home'], 
       data2: ['unilever', 'home'], 
-      gridCols: 'xl:grid-cols-[420px_750px]'
+      gridCols: 'xl:grid-cols-[34.5%_61.5%]'
     },
     { 
       data1: ['fiat', 'home'], 
       data2: ['whirlpool', 'home'], 
-      gridCols: 'xl:grid-cols-[1fr_1fr]'
+      gridCols: 'xl:grid-cols-[48%_48%]'
     },
     { 
       data1: ['estrada', 'home'], 
       data2: ['disneyBaby', 'home'], 
-      gridCols: 'xl:grid-cols-[750px_420px]'
+      gridCols: 'xl:grid-cols-[61.5%_34.5%]'
     },
     { 
       data1: ['iplan', 'home'], 
       data2: ['givaudan', 'home'], 
-      gridCols: 'xl:grid-cols-[1fr_1fr]'
+      gridCols: 'xl:grid-cols-[48%_48%]'
     }
   ];
 
@@ -83,20 +83,29 @@ export const Works = () => {
   }
 
   return (
-    <div className="px-3 py-0 relative mt-[48px]">
+    <div className="px-3 py-0 relative mt-[48px] justify-center flex ">
       <div className="mx-auto w-full max-w-[1440px] ">
-        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo px-[16px] ml:px-[40px] lg:px-[50px] 1.5xl:px-[90px]"/>
+        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo px-[16px] ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[90px] gap-10"/>
 
-        <div className="flex flex-col px-[16px] mt-[24px] ml:px-[40px] lg:px-[50px]">
+        <div className="flex flex-col px-[16px] mt-[24px] ml:px-[40px] lg:px-[50px] xl:px-[90px]">
           <span className="text-md-lato-700 grey-black text-left">Grounded in research and elevated by creativity.</span>
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
-        <div className="">
+        <div className="sm:px-4 md:px-11 xl:px-5 1.5xl:px-[90px]">
           {combosData.map((combo, index) => (
-            <div key={index} className={`grid lg:mt-[45px] ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[90px] ${combo.gridCols} xl:gap-[70px] 1.5xl:gap-[90px] grid-cols-[1fr] px-[8px] mt-[16px] gap-[16px]`}>
-              <ComboMDR data={combo.data1} />
-              <ComboMD data={combo.data2} />
+            <div key={index} className={`grid lg:mt-[45px] gap-4 xl:gap-[52px] 1.5xl:gap-[90px] 2xl:gap-[70px] ${combo.gridCols} mt-[16px]`}>
+              {index % 2 !== 0 ? (
+                <>
+                  <ComboMD data={combo.data1} />
+                  <ComboMDR data={combo.data2} />
+                </>
+              ) : (
+                <>
+                  <ComboMDR data={combo.data1} />
+                  <ComboMD data={combo.data2} />
+                </>
+              )}
             </div>
           ))}
 

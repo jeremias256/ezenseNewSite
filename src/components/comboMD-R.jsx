@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { getClienteById } from "../routes/clientes";
 import { Link } from 'react-router-dom';
 
-const ComboMD = ({ data }) => {
+const ComboMD = ({ data, className }) => {
     const clienteRender = getClienteById(data[0]);
 
     // Si la variable pp es 'pp', limita las imágenes a 2
@@ -24,7 +24,7 @@ const ComboMD = ({ data }) => {
 
     return (
         <>
-            <div className="flex flex-col mt-[53px] rounded-s-[84px] w-full border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction">
+            <div className={`${className} flex flex-col mt-[53px] rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
                 <div className="absolute -top-8 left-20 text-sm-nunito-700 call-to-action">{clienteRender.descripcionCombo.comboTitulo}</div>
                 <div className='border-l-2 rounded-s-full border-callToAction h-[155px] w-full pr-4 xl:pr-[9.8px]'>
                     <div className='flex flex-col pl-[74px]'>
