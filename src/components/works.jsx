@@ -92,7 +92,7 @@ export const Works = () => {
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
-        <div className="sm:px-4 md:px-11 xl:px-5 1.5xl:px-[90px] 1.5xl:pr-[120px] 2xl:pr-[100px]">
+        <div className="sm:px-4 md:px-7 ml:px-11 xl:px-5 1.5xl:px-[90px] 1.5xl:pr-[120px] 2xl:pr-[100px]">
           {combosData.map((combo, index) => (
             <div key={index} className={`grid lg:mt-[45px] gap-4 xl:gap-[52px] 1.5xl:gap-[90px] ${combo.gridCols} mt-[16px]`}>
               {index % 2 !== 0 ? (

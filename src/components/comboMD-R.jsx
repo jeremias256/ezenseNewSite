@@ -44,7 +44,7 @@ const ComboMD = ({ data, className }) => {
                     <Link to={`/${clienteRender.cliente}`}>
                         <div className='flex flex-1 justify-end gap-4 py-4 pr-4 border-b-2 border-r-2 border-callToAction border-l-0 rounded-e-full '>
                             {imagenes.map((imgSrc, index) => (
-                                <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd' ? ' hidden md:block' :  imgSrc.pant === 'onlyMovile'? 'xl:hidden':' block'} />
+                                <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}` }  className={imgSrc.pant === 'd' ? ' hidden ml:block' :  imgSrc.pant === 'onlyMovile'? 'xl:hidden':' block'} />
                             ))}
                         </div>
                     </Link>
