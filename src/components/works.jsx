@@ -85,14 +85,14 @@ export const Works = () => {
   return (
     <div className="px-3 py-0 relative mt-[48px] 1.5xl:px-0">
       <div className="mx-auto w-full max-w-[1440px] ">
-        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo px-[16px] ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[60px] gap-10"/>
+        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo px-[16px] ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[60px] 2xl:mx-[-70px] gap-10"/>
 
         <div className="flex flex-col px-[16px] mt-[24px] ml:px-[40px] lg:px-[50px] xl:px-[90px]">
           <span className="text-md-lato-700 grey-black text-left">Grounded in research and elevated by creativity.</span>
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
-        <div className="sm:px-4 md:px-7 ml:px-11 xl:px-5 1.5xl:px-[90px] 1.5xl:pr-[120px] 2xl:pr-[100px]">
+        <div className="sm:px-4 md:px-7 ml:px-11 xl:px-5 1.5xl:px-[90px] 1.5xl:pr-[120px] 2xl:px-0">
           {combosData.map((combo, index) => (
             <div key={index} className={`grid lg:mt-[45px] gap-4 xl:gap-[52px] 1.5xl:gap-[90px] ${combo.gridCols} mt-[16px]`}>
               {index % 2 !== 0 ? (
