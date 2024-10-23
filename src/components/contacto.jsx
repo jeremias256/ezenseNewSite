@@ -17,7 +17,7 @@ export const Contacto = () => {
     <div className="w-full px-3" id="contact">
       <div className="lg:gap-[60px]sm:flex max-w-[1440px] rounded-[24px] bg-custom-gradient px-4 pt-6 sm:m-[12px] sm:flex-col sm:gap-[30px] lg:m-auto lg:flex lg:flex-row lg:p-[60px] lg:items-start">
         {/* formulario */}
-        <div className="">
+        <div className="lg:basis-1/2">
           <div className="flex">
             <div className="rounded-tl-[24px] border-l-[2px] border-t-[2px] border-callToAction pl-6"></div>
             <div className="border-y-[2px] border-callToAction">
@@ -50,7 +50,7 @@ export const Contacto = () => {
         </div>
 
         {/* datos */}
-        <div className="mt-[60px] flex flex-col justify-center lg:mt-0">
+        <div className="mt-[60px] flex flex-col justify-start items-center lg:mt-0 lg:basis-1/2">
           <div className="flex flex-col items-center xl:flex-row">
             <div className="flex flex-col items-center sm:flex sm:items-center sm:justify-center lg:flex">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
