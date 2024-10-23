@@ -1,3 +1,4 @@
+import axios from 'axios';
 /* ------------------------------------------- formik ------------------------------------------- */
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
@@ -7,14 +8,29 @@ import useEzense from "hooks/useEzenseProvider";
 export const Step2 = ({ setStepContacto }) => {
     const { setLoaderForm } = useEzense();
     const handleSubmit = async (values, { setSubmitting }) => {
-        console.log("👀 - handleSubmit - setSubmitting:", setSubmitting);
-        console.log("👀 - handleSubmit - values:", values);
         setLoaderForm(true);
 
-        setTimeout(() => {
-            setLoaderForm(false);
+        console.log("👀 - handleSubmit - setSubmitting:", setSubmitting);
+        console.log("👀 - handleSubmit - values:", values);
+
+        let fData = new FormData();
+        fData.append("firstName", values.firstName);
+        fData.append("lastName", values.lastName);
+        fData.append("email", values.email);
+        fData.append("phone", values.phone);
+        fData.append("message", values.message);
+
+        try {
+            const response = await axios.post('resend.php', fData);
+            console.log('Response:', response.data);
             setStepContacto(3)
-        }, 2000);
+
+        } catch (error) {
+            console.error('Error:', error);
+        } finally {
+            console.log("FINALIZO")
+            setLoaderForm(false);
+        }
     };
 
     return (
@@ -22,7 +38,7 @@ export const Step2 = ({ setStepContacto }) => {
             initialValues={{
                 firstName: "JEREMIAS",
                 lastName: "MENACHO",
-                email: "JERE.MENACHO@GMAIL.COM",
+                email: "jere.menacho@gmail.com",
                 phone: "1139341010",
                 message: "TEST",
             }}

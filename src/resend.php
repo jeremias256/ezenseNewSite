@@ -1,21 +1,28 @@
 <?php
+if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 
-// Include Composer autoload file to load Resend SDK classes...
-require __DIR__ . '/vendor/autoload.php';
+    require __DIR__ . '/vendor/autoload.php';
 
-// Assign a new Resend Client instance to $resend variable, which is automatically autoloaded...
-$resend = Resend::client('re_123456789');
+    $resend = Resend::client('re_VkMRunb6_J2PsA15EF8HHvxafi5sPTaQM');
 
-try {
-    $result = $resend->emails->send([
-        'from' => 'Acme <onboarding@resend.dev>',
-        'to' => ['delivered@resend.dev'],
-        'subject' => 'Hello world',
-        'html' => '<strong>It works!</strong>',
-    ]);
-} catch (\Exception $e) {
-    exit('Error: ' . $e->getMessage());
+    $firstName       = $_POST['firstName'];
+    $lastName        = $_POST['lastName'];
+    $email      = $_POST['email'];
+    $phone      = $_POST['phone'];
+    $message      = $_POST['message'];
+
+    try {
+        $result = $resend->emails->send([
+            'from' => 'ezense <php@resend.dev>',
+            'to' => ['jere.menacho@gmail.com'],
+            'subject' => 'Formulario ezense site ',
+            'html' => "<h1>Formulario de contacto</h1><p>Nombre: $firstName</p><p>Apellido: $lastName</p><p>Email: $email</p><p>Telefono: $phone</p><p>Mensaje: $message</p>"
+        ]);
+    } catch (\Exception $e) {
+        exit('Error: ' . $e->getMessage());
+    }
+
+    echo $result->toJson();
+    header("Location: index7.html");
+    die();
 }
-
-// Show the response of the sent email to be saved in a log...
-echo $result->toJson();

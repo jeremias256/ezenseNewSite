@@ -1,40 +1,8 @@
-// import { Template_email } from "components/email/template_email";
-// import { Resend } from "resend";
-// import { RESEND_API_KEY } from "env";
-
-// function fpost() {
-//     try {
-//         const { data, error } = await resend.emails.send({
-//             from: "Acme <onboarding@resend.dev>",
-//             to: ["gab.menacho@gmail.com"],
-//             subject: "Hello world",
-//             react: Template_email(),
-//         });
-
-//         if (error) {
-//             return Response.json({ error }, { status: 500 });
-//         }
-
-//         return Response.json(data);
-//     } catch (error) {
-//         return Response.json({ error }, { status: 500 });
-//     }
-// }
 
 export const Step1 = ({ setStepContacto }) => {
-    // const resend = new Resend(RESEND_API_KEY);
 
     const abirFormulario = async () => {
-        try {
-            const response = await fetch('/api/send', { method: 'POST' });
-            console.log("👀 - abirFormulario - response:", response);
-        } catch (err) {
-            console.log("👀 - abirFormulario - err:", err);
-        } finally {
-            console.log("FINALLY")
-        }
-
-        // setStepContacto(2);
+        setStepContacto(2);
     };
 
     return (
