@@ -32,6 +32,7 @@ export default {
       sm: "440px",
       md: "768px",
       ml:"840px",
+      "2ml":"945px",
       lg: "1024px",
       "2lg":"1090px",
       xl: "1280px",
