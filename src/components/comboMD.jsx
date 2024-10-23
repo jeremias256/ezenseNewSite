@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { getClienteById } from "../routes/clientes";
 import { Link } from 'react-router-dom';
 
@@ -26,8 +25,8 @@ const ComboMD = ({ data, className }) => {
       </div>
       <Link to={`/${clienteRender.cliente}`}>
 
-        <div className='absolute w-[75%] top-0 right-0 h-[154.5px] border-b-2 rounded-e-full border-callToAction'></div>
-        <div className='absolute w-[80%] top-[153.2px] h-[200px] border-t-2 rounded-s-full border-callToAction'></div>
+        <div className='absolute w-[70%] sm:w-[75%] top-0 right-0 h-[154.5px] border-b-2 rounded-e-full border-callToAction'></div>
+        <div className='absolute w-[70%] sm:w-[80%] top-[152.8px] sm:top-[153.2px] h-[200px] border-t-2 rounded-s-full border-callToAction'></div>
         <div className="flex flex-1 gap-4 py-4 pr-0 pl-4 border-2 border-callToAction border-r-0 border-t-0 rounded-s-full">
           {imagenes.map((imgSrc, index) => (
             <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}`} className={imgSrc.pant === 'd' ? ' hidden ml:block' : imgSrc.pant === 'onlyMovile' ? 'xl:hidden' : ' block'} />

@@ -23,6 +23,6 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
     }
 
     echo $result->toJson();
-    header("Location: index7.html");
+    header("Location: index12.html");
     die();
 }

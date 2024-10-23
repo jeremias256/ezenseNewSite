@@ -46,11 +46,11 @@ const sections = [
 
 export const Servicios = () => {
   return (
-    <div className="px-[16px] sm:px-[30px] py-0 1.5xl:px-[90px] 2xl:px-0 mt-[60px]" id="services">
+    <div className="px-[16px] sm:px-[30px] py-0 1.5xl:px-[90px] 2xl:px-0 mt-[60px] lg:mx-auto" id="services">
       <div className="relative m-auto max-w-[1440px] servicios-back">
-        <div className="px-[16px] md:px-[45px] py-[30px] lg:py-[60px] rounded-2xl lg:px-[36px] bg-[#4d4d60e0]">          
+        <div className="px-[16px] md:px-[45px] xl:px-[66px] py-[30px] lg:py-[60px] rounded-2xl lg:px-[36px] bg-[#4d4d60e0]">
           <div>
-            <TituloSeccion titulo="Services" customColor="text-white "/>
+            <TituloSeccion titulo="Services" customColor="text-white " />
 
             <div className="flex flex-col py-[32px] px-[12px] white ">
               <span className="text-md-lato-700">
@@ -83,7 +83,7 @@ export const Servicios = () => {
                       <div className="flex-1 ml:max-w-[500px] lg:max-w-[550px] xl:max-w-[600px] 1.5xl:max-w-[763px]">
                         {section.items.map((item, itemIndex) => (
                           <div key={itemIndex} className="flex ml:relative items-center mx-auto border-b border-white p-2 h-[32px] pl-[0px]">
-                            <div className="ml:absolute text-sm-nunito-400 white ml:w-full ml:flex ml:left-[40%] lg:left-[50%]">{item}</div>
+                            <div className="ml:absolute text-sm-nunito-400 white ml:flex ml:left-[40%] lg:left-[50%] xl:pl-[48px]">{item}</div>
                           </div>
                         ))}
                       </div>

@@ -12,7 +12,7 @@ import agenciasMovile from "../assets/agenciasMovile.png";
 
 export const Clientes = () => {
   return (
-    <div className="mt-[60px] mx-[16px] lg:mx-auto max-w-[1440px]" id="clients">
+    <div className="mt-[60px] sm:px-[30px] mx-[16px] 1.5xl:px-[90px] 2xl:px-0 lg:mx-auto max-w-[1440px]" id="clients">
 
       <TituloSeccionWhite titulo="Clients" />
 

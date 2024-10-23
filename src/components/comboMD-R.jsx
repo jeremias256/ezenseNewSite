@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import { getClienteById } from "../routes/clientes";
 import { Link } from 'react-router-dom';
 
@@ -8,23 +7,11 @@ const ComboMD = ({ data, className }) => {
     // Si la variable pp es 'pp', limita las imágenes a 2
     const imagenes = data[1] === 'pp' ? Object.values(clienteRender.imgCombo).slice(0, 2) : Object.values(clienteRender.imgCombo);
 
-    // Para ver la resolución de la pantalla
-    useEffect(() => {
-        function handleResize() {
-            const screenWidth = window.innerWidth;
-            const screenHeight = window.innerHeight;
-            console.log(`Ancho de pantalla: ${screenWidth}px, Alto de pantalla: ${screenHeight}px`);
-        }
-        window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
         <>
-            <div className={`${className} flex flex-col mt-[53px] rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
+            <div className={`${className} flex flex-col mt-[53px] rounded-s-[83px] sm:rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
                 <div className="absolute -top-8 left-20 text-sm-nunito-700 call-to-action">{clienteRender.descripcionCombo.comboTitulo}</div>
                 <div className='border-l-2 rounded-s-full border-callToAction h-[155px] w-full pr-4 xl:pr-[9.8px]'>
                     <div className='flex flex-col pl-[74px]'>
@@ -40,9 +27,8 @@ const ComboMD = ({ data, className }) => {
                 </div>
                 <div className='flex-1'>
                     <Link to={`/${clienteRender.cliente}`}>
-
-                        <div className='absolute w-[75%] top-0  h-[154.5px] border-b-2 rounded-s-full border-callToAction'></div>
-                        <div className='absolute w-[80%] top-[153.2px] right-0 h-[200px] border-t-2 rounded-e-full border-callToAction'></div>
+                        <div className='absolute w-[70%] sm:w-[75%] top-0  h-[154.5px] border-b-2 rounded-s-full border-callToAction'></div>
+                        <div className='absolute w-[70%] sm:w-[80%] top-[152.6px] sm:top-[153.2px] right-[1px] sm:right-0 h-[200px] border-t-2 rounded-e-full border-callToAction'></div>
                         <div className='flex flex-1 justify-end gap-4 py-4 pr-4 border-b-2 border-r-2 border-callToAction border-l-0 rounded-e-full '>
                             {imagenes.map((imgSrc, index) => (
                                 <img key={index} src={imgSrc.url} alt={`Imagen ${index + 1}`} className={imgSrc.pant === 'd' ? ' hidden ml:block' : imgSrc.pant === 'onlyMovile' ? 'xl:hidden' : ' block'} />

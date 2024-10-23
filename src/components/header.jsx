@@ -27,7 +27,7 @@ export const Header = () => {
     <header className={`relative w-full flex ${isMenuOpen ? 'md:h-[54px] h-[62px]' : 'lg:h-[54px] h-[115px]'}`}>
       <div className="flex flex-col md:flex-row items-center justify-between w-full px-[16px] md:px-0 ">
 
-        <div className="flex w-full md:w-[auto] lg:items-center justify-between h-[62px]">
+        <div className="lg:absolute flex w-full md:w-[auto] lg:items-center justify-between h-[62px]">
 
           <div className="flex items-center gap-[8px]">
             <img src={imgLogoEzense} width="31px" height="31px" alt="Logo de e-zense" />
