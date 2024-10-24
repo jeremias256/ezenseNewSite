@@ -1,9 +1,9 @@
-import React from "react";
+import { useState } from "react";
+/* ----------------------------------------- COMPONENTS ----------------------------------------- */
 import TituloSeccion from "./tituloSeccion";
 import ComboMD from "./comboMD";
 import ComboMDR from "./comboMD-R";
 import ButtonVerMas from "./buttonVerMas";
-import { useState } from "react";
 
 export const Works = () => {
   const [paginacionCombos, setPaginacionCombos] = useState(0);
@@ -40,7 +40,6 @@ export const Works = () => {
       gridCols: 'xl:grid-cols-[48%_48%] 2xl:grid-cols-[46.6%_47%]'
     }
   ];
-
   const filaCombosData = [
     {
       className: "xl:grid-cols-[39.5%_69.5%]",
@@ -75,18 +74,19 @@ export const Works = () => {
   const mostrarMas = () => setPaginacionCombos(1);
 
   return (
-    <div className="px-3 py-0 relative mt-[48px] 1.5xl:px-0">
+    <div className="px-4 py-0 relative mt-[48px] xl:px-[60px]">
       <div className="mx-auto w-full max-w-[1440px] ">
-        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="works-titulo ml:px-[40px] lg:px-[50px] xl:px-[30px] 1.5xl:px-[60px] 2xl:mx-[-70px] gap-10" />
+        <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="max-w-[1320px]" />
 
-        <div className="flex flex-col px-3 mt-[24px] ml:px-[28px]">
+        {/* TEXTO HEADER */}
+        <div className="flex flex-col px-3 mt-[24px] xl:px-[28px]">
           <span className="text-md-lato-700 grey-black text-left">Grounded in research and elevated by creativity.</span>
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
-        <div className="sm:px-4 md:px-7 ml:px-11 xl:px-5 1.5xl:px-[90px] 1.5xl:pr-[120px] 2xl:px-0">
+        <div className="">
           {combosData.map((combo, index) => (
-            <div key={index} className={`grid lg:mt-[45px] gap-4 xl:gap-[52px] 1.5xl:gap-[90px] ${combo.gridCols} mt-[16px]`}>
+            <div key={index} className={`grid lg:mt-[45px] justify-between ${combo.gridCols} mt-[16px]`}>
               {index % 2 !== 0 ? (
                 <>
                   <ComboMD data={combo.data1} />

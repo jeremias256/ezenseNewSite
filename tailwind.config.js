@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./**/*.{html,jsx}"],
+  content: ["./src/**/*.{html,jsx,js}"],
   theme: {
     extend: {
       backgroundBlendMode: {
@@ -29,14 +29,14 @@ export default {
       },
     },
     screens: {
-      sm: "440px",
+      sm: "440px", //
       md: "768px",
-      ml:"840px",
-      "2ml":"945px",
+      ml: "840px",
+      "2ml": "945px",
       lg: "1024px",
-      "2lg":"1090px",
+      "2lg": "1090px",
       xl: "1280px",
-      "1.5xl":"1440px",
+      "1.5xl": "1440px",
       "2xl": "1536px",
     },
   },
