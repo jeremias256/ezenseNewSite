@@ -17,9 +17,9 @@ export const Banner = () => {
   const anteriorY = useRef(0); //eje y actual
   const frame = 0.03; //fps
 
-  
+
   const [scrollHeightFactor, setScrollHeightFactor] = useState(2000);
-  
+
   useEffect(() => {
     const updateScrollY = throttle(() => {
       setAcumuladorFrame(acumuladorFrame + frame);
@@ -44,7 +44,7 @@ export const Banner = () => {
   useEffect(() => {
     const adjustScrollHeightFactor = () => {
       const width = window.innerWidth;
-      
+
       if (width > 1560) {
         setScrollHeightFactor(1700);
       } else if (width > 1024) {

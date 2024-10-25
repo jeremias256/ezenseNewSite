@@ -82,6 +82,8 @@ export const Works = () => {
 
   return (
     <div className="px-4 py-0 relative mt-[60px] xl:px-[60px]">
+      <div className="bg-opacity-gradient pointer-events-none absolute top-0 left-0 h-1/3 w-full"></div>
+
       <div className="mx-auto w-full max-w-[1440px]">
         <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="max-w-[1320px] mx-auto" />
 
