@@ -98,6 +98,8 @@ export const Banner = () => {
             height="103%"
             muted
           />
+          {/* <div className="bg-opacity-gradient pointer-events-none absolute top-0 left-0 h-1/3 w-full"></div> */}
+
         </div>
       </StickyBox>
 
