@@ -90,7 +90,7 @@ export const Banner = () => {
 
       if (window.innerWidth >= 1560) {
         scrollThreshold = 1860;
-      } else  if (window.innerWidth >= 1280) {
+      } else if (window.innerWidth >= 1280) {
         scrollThreshold = 2000;
       } else if (window.innerWidth >= 1024) {
         scrollThreshold = 2020;
@@ -125,7 +125,7 @@ export const Banner = () => {
           {/* SOMBRA */}
           <div className={`bg-gradient-to-b from-transparent from-50% via-[#f7f4ef] via-100% to-background to-80%  pointer-events-none absolute -bottom-5 left-0 h-[40%] w-full transition-opacity duration-500 ${isScrolled ? 'opacity-80' : 'opacity-0'}`}></div>
 
-          <div className={`bg-gradient-to-t  absolute -bottom-6 w-full h-14 from-[#eceae5] from-[40%] ${isScrolled ? 'opacity-100' : 'opacity-0'}`}></div>
+          <div className={`bg-gradient-to-t  absolute -bottom-6 xl: 2xl:-bottom-[40px] w-full h-14 from-[#eceae5] from-[40%] ${isScrolled ? 'opacity-100' : 'opacity-0'}`}></div>
         </div>
       </StickyBox>
 
