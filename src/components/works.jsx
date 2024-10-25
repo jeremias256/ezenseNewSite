@@ -43,32 +43,39 @@ export const Works = () => {
 
   const filaCombosData = [
     {
-      className: "xl:grid-cols-[39.5%_69.5%]",
-      combos: [ { component: ComboMDR, data: ['procter', 'home'] }, { component: ComboMD, data: ['beiersdorf', 'home'] } ]
+      className: "xl:grid-cols-[34.5%_61.5%]",
+      data1: ['procter', 'home'],
+      data2: ['beiersdorf', 'home'],
     },
     {
-      className: "xl:grid-cols-[54%_54.5%]",
-      combos: [ { component: ComboMD, data: ['peugeot', 'home'] }, { component: ComboMDR, data: ['televisa', 'home'] } ]
+      className: "xl:grid-cols-[48%_48%]",
+      data1: ['peugeot', 'home'],
+      data2: ['televisa', 'home'],
     },
     {
-      className: "xl:grid-cols-[70%_40%]",
-      combos: [ { component: ComboMDR, data: ['gm', 'home'] }, { component: ComboMD, data: ['turner', 'home'] } ]
+      className: "xl:grid-cols-[61.5%_34.5%]",
+      data1: ['gm', 'home'],
+      data2: ['turner', 'home'],
     },
     {
-      className: "xl:grid-cols-[55%_54%]",
-      combos: [ { component: ComboMD, data: ['nike', 'home'] }, { component: ComboMDR, data: ['mcdonalds', 'home'] } ]
+      className: "xl:grid-cols-[48%_48%]",
+      data1: ['nike', 'home'],
+      data2: ['mcdonalds', 'home'],
     },
     {
-      className: "xl:grid-cols-[39.5%_70%]",
-      combos: [ { component: ComboMDR, data: ['philip', 'home'] }, { component: ComboMD, data: ['abinbev', 'home'] } ]
+      className: "xl:grid-cols-[34.5%_61.5%]",
+      data1: ['philip', 'home'],
+      data2: ['abinbev', 'home'],
     },
     {
-      className: "xl:grid-cols-[55%_54.5%]",
-      combos: [ { component: ComboMD, data: ['disney', 'home'] }, { component: ComboMDR, data: ['kimberly', 'home'] } ]
+      className: "xl:grid-cols-[48%_48%]",
+      data1: ['disney', 'home'],
+      data2: ['kimberly', 'home'],
     },
     {
-      className: "xl:grid-cols-[71%_39%]",
-      combos: [ { component: ComboMDR, data: ['pepsico', 'home'] }, { component: ComboMD, data: ['pacoRabanne', 'home'] } ]
+      className: "xl:grid-cols-[61.5%_34.5%]",
+      data1: ['pepsico', 'home'],
+      data2: ['pacoRabanne', 'home'],
     }
   ];
 
@@ -113,20 +120,25 @@ export const Works = () => {
             <ButtonVerMas text={'Mostrar más'} onClick={mostrarMas} />
           </div>
 
-          {paginacionCombos == 1 &&
-            (
-              <>
-                {filaCombosData.map((fila, index) => (
-                  <div key={index} className={`grid lg:mt-[46px] lg:px-[90px] xl:gap-[52px] 1.5xl:gap-[90px] grid-cols-[1fr] xl:pl-[0px] xl:px-[154px] 2xl:pr-[180px] ${fila.className}`}>
-                    {fila.combos.map((combo, idx) => {
-                      const ComboComponent = combo.component;
-                      return <ComboComponent key={idx} data={combo.data} />;
-                    })}
-                  </div>
-                ))}
-              </>
-            )
-          }
+          {paginacionCombos == 1 && (
+            <>
+              {filaCombosData.map((fila, index) => (
+                <div key={index} className={`grid lg:mt-[45px] gap-4 xl:gap-[52px] 1.5xl:gap-[90px] ${fila.className} mt-[16px]`}>
+                {index % 2 !== 0 ? (
+                  <>
+                    <ComboMD data={fila.data1} />
+                    <ComboMDR data={fila.data2} />
+                  </>
+                ) : (
+                  <>
+                    <ComboMDR data={fila.data1} />
+                    <ComboMD data={fila.data2} />
+                  </>
+                )}
+              </div>
+              ))}
+            </>
+          )}
         </div>
       </div>
     </div>
