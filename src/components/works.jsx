@@ -74,19 +74,19 @@ export const Works = () => {
   const mostrarMas = () => setPaginacionCombos(1);
 
   return (
-    <div className="px-4 py-0 relative mt-[48px] xl:px-[60px]">
+    <div className="px-4 py-0 relative mt-[60px] xl:px-[60px]">
       <div className="mx-auto w-full max-w-[1440px]">
         <TituloSeccion titulo="Works" id="works" customWidth="w-[155px]" className="max-w-[1320px] mx-auto" />
 
         {/* TEXTO HEADER */}
-        <div className="mx-auto flex flex-col px-3 mt-[24px] xl:px-[28px] max-w-[1320px]">
+        <div className="mx-auto flex flex-col px-3 mt-6 xl:px-[28px] max-w-[1320px]">
           <span className="text-md-lato-700 grey-black text-left">Grounded in research and elevated by creativity.</span>
           <span className="text-md-lato-400 grey-black text-left">We navigate the complexities of user behavior to deliver experiences that captivate and convert.</span>
         </div>
 
         <div className="max-w-[1320px] mx-auto">
           {combosData.map((combo, index) => (
-            <div key={index} className={`grid ${index == 0 ? '' : 'mt-[16px] lg:mt-[45px]'} gap-4 xl:gap-[52px] ${combo.gridCols}`}>
+            <div key={index} className={`grid ${index == 0 ? '' : "mt-[16px] lg:mt-[45px]"} gap-4 xl:gap-[52px] ${combo.gridCols}`}>
               {index % 2 !== 0 ? (
                 <>
                   <ComboMD data={combo.data1} />

@@ -8,9 +8,8 @@ import ale from "../assets/Alejandro.png";
 
 export const Bureau = () => {
   return (
-    <div className="bureau-content px-3 py-0 mt-[60px]">
-      <div
-        className="bureau-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
+    <div className="px-4 py-0 mt-[60px] xl:px-[60px]">
+      <div className="bureau-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
         style={{ backgroundImage: "url(src/assets/back-servicios.gif)" }}
       >
         <div className="bureau-back2 px-[16px] py-[40px] lg:py-[60px] lg:px-[36px]" id="bureau">
