@@ -8,10 +8,8 @@ import ale from "../assets/Alejandro.png";
 
 export const Bureau = () => {
   return (
-    <div className="px-4 py-0 mt-[60px] xl:px-[60px]">
-      <div className="bureau-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
-        style={{ backgroundImage: "url(src/assets/back-servicios.gif)" }}
-      >
+    <div className="px-4 py-0 mt-[60px] xl:px-[60px] overflow-hidden">
+      <div className="servicios-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter overflow-hidden">
         <div className="bureau-back2 px-[16px] py-[40px] lg:py-[60px] lg:px-[36px]" id="bureau">
           <TituloSeccion titulo="Bureau" />
 
@@ -34,16 +32,11 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-nombre">
-                <span className="text-sm-nunito-700 grey-black">
-                  FLAVIO VILLAN{" "}
-                </span>
+                <span className="text-sm-nunito-700 grey-black">FLAVIO VILLÁN</span>
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">
-                  {" "}
-                  Creative Director / Partner{" "}
-                </span>
+                <span className="text-sm-nunito-400 grey-black">Creative Director / Partner</span>
               </div>
             </div>
 
@@ -53,17 +46,11 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-nombre">
-                <span className="text-sm-nunito-700 grey-black">
-                  {" "}
-                  JAVIER MARTINEZ{" "}
-                </span>
+                <span className="text-sm-nunito-700 grey-black">JAVIER MARTINEZ</span>
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">
-                  {" "}
-                  IT Director / Partner{" "}
-                </span>
+                <span className="text-sm-nunito-400 grey-black">IT Director / Partner</span>
               </div>
             </div>
 
@@ -73,17 +60,11 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-nombre">
-                <span className="text-sm-nunito-700 grey-black">
-                  {" "}
-                  ALE JEROZ{" "}
-                </span>
+                <span className="text-sm-nunito-700 grey-black">ALE JEROZ</span>
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">
-                  {" "}
-                  Operation Director / Asociated{" "}
-                </span>
+                <span className="text-sm-nunito-400 grey-black">Operation Director / Asociated</span>
               </div>
             </div>
 

@@ -104,7 +104,7 @@ export const Banner = () => {
       </StickyBox>
 
       <div className=" w-[0px] z-20"></div>
-      <div className="absolute top-[180px]  md:top-[600px] left-1/2 transform -translate-x-1/2">
+      <div className="absolute top-[180px] md:top-[600px] left-1/2 transform -translate-x-1/2">
         <div className="mt-[350px]">
           <p className="text-banner">Design</p>
           <p className="text-banner">Technology</p>
@@ -116,8 +116,8 @@ export const Banner = () => {
         </div>
 
         <div className="my-[350px]">
-          <p className="text-banner">Design and Technology</p>
           <p className="text-banner">via Cutting-Edge</p>
+          <p className="text-banner">Design and Technology</p>
         </div>
       </div>
     </div>

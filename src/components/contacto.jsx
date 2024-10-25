@@ -14,7 +14,7 @@ export const Contacto = () => {
   const [stepContacto, setStepContacto] = useState(1);
 
   return (
-    <div className="w-full px-3" id="contact">
+    <div className="w-full px-3 mt-[60px]" id="contact">
       <div className="lg:gap-[60px]sm:flex max-w-[1440px] rounded-[24px] bg-custom-gradient px-4 pt-6 sm:m-[12px] sm:flex-col sm:gap-[30px] lg:m-auto lg:flex lg:flex-row lg:p-[60px] lg:items-start">
         {/* formulario */}
         <div className="lg:basis-1/2">

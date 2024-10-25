@@ -20,7 +20,6 @@
 }
 
 .bureau-subTitulo {
- 
 }
 
 .personas {
@@ -43,7 +42,7 @@
 .persona-funcion {
   border-top: 2px solid #ff3d00;
   margin-bottom: 10px;
-
+  padding-top: 12px;
   width: 100%;
   text-align: center;
 }
