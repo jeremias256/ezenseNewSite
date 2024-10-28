@@ -1,13 +1,13 @@
 import React from "react";
 import BiselSmall from "./bisel/biselSmall";
 
-const TituloSeccion = ({ className, id, titulo, customWidth, customColor }) => {
+const TituloSeccion = ({ className, id, titulo, customWidth, customColor, gradient }) => {
   return (
     <div className={className} id={id}>
       <div className="relative h-[90px] flex flex-col justify-end">
         <div className="absolute top-0 flex w-full">
-          <div className={`border-t-2 border-b-2 h-[60px] rounded-s-full border-l-2 border-callToAction flex items-center `}>
-            <span className={`text-lg-nunito-400 grey-black text-[32px] font-normal pl-6 ${customColor ? customColor : 'text-greyBlack'}`}>{titulo}</span>
+          <div className={`border-t-2 border-b-2 h-[60px] rounded-s-full border-l-2 border-callToAction flex items-center ${gradient ? gradient : ''}`}>
+            <span className={`text-lg-nunito-400 grey-black text-[32px] font-normal pl-6 ${customWidth ? customWidth : ''} ${customColor ? customColor : 'text-greyBlack'}`}>{titulo}</span>
           </div>
           <BiselSmall className="flex border-b-2 h-[60px] border-callToAction" />
           <div className="w-full relative">

@@ -2,7 +2,6 @@ import { getClienteById } from "../routes/clientes";
 import { Link } from 'react-router-dom';
 
 const ComboMD = ({ data, className }) => {
-  console.log("👀 - ComboMD - data:", data);
   const clienteRender = getClienteById(data[0]);
 
   // Si la variable pp es 'pp', limita las imágenes a 2
@@ -10,7 +9,7 @@ const ComboMD = ({ data, className }) => {
 
   return (
     <div className={`${className} flex flex-col mt-[53px] rounded-e-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
-      <div className="absolute -top-8 left-0 text-sm-nunito-700 call-to-action">
+      <div className="absolute -top-9 left-0 text-sm-nunito-700 call-to-action text-[24px]">
         {clienteRender.descripcionCombo.comboTitulo}
       </div>
       <div className="relative border-y-0 border-l-0 rounded-e-full border-2 border-callToAction">

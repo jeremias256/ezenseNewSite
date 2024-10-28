@@ -128,6 +128,7 @@
     @apply font-lato text-[18px] font-normal;
     margin: 0px;
   }
+
   .btn_gris {
     @apply rounded-[555px] bg-[#4d4f61] px-[28px] py-[10px] text-[#fff];
   }

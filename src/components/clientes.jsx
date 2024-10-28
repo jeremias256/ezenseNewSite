@@ -39,7 +39,7 @@ export const Clientes = () => {
   return (
     <div className="px-4 py-0 mt-[60px] xl:px-[60px]" id="clients">
       <div className="mx-auto w-full max-w-[1440px]">
-        <TituloSeccionWhite className="max-w-[1320px] mx-auto" titulo="Clients" />
+        <TituloSeccionWhite className="max-w-[1320px] mx-auto" titulo="Clients" gradient="bg-gradient-to-r from-white to-background" />
 
         {/* TEXTO HEADER */}
         <div className="mx-auto flex flex-col px-3 mt-6 xl:px-[28px] max-w-[1320px]">
