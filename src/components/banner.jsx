@@ -123,9 +123,9 @@ export const Banner = () => {
           <ReactPlayer ref={playerRef} url={ezenseVideo} width="100%" height="103%" muted />
 
           {/* SOMBRA */}
-          <div className={`bg-gradient-to-b from-transparent from-50% via-[#f7f4ef] via-100% to-background to-80%  pointer-events-none absolute -bottom-5 left-0 h-[40%] w-full transition-opacity duration-500 ${isScrolled ? 'opacity-80' : 'opacity-0'}`}></div>
+          <div className={`bg-gradient-to-b from-transparent from-50% via-[#f7f4ef] via-100% to-background to-80%  pointer-events-none absolute -bottom-5 left-0 h-[40%] w-full transition-opacity duration-500 opacity-80`}></div>
 
-          <div className={`bg-gradient-to-t absolute -bottom-8 2xl:-bottom-[40px] w-full h-14 from-[#eceae5] from-[40%] ${isScrolled ? 'opacity-100' : 'opacity-0'}`}></div>
+          <div className={`bg-gradient-to-t absolute -bottom-8 2xl:-bottom-[40px] w-full h-14 from-[#eceae5] from-[40%] opacity-100`}></div>
         </div>
       </StickyBox>
 
