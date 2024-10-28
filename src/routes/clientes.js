@@ -121,10 +121,10 @@ const clientes = [
         url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo2.png`,
         pant: "m",
       },
-      img3: {
-        url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo3.png`,
-        pant: "d",
-      },
+      // img3: {
+      //   url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo3.png`,
+      //   pant: "d",
+      // },
     },
 
     proyectoRelacionado1: {
@@ -349,10 +349,10 @@ const clientes = [
         url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo1.png`,
         pant: "m",
       },
-      img2: {
-        url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo2.png`,
-        pant: "m",
-      },
+      // img2: {
+      //   url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo2.png`,
+      //   pant: "m",
+      // },
       img3: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo3.png`,
         pant: "d",
@@ -1187,6 +1187,88 @@ const clientes = [
       img0: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto26/fotoCombo0.png`,
         pant: "onlyMovile",
+      },
+    },
+
+    proyectoRelacionado1: {
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
+    },
+
+    proyectoRelacionado2: {
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
+  },
+  /* 27 - knorr */
+  {
+    id: 27,
+    cliente: "knorr",
+    titulo: "Knorr",
+    cantImagen: 7,
+    descripcionText: {
+      descTitulo: "Black XS Live Sound: Allison",
+      descParrafo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.`,
+    },
+
+    descripcionCombo: {
+      comboTitulo: "Knorr",
+      linea1: "Quick",
+      linea2: "Antipicoteo",
+      linea3: "+ 2nd service",
+      linea4: "+ 3rd service",
+      linea5: "+ 4th service",
+    },
+
+    imgCombo: {
+      img1: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto27/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto27/fotoCombo2.png`,
+        pant: "d",
+      },
+    },
+
+    proyectoRelacionado1: {
+      idProyectoRelacionado: 7,
+      proyectoRelacionado: "fiat",
+    },
+
+    proyectoRelacionado2: {
+      idProyectoRelacionado: 2,
+      proyectoRelacionado: "mondelez",
+    },
+  },
+  /* 28 - The Clorox Company*/
+  {
+    id: 28,
+    cliente: "theCloroxCompany",
+    titulo: "The Clorox Company",
+    cantImagen: 7,
+    descripcionText: {
+      descTitulo: "Black XS Live Sound: Allison",
+      descParrafo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.`,
+    },
+
+    descripcionCombo: {
+      comboTitulo: "The Clorox Company",
+      linea1: "Cleared & Glad",
+      linea2: "Rich Media Campaign",
+      linea3: "+ Banners design",
+      linea4: "+ HTML5 Banners",
+      linea5: "+ Character design",
+    },
+
+    imgCombo: {
+      img1: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto28/fotoCombo1.png`,
+        pant: "m",
+      },
+      img2: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto28/fotoCombo2.png`,
+        pant: "d",
       },
     },
 

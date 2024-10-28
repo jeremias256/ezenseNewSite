@@ -66,4 +66,9 @@ export const filaCombosData = [
     data1: ["pepsico", "home"],
     data2: ["pacoRabanne", "home"],
   },
+  // {
+  //   className: "xl:grid-cols-[48%_48%]",
+  //   data1: ["knorr", "home"],
+  //   data2: ["theCloroxCompany", "home"],
+  // },
 ];
