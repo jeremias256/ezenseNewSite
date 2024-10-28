@@ -2,6 +2,7 @@ import { useState } from "react";
 /* ------------------------------------------- assets ------------------------------------------- */
 import imgLogoEzense from "assets/logo-ezense.png";
 import { HamburguesaSVG } from "./svg";
+import closeIcon from "../assets/close.png";
 
 export const Header = () => {
 
@@ -40,14 +41,13 @@ export const Header = () => {
             className="md:hidden flex items-center"
             onClick={toggleMenu}
           >
-            <HamburguesaSVG />
+            {isMenuOpen ? <HamburguesaSVG /> : <img src={closeIcon} />}
+
           </button>
         </div>
 
 
         <div className={`${isMenuOpen ? 'hidden md:flex md:m-auto md:gap-[14px]' : 'lg:hidden border-t-[2px] p-[12px] border-callToAction w-full flex justify-between'}`}>
-
-
           <span className="opciones cursor-pointer hover:text-callToAction md:text-[18px]" onClick={() => scrollToSection('works')}>
             Works
           </span>

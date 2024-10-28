@@ -22,12 +22,6 @@
 .bureau-subTitulo {
 }
 
-.personas {
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .persona {
   display: flex;
   flex-direction: column;
@@ -58,10 +52,5 @@
 
   .bureau-subTitulo {
     padding: 32px 6px;
-  }
-
-  .personas {
-    padding: 20px 0px;
-    flex-direction: column;
   }
 }

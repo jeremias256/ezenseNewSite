@@ -7,8 +7,6 @@ const ComboMD = ({ data, className }) => {
     // Si la variable pp es 'pp', limita las imágenes a 2
     const imagenes = data[1] === 'pp' ? Object.values(clienteRender.imgCombo).slice(0, 2) : Object.values(clienteRender.imgCombo);
 
-
-
     return (
         <>
             <div className={`${className} flex flex-col mt-[53px] rounded-s-[83px] sm:rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>

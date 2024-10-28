@@ -23,7 +23,7 @@ export const Bureau = () => {
             </p>
           </div>
 
-          <div className="personas sm:flex sm:flex-col lg:flex lg:flex-row">
+          <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
 
             <div className="persona">
 

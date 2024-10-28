@@ -1,5 +1,3 @@
-import { stringify } from "postcss";
-
 const clientes = [
   /* 1- Clarin */
   {
@@ -12,7 +10,6 @@ const clientes = [
       descParrafo:
         "Young & Rubicam nos encargó una serie de Brand Games para la campaña online: #HombresDeOleBajoElBrazo. Siguiendo la comunicación, desarrollamos el look & feel y la jugabilidad de los mismos para que reflejen ese hombre distinto, ducho, perseverante; como los lectores de Olé.",
     },
-
     descripcionCombo: {
       comboTitulo: "Grupo Clarín",
       linea1: "Diario deportivo Olé",

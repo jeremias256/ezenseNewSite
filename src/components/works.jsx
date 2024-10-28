@@ -29,11 +29,13 @@ export const Works = () => {
             <div key={index} className={`grid ${index == 0 ? '' : "mt-[16px] lg:mt-[45px]"} gap-4 xl:gap-[52px] ${combo.gridCols}`}>
               {index % 2 !== 0 ? (
                 <>
+                  <div className="hidden">impar - {index}</div>
                   <ComboMD data={combo.data1} />
                   <ComboMDR data={combo.data2} />
                 </>
               ) : (
                 <>
+                  <div className="hidden">par - {index}</div>
                   <ComboMDR data={combo.data1} />
                   <ComboMD data={combo.data2} />
                 </>
