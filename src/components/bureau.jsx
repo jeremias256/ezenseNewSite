@@ -36,7 +36,7 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">Creative Director / Partner</span>
+                <span className="text-sm-nunito-700 text-[#7C818D] ">Creative Director / <span className="text-sm-nunito-400">Partner</span></span>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">IT Director / Partner</span>
+                <span className="text-sm-nunito-700 text-[#7C818D] ">IT Director / <span className="text-sm-nunito-400">Partner</span></span>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-funcion">
-                <span className="text-sm-nunito-400 grey-black">Operation Director / Asociated</span>
+                <span className="text-sm-nunito-700 text-[#7C818D] ">Operation Director / <span className="text-sm-nunito-400">Asociated</span></span>
               </div>
             </div>
 
