@@ -119,12 +119,12 @@ const clientes = [
       },
       img2: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo2.png`,
-        pant: "m",
+        pant: "d",
       },
-      // img3: {
-      //   url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo3.png`,
-      //   pant: "d",
-      // },
+      img3: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto3/foto3.png`,
+        pant: "onlyMovile",
+      },
     },
 
     proyectoRelacionado1: {

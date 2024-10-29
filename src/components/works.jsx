@@ -4,7 +4,6 @@ import TituloSeccion from "./tituloSeccion";
 import ComboMD from "./comboMD";
 import ComboMDR from "./comboMD-R";
 import ButtonVerMas from "./buttonVerMas";
-
 import { combosData, filaCombosData } from "../constants";
 
 export const Works = () => {
