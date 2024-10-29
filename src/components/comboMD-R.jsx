@@ -10,8 +10,8 @@ const ComboMD = ({ data, className }) => {
         <>
             <div className={`${className} flex flex-col mt-[53px] rounded-s-[83px] sm:rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
                 <div className="absolute -top-9 left-20 text-sm-nunito-700 call-to-action text-[24px]">{clienteRender.descripcionCombo.comboTitulo}</div>
-                <div className='border-l-2 rounded-s-full border-callToAction h-[155px] w-full pr-4 xl:pr-[9.8px]'>
-                    <div className="absolute w-20 h-[153px] top-[0.5px]  rounded-s-full bg-gradient-to-r from-white -z-10 to-background"></div>
+                <div className='relative  w-full pr-4 xl:pr-[9.8px] overflow-hidden'>
+                    <div className="absolute w-20 h-[153px] rounded-s-full bg-gradient-to-r from-white -z-10 to-background"></div>
                     <div className='flex flex-col pl-[74px]'>
                         {[clienteRender.descripcionCombo.linea1, clienteRender.descripcionCombo.linea2, clienteRender.descripcionCombo.linea3, clienteRender.descripcionCombo.linea4, clienteRender.descripcionCombo.linea5].map((linea, index) => (
                             <div key={index} className={`flex items-center h-[31px] xl:w-[99%] pt-2 pb-[10px] ${index < 4 ? 'border-b border-greyBlack' : ''}`}>
@@ -25,7 +25,7 @@ const ComboMD = ({ data, className }) => {
                 </div>
                 <div className='flex-1'>
                     <Link to={`/${clienteRender.cliente}`}>
-                        <div className='absolute w-[70%] sm:w-[75%] top-0  h-[154.5px] border-b-2 rounded-s-full border-callToAction'></div>
+                        <div className='absolute w-[70%] sm:w-[75%] top-0  h-[154.5px] border-2 border-t-0 border-r-0 rounded-s-full border-callToAction'></div>
                         <div className='absolute w-[70%] sm:w-[80%] top-[152.6px] sm:top-[153.2px] right-[1px] sm:right-0 h-[200px] border-t-2 rounded-e-full border-callToAction'></div>
                         <div className='flex flex-1 justify-end gap-4 py-4 pr-4 border-b-2 border-r-2 border-callToAction border-l-0 rounded-e-full '>
                             {imagenes.map((imgSrc, index) => (
