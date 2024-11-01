@@ -119,12 +119,12 @@ const clientes = [
       },
       img2: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo2.png`,
-        pant: "m",
+        pant: "d",
       },
-      // img3: {
-      //   url: `/imgClientesSitioEzense/fotoClientes/proyecto3/fotoCombo3.png`,
-      //   pant: "d",
-      // },
+      img3: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto3/foto3.png`,
+        pant: "onlyMovile",
+      },
     },
 
     proyectoRelacionado1: {
@@ -299,12 +299,12 @@ const clientes = [
 
     imgCombo: {
       img0: {
-        url: `/imgClientesSitioEzense/fotoClientes/proyecto7/fotoCombo0.png`,
-        pant: "onlyMovile",
-      },
-      img1: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto7/fotoCombo1.png`,
         pant: "m",
+      },
+      img1: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto7/foto3.png`,
+        pant: "onlyMovile",
       },
       img2: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto7/fotoCombo2.png`,
@@ -347,15 +347,15 @@ const clientes = [
     imgCombo: {
       img1: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo1.png`,
-        pant: "m",
+        pant: "d",
       },
-      // img2: {
-      //   url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo2.png`,
-      //   pant: "m",
-      // },
+      img2: {
+        url: `/imgClientesSitioEzense/fotoClientes/proyecto8/foto2.png`,
+        pant: "onlyMovile",
+      },
       img3: {
         url: `/imgClientesSitioEzense/fotoClientes/proyecto8/fotoCombo3.png`,
-        pant: "d",
+        pant: "m",
       },
     },
 
