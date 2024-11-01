@@ -16,7 +16,7 @@ export const Works = () => {
     <div className="px-4 py-0 relative mt-[60px] xl:px-[60px]">
 
       <div className="mx-auto w-full max-w-[1440px]">
-        <TituloSeccion titulo="Works" id="works" customWidth="w-[135px]" className="max-w-[1320px] mx-auto" gradient="bg-gradient-to-r from-white to-background overflow-hidden" />
+        <TituloSeccion titulo="Works" id="works" customWidth="w-[255px] md:w-[150px]" className="max-w-[1320px] mx-auto" gradient="bg-gradient-to-r from-white to-background overflow-hidden" />
 
         {/* TEXTO HEADER */}
         <div className="mx-auto flex flex-col px-3 mt-6 xl:px-[28px] max-w-[1320px]">

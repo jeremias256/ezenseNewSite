@@ -15,7 +15,7 @@ const ComboMD = ({ data, className }) => {
       <div className="relative border-y-0 border-l-0 rounded-e-full border-2 border-callToAction">
         <div className="h-[155px] flex-col pr-[80.5px] pl-4">
           {[clienteRender.descripcionCombo.linea1, clienteRender.descripcionCombo.linea2, clienteRender.descripcionCombo.linea3, clienteRender.descripcionCombo.linea4].map((linea, index) => (
-            <div key={index} className="border-b border-greyBlack h-[31px] pt-1 pb-[10px] pl-2 items-center flex">
+            <div key={index} className="border-b border-greyBlack h-[31px] pt-2 pb-[10px] pl-2 items-center flex">
               <p className={`text-sm-nunito-${index === 0 ? '700' : '400'} grey-black`}>{linea}</p>
             </div>
           ))}
