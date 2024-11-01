@@ -4,6 +4,7 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 /* ------------------------------------------- context ------------------------------------------ */
 import useEzense from "hooks/useEzenseProvider";
+import ButtonVerMas from './buttonVerMas';
 
 export const Step2 = ({ setStepContacto }) => {
     const { setLoaderForm } = useEzense();
@@ -63,7 +64,7 @@ export const Step2 = ({ setStepContacto }) => {
             onSubmit={handleSubmit}
         >
             {({ errors, touched, isSubmitting }) => (
-                <Form>
+                <Form className="flex flex-col">
                     <div className="">
                         <span className="text-md-lato-700 grey-black">
                             Are you poised to elevate your digital presence?
@@ -146,13 +147,13 @@ export const Step2 = ({ setStepContacto }) => {
                             </div>
                         </div>
                         <div className="flex flex-col mt-4">
-                            <div className="h-[44px]">
+                            <div className="">
                                 <label htmlFor="input-name" className='label-grey'>
                                     MESSAGE
                                 </label>
                                 <Field
                                     autocomplete="off"
-                                    className="input-grey"
+                                    className="input-grey min-h-[44px]"
                                     name="message"
                                     as="textarea"
                                     placeholder="Message"
@@ -161,9 +162,7 @@ export const Step2 = ({ setStepContacto }) => {
                         </div>
                     </div>
                     <div className="flex justify-end mt-4">
-                        <button className="btn_gris" disabled={isSubmitting} type="submit">
-                            Send
-                        </button>
+                        <ButtonVerMas text={'Send'} onClick={() => { }} typeButton='submit' disabled={isSubmitting} />
                     </div>
                 </Form>
             )}

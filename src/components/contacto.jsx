@@ -51,27 +51,19 @@ export const Contacto = () => {
 
         {/* datos */}
         <div className="mt-[60px] flex flex-col justify-start items-center lg:mt-0 lg:basis-1/2">
-          <div className="flex flex-col items-center xl:flex-row">
-            <div className="flex flex-col items-center sm:flex sm:items-center sm:justify-center lg:flex">
+          <div className="flex flex-col items-center xl:flex-row lg:gap-8">
+            <div className="flex flex-col items-center sm:flex sm:items-start sm:justify-center lg:flex">
               <span className="text-md-lato-700 grey-black"> Argentina </span>
-              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center">
-                Av Santa Fe 3778 - CABA - Buenos Aires
-              </span>
-
-              <span className="text-sm-nunito-400 call-to-action">
-                bue@e-zense.com
-              </span>
+              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center lg:mt-8">Av Santa Fe 3778</span>
+              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center">CABA - Buenos Aires</span>
+              <a href="mailto:santiago@e-zense.com" className="text-sm-nunito-400 call-to-action lg:mt-8">bue@e-zense.com</a>
             </div>
 
-            <div className="flex flex-col items-center sm:flex sm:items-center sm:justify-center lg:flex">
+            <div className="mt-8 flex flex-col items-center sm:flex sm:items-start sm:justify-center lg:mt-0 lg:flex">
               <span className="text-md-lato-700 grey-black"> Chile </span>
-              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center">
-                Dr Manuel Barros 71 - Santiago
-              </span>
-
-              <span className="text-sm-nunito-400 call-to-action">
-                santiago@e-zense.com
-              </span>
+              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center lg:mt-8">Dr Manuel Barros 71</span>
+              <span className="text-sm-nunito-400 grey-black text-[16px] lg:text-center">Providencia - Santiago</span>
+              <a href="mailto:santiago@e-zense.com" className="text-sm-nunito-400 call-to-action lg:mt-8">santiago@e-zense.com</a>
             </div>
           </div>
         </div>

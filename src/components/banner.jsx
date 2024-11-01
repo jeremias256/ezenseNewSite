@@ -112,6 +112,7 @@ export const Banner = () => {
 
   return (
     <div className="flex items-start w-full min-h-[1850px] sm:h-[290vw] sm:max-h-[1920px] md:h-[355vw] md:max-h-[2750px] lg:max-h-[2750px] xl:max-h-[2750px] 2xl:max-h-[2600px]"
+      id="banner"
       ref={contentBannerDivRef}
     >
       <StickyBox offsetTop={0} offsetBottom={20}>

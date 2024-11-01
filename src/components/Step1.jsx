@@ -1,3 +1,4 @@
+import ButtonVerMas from "./buttonVerMas";
 
 export const Step1 = ({ setStepContacto }) => {
 
@@ -21,12 +22,7 @@ export const Step1 = ({ setStepContacto }) => {
                 </span>
             </div>
             <div className="mt-6 flex justify-end">
-                <button
-                    className="btn_gris text-sm-nunito-400"
-                    onClick={abirFormulario}
-                >
-                    Let's talk!
-                </button>
+                <ButtonVerMas text={"Let's talk!"} onClick={abirFormulario} />
             </div>
         </>
     );

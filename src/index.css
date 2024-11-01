@@ -133,7 +133,7 @@
     @apply rounded-[555px] bg-[#4d4f61] px-[28px] py-[10px] text-[#fff];
   }
   .text-banner {
-    @apply text-center font-nunito text-[50px] font-[250] not-italic leading-[50px] tracking-[-1.04px] text-white md:text-[104px] md:leading-[100px];
+    @apply text-center font-nunito text-[50px] font-[250] not-italic leading-[50px] tracking-[-1.04px] text-white md:text-[94px] md:leading-[100px];
   }
 }
 video {

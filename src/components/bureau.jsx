@@ -11,7 +11,7 @@ export const Bureau = () => {
     <div className="px-4 py-0 mt-[60px] xl:px-[60px] overflow-hidden">
       <div className="servicios-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter overflow-hidden">
         <div className="bureau-back2 px-[16px] py-[40px] lg:py-[60px] lg:px-[36px]" id="bureau">
-          <TituloSeccion titulo="Bureau" />
+          <TituloSeccion className="max-w-[1320px] mx-auto" titulo="Bureau" />
 
           <div className="bureau-subTitulo flex flex-col gap-[24px] py-[32px] px-[12px] lg:px-[30px]">
             <p className="text-md-lato-700 grey-black">
