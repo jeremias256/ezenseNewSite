@@ -37,11 +37,11 @@ export const Step2 = ({ setStepContacto }) => {
     return (
         <Formik
             initialValues={{
-                firstName: "JEREMIAS",
-                lastName: "MENACHO",
-                email: "jere.menacho@gmail.com",
-                phone: "1139341010",
-                message: "TEST",
+                firstName: "",
+                lastName: "",
+                email: "",
+                phone: "",
+                message: "",
             }}
             validationSchema={Yup.object({
                 firstName: Yup.string()
