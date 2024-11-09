@@ -8,8 +8,10 @@ import ale from "../assets/Alejandro.png";
 
 export const Bureau = () => {
   return (
-    <div className="px-4 py-0 mt-[60px] xl:px-[60px] overflow-hidden">
-      <div className="servicios-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter overflow-hidden">
+    <div className="px-4 py-0 mt-[60px] xl:px-[60px]">
+      <div className="bureau-back bg-bgGris luminosity m-auto max-w-[1440px] rounded-[24px] bg-opacity-90 bg-cover bg-no-repeat brightness-90 filter"
+        style={{ backgroundImage: "url(src/assets/back-servicios.gif)" }}
+      >
         <div className="bureau-back2 px-[16px] py-[40px] lg:py-[60px] lg:px-[36px]" id="bureau">
           <TituloSeccion titulo="Bureau" />
 
@@ -32,7 +34,7 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-nombre">
-                <span className="text-sm-nunito-700 grey-black">FLAVIO VILLÁN</span>
+                <span className="text-sm-nunito-700 grey-black">FLAVIO VILLAN</span>
               </div>
 
               <div className="persona-funcion">
@@ -46,7 +48,7 @@ export const Bureau = () => {
               </div>
 
               <div className="persona-nombre">
-                <span className="text-sm-nunito-700 grey-black">JAVIER MARTINEZ</span>
+                <span className="text-sm-nunito-700 grey-black">JAVIER MARTINE</span>
               </div>
 
               <div className="persona-funcion">

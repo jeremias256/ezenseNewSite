@@ -62,11 +62,17 @@ export const Proyecto = () => {
         <HeaderPP />
       </div>
 
-      <div className="pp-content pt-[80px] lg:w-[1440px] lg:m-[auto]">
+      <div className="pp-content pt-[80px] lg:w-[1440px] lg:m-[auto] ">
         <div className="works-titulo px-[16px] lg:px-[60px]">
           <TituloSeccionWhite customWidth={'w-[215px]'} titulo={clienteRender.titulo} />
         </div>
-        <div className="pp-info flex flex-col lg:flex-row lg:justify-between my-[40px] mx-[16px] lg:mx-[90px] gap-[40px] lg:gap-[90px]">
+        <div className="pp-info
+        flex 
+        flex-col lg:flex-row lg:justify-between
+        my-[40px] 
+        mx-[16px] lg:mx-[90px]
+        gap-[40px] lg:gap-[90px]
+      ">
           <div className="pp-info-detalle">
             <p className="text-md-lato-700 call-to-action">
               {" "}
