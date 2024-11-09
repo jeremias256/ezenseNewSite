@@ -57,12 +57,12 @@ export const Proyecto = () => {
   }, []);
 
   return (
-    <>
+    <div className="bg-background">
       <div className="max-w-[1392px] fixed left-1/2 z-50  w-full -translate-x-1/2 transform bg-white50 backdrop-blur-sm md:top-0 md:flex md:h-auto md:w-[98%] md:rounded-[555px] md:px-[16px] lg:mt-[8px]">
         <HeaderPP />
       </div>
 
-      <div className="pp-content pt-[80px] lg:w-[1440px] lg:m-[auto] ">
+      <div className="pp-content pt-[80px] lg:w-[1440px] lg:m-[auto]">
         <div className="works-titulo px-[16px] lg:px-[60px]">
           <TituloSeccionWhite customWidth={'w-[215px]'} titulo={clienteRender.titulo} />
         </div>
@@ -165,7 +165,7 @@ export const Proyecto = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
 
   );
 };
