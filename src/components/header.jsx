@@ -2,7 +2,6 @@ import { useState } from "react";
 /* ------------------------------------------- assets ------------------------------------------- */
 import imgLogoEzense from "assets/logo-ezense.png";
 import { HamburguesaSVG } from "./svg";
-import closeIcon from "../assets/close.png";
 
 export const Header = () => {
 
@@ -42,7 +41,6 @@ export const Header = () => {
             onClick={toggleMenu}
           >
             {isMenuOpen ? <HamburguesaSVG /> : <img src={closeIcon} />}
-
           </button>
         </div>
 

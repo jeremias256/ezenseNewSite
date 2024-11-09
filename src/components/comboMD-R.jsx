@@ -10,12 +10,12 @@ const ComboMD = ({ data, className }) => {
         <>
             <div className={`${className} flex flex-col mt-[53px] rounded-s-[83px] sm:rounded-s-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
                 <div className="absolute -top-9 left-20 text-sm-nunito-700 call-to-action text-[24px]">{clienteRender.descripcionCombo.comboTitulo}</div>
-                <div className='relative  w-full pr-4 xl:pr-[9.8px] overflow-hidden'>
+                <div className='relative w-full pr-4 xl:pr-[9.8px] overflow-hidden'>
                     <div className="absolute w-20 h-[153px] rounded-s-full bg-gradient-to-r from-white -z-10 to-background"></div>
                     <div className='flex flex-col pl-[74px]'>
                         {[clienteRender.descripcionCombo.linea1, clienteRender.descripcionCombo.linea2, clienteRender.descripcionCombo.linea3, clienteRender.descripcionCombo.linea4, clienteRender.descripcionCombo.linea5].map((linea, index) => (
                             <div key={index} className={`flex items-center h-[31px] xl:w-[99%] pt-2 pb-[10px] ${index < 4 ? 'border-b border-greyBlack' : ''}`}>
-                                <p className={` text-sm-nunito-${index === 0 ? '700' : '400'} grey-black`}>{linea}</p>
+                                <p className={`text-sm-nunito-${index === 0 ? '700' : '400'} grey-black`}>{linea}</p>
                             </div>
                         ))}
                     </div>

@@ -4,16 +4,14 @@ import { Link } from 'react-router-dom';
 const ComboMD = ({ data, className }) => {
   const clienteRender = getClienteById(data[0]);
 
-  // Si la variable pp es 'pp', limita las imágenes a 2
   const imagenes = Object.values(clienteRender.imgCombo);
 
   return (
     <div className={`${className} flex flex-col mt-[53px] rounded-e-[84px] border-b-0 border-l-0 border-r-0 relative border-2 border-callToAction`}>
-      <div className="absolute -top-9 left-0 text-sm-nunito-700 call-to-action text-[24px]">
-        {clienteRender.descripcionCombo.comboTitulo}
-      </div>
+      <div className="absolute -top-9 left-0 text-sm-nunito-700 call-to-action text-[24px]">{clienteRender.descripcionCombo.comboTitulo}</div>
       <div className="relative overflow-hidden">
         <div className="absolute w-20 h-[153px] right-0 rounded-e-full bg-gradient-to-l from-white -z-10 to-background"></div>
+        <div className="absolute w-20 h-[153px] top-[0.5px] right-0 rounded-e-full bg-gradient-to-l from-white -z-10 to-background"></div>
         <div className="h-[155px] flex-col pr-[80.5px] pl-4">
           {[clienteRender.descripcionCombo.linea1, clienteRender.descripcionCombo.linea2, clienteRender.descripcionCombo.linea3, clienteRender.descripcionCombo.linea4].map((linea, index) => (
             <div key={index} className="border-b border-greyBlack h-[31px] pt-2 pb-[10px] pl-2 items-center flex">

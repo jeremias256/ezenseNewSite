@@ -128,7 +128,6 @@
     @apply font-lato text-[18px] font-normal;
     margin: 0px;
   }
-
   .btn_gris {
     @apply rounded-[555px] bg-[#4d4f61] px-[28px] py-[10px] text-[#fff];
   }
@@ -200,20 +199,6 @@ video {
 
 /* SERVICIOS */
 .servicios-back::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("./assets/back-servicios.gif") no-repeat center center;
-  background-size: cover;
-  z-index: -1;
-  background-color: #60627a;
-  background-blend-mode: luminosity;
-  border-radius: 16px;
-}
-.bureau-back {
   content: "";
   position: absolute;
   top: 0;

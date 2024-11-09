@@ -3,12 +3,12 @@ export default {
   content: ["./src/**/*.{html,jsx,js}"],
   theme: {
     extend: {
+      backgroundBlendMode: {
+        luminosity: "luminosity",
+      },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
         "4xl": "0 35px 35px rgba(0, 0, 0, 0.5)",
-      },
-      backgroundBlendMode: {
-        luminosity: "luminosity",
       },
       colors: {
         greyBlack: "#4D4F61",
